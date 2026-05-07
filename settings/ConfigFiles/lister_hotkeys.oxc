@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<hotkeys done_def="pathentry,rename,autosize,refreshthumbs,nexttab,prevtab,nexttabdest,prevtabdest,appcmd_back,appcmd_forward,prevfilter,zoom_in,zoom_out,zoom_reset,expanddir,collapsedir,repeatfind">
+	<key defkey="appcmd_back" hotkey="app+0x1">
+		<label>后退(B)</label>
+		<tip>返回前一文件夹</tip>
+		<function type="normal">
+			<instruction>go back whendual=checkmouse,deffocus</instruction>
+		</function>
+	</key>
+	<key defkey="appcmd_forward" hotkey="app+0x2">
+		<label>前进(W)</label>
+		<tip>前往历史中下一个文件夹</tip>
+		<function type="normal">
+			<instruction>go forward whendual=checkmouse,deffocus</instruction>
+		</function>
+	</key>
+	<key defkey="autosize" hotkey="ctrl+num+">
+		<label>自动调整属性栏宽度</label>
+		<tip>对详情/增强模式窗口进行大小自动调整</tip>
+		<function type="normal">
+			<instruction>set autosizecolumns</instruction>
+		</function>
+	</key>
+	<key defkey="collapsedir" hotkey="alt+up">
+		<label>折叠文件夹</label>
+		<tip>折叠当前选定的文件夹</tip>
+		<function type="normal">
+			<instruction>go expandbranch=collapse</instruction>
+		</function>
+	</key>
+	<key defkey="expanddir" hotkey="alt+down">
+		<label>展开文件夹</label>
+		<tip>展开当前选定的文件夹</tip>
+		<function type="normal">
+			<instruction>go expandbranch</instruction>
+		</function>
+	</key>
+	<key defkey="nexttab">
+		<label>下一个标签页</label>
+		<tip>在当前栏中选择下一个标签页</tip>
+		<hotkeys>
+			<key>ctrl+pagedown</key>
+			<key>ctrl+shift+app+0x2</key>
+		</hotkeys>
+		<function type="normal">
+			<instruction>go tabselect +1</instruction>
+		</function>
+	</key>
+	<key defkey="nexttabdest" hotkey="ctrl+shift+pagedown">
+		<label>后一标签页(目标栏)</label>
+		<tip>在目标栏中选择下一个标签页</tip>
+		<function type="normal">
+			<instruction>go tabselect +1 openindual</instruction>
+		</function>
+	</key>
+	<key defkey="pathentry" hotkey="shift+enter">
+		<label>路径项目</label>
+		<tip>启用直接路径项目字段</tip>
+		<function type="normal">
+			<instruction>go pathentry</instruction>
+		</function>
+	</key>
+	<key defkey="prevfilter">
+		<label>恢复过滤器</label>
+		<tip>恢复当前栏之前所用的快速过滤器</tip>
+		<hotkeys>
+			<key>ctrl+shift+8</key>
+			<key>ctrl+num*</key>
+		</hotkeys>
+		<function type="normal">
+			<instruction>set quickfilter=!prev</instruction>
+		</function>
+	</key>
+	<key defkey="prevtab">
+		<label>上一个标签页</label>
+		<tip>在当前栏中选择上一个标签页</tip>
+		<hotkeys>
+			<key>ctrl+pageup</key>
+			<key>ctrl+shift+app+0x1</key>
+		</hotkeys>
+		<function type="normal">
+			<instruction>go tabselect -1</instruction>
+		</function>
+	</key>
+	<key defkey="prevtabdest" hotkey="ctrl+shift+pageup">
+		<label>前一标签页(目标栏)</label>
+		<tip>在目标栏中选择上一个标签页</tip>
+		<function type="normal">
+			<instruction>go tabselect -1 openindual</instruction>
+		</function>
+	</key>
+	<key defkey="refreshthumbs">
+		<label>刷新缩略图</label>
+		<tip>删除缩略图缓存并为当前文件夹重新生成缩略图</tip>
+		<hotkeys>
+			<key>shift+f5</key>
+			<key>ctrl+f5</key>
+		</hotkeys>
+		<function type="normal">
+			<instruction>go refreshthumbs</instruction>
+		</function>
+	</key>
+	<key defkey="rename" hotkey="f2">
+		<label>内联重命名</label>
+		<tip>开始对选定项目进行内联重命名</tip>
+		<function type="normal">
+			<instruction>rename inline</instruction>
+		</function>
+	</key>
+	<key defkey="repeatfind" hotkey="shift+f3">
+		<label>重复上次查找</label>
+		<tip>在当前文件显示中重复上次 FAYT 查找操作</tip>
+		<function type="normal">
+			<instruction>cli quickfindrepeat</instruction>
+		</function>
+	</key>
+	<key defkey="zoom_in" hotkey="187,2">
+		<label>放大</label>
+		<tip>增大字体或缩略图大小</tip>
+		<function type="normal">
+			<instruction>@if:Set view=thumbnails</instruction>
+			<instruction>Show THUMBNAILSIZE=+32</instruction>
+			<instruction>@if:else</instruction>
+			<instruction>Set FONTSCALE=+10</instruction>
+		</function>
+	</key>
+	<key defkey="zoom_out" hotkey="189,2">
+		<label>缩小</label>
+		<tip>减小字体或缩略图大小</tip>
+		<function type="normal">
+			<instruction>@if:Set view=thumbnails</instruction>
+			<instruction>Show THUMBNAILSIZE=-32</instruction>
+			<instruction>@if:else</instruction>
+			<instruction>Set FONTSCALE=-10</instruction>
+		</function>
+	</key>
+	<key defkey="zoom_reset" hotkey="ctrl+0">
+		<label>重置缩放</label>
+		<tip>重置字体或缩略图大小</tip>
+		<function type="normal">
+			<instruction>@if:Set view=thumbnails</instruction>
+			<instruction>Show THUMBNAILSIZE=reset</instruction>
+			<instruction>@if:else</instruction>
+			<instruction>Set FONTSCALE=100</instruction>
+		</function>
+	</key>
+</hotkeys>

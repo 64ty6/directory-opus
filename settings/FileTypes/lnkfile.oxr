@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xml_registry_redirect hive="HKCR">
+	<key name="lnkfile">
+		<key name="opus">
+			<key name="opentargetcontainer">
+				<key name="command">
+					<value name="@default" type="sz">go opencontainer=target</value>
+				</key>
+				<key name="opusflags">
+					<value name="Position" type="sz">0</value>
+				</key>
+				<value name="@default" type="sz">打开目标文件夹</value>
+			</key>
+		</key>
+		<key name="opusflags">
+			<value name="OpusDoneDefTiles" type="sz" />
+			<value name="OpusDoneDefTooltip" type="sz" />
+			<value name="OpusTilesDef" type="sz">{target}
+{type}</value>
+			<value name="OpusTooltipDPI" type="sz">150</value>
+			<value name="OpusTooltipDef" type="sz">{name}
+&lt;b&gt;目标：&lt;/b&gt;\	{target}
+&lt;b&gt;类型：&lt;/b&gt;\	{type}
+&lt;b&gt;修改于：&lt;/b&gt;\	{modified}</value>
+		</key>
+	</key>
+</xml_registry_redirect>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<hotkeys done_def="newlister,taskmanager">
+	<key defkey="newlister" hotkey="win+shift+E">
+		<label>新建窗口</label>
+		<tip>打开新窗口</tip>
+		<function type="normal">
+			<instruction>go new</instruction>
+		</function>
+	</key>
+	<key defkey="taskmanager" hotkey="ctrl+shift+f1">
+		<label>任务管理器</label>
+		<tip>显示正在运行的脚本和其他后台任务的相关信息。</tip>
+		<function type="normal">
+			<instruction>help taskmanager</instruction>
+		</function>
+	</key>
+</hotkeys>

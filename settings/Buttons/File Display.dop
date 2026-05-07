@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<toolbar>
+	<buttons backcol="none" display="label" textcol="none" type="menu">
+		<button backcol="none" display="icon" hotkey="alt+left" hotkey_label="yes" label_pos="right" no_label="yes" textcol="none" timed="yes" type="menu_button">
+			<label>后退(&amp;B)</label>
+			<tip>后退 %1</tip>
+			<icon1>#goback</icon1>
+			<function type="normal">
+				<instruction>Go BACK USEQUALKEYS</instruction>
+			</function>
+			<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none">
+				<label>后退</label>
+				<tip>显示以前访问过的您可以返回的文件夹的列表</tip>
+				<function type="normal">
+					<instruction>Go BACKLIST</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none" type="menu">
+				<label>历史位置(&amp;R)</label>
+				<icon1>#recentlist</icon1>
+				<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none">
+					<label>清空最近访问列表(&amp;C)</label>
+					<tip>清除您最近访问的文件夹列表</tip>
+					<function type="normal">
+						<instruction>Recent CLEAR</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>历史位置(&amp;R)</label>
+					<tip>显示您最近访问过的文件夹</tip>
+					<function type="normal">
+						<instruction>Recent SHOWICONS USEQUALKEYS</instruction>
+					</function>
+				</button>
+			</button>
+		</button>
+		<button backcol="none" display="icon" hotkey="alt+right" hotkey_label="yes" label_pos="right" no_label="yes" textcol="none" timed="yes" type="menu_button">
+			<label>前进(W)</label>
+			<tip>前进到 %1</tip>
+			<icon1>#goforward</icon1>
+			<function type="normal">
+				<instruction>Go FORWARD USEQUALKEYS</instruction>
+			</function>
+			<button backcol="none" display="label" label_pos="right" textcol="none">
+				<label>前进列表</label>
+				<tip>显示以前访问过的您可以前进的文件夹的列表</tip>
+				<function type="normal">
+					<instruction>Go FORWARDLIST</instruction>
+				</function>
+			</button>
+		</button>
+		<button always_enable="yes" backcol="none" display="icon" hotkey="backspace" hotkey_label="yes" label_pos="right" no_label="yes" textcol="none" timed="yes" type="menu_button">
+			<label>向上(&amp;G)</label>
+			<tip>向上 %1</tip>
+			<icon1>#goup</icon1>
+			<function type="normal">
+				<instruction>Go UP BACK USEQUALKEYS</instruction>
+			</function>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>新窗口中的上级文件夹(&amp;P)</label>
+				<tip>上级文件夹 %1 (新窗口)</tip>
+				<icon1>#goupnewlister</icon1>
+				<function type="normal">
+					<instruction>Go UP NEW</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+				<label>在新标签页中打开上级文件夹(P)</label>
+				<tip>%1 的上级文件夹(新标签页)</tip>
+				<icon1>#goupnewtab</icon1>
+				<function type="normal">
+					<instruction>Go UP NEWTAB</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" hotkey="ctrl+backspace" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>转到根目录(&amp;R)</label>
+				<tip>转到当前文件夹所在分区的根目录</tip>
+				<icon1>#goroot</icon1>
+				<function type="normal">
+					<instruction>Go ROOT USEQUALKEYS</instruction>
+				</function>
+			</button>
+		</button>
+		<button backcol="none" display="icon" hotkey_label="yes" label_pos="right" no_label="yes" textcol="none">
+			<label>刷新(R)</label>
+			<tip>刷新当前文件夹的内容</tip>
+			<hotkeys>
+				<key>f5</key>
+				<key>app+0x3</key>
+			</hotkeys>
+			<icon1>#refresh</icon1>
+			<function type="normal">
+				<instruction>Go REFRESH=source</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="icon" hotkey="alt+home" hotkey_label="yes" label_pos="right" no_label="yes" textcol="none">
+			<label>首页(H)</label>
+			<tip>退回至 %1</tip>
+			<icon1>#home</icon1>
+			<function type="normal">
+				<instruction>Go HOMEDIR USEQUALKEYS</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="label" label_pos="right" textcol="none">
+			<label>开始隐藏</label>
+			<function type="normal">
+				<instruction>@hideblock:begin</instruction>
+				<instruction>@hideif:Toolbar NAME=&quot;Favorites Bar&quot; TOGGLE</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="icon" dropdown_glyph_slim="yes" label_pos="right" no_label="yes" textcol="none" type="menu">
+			<label>收藏夹(&amp;A)</label>
+			<icon1>#favorites</icon1>
+			<button backcol="none" display="both" hotkey="ctrl+D" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>添加到收藏夹(&amp;A)</label>
+				<tip>将当前文件夹加入收藏夹</tip>
+				<icon1>#favoritesadd</icon1>
+				<function type="normal">
+					<instruction>Favorites ADDDIALOG</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>编辑收藏夹(&amp;E)</label>
+				<tip>编辑您的收藏夹列表</tip>
+				<icon1>#favoritesedit</icon1>
+				<function type="normal">
+					<instruction>Favorites EDIT</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>收藏夹位置(F)</label>
+				<tip>显示收藏夹中的文件夹</tip>
+				<icon1>#favoriteslist</icon1>
+				<function type="normal">
+					<instruction>Favorites SHOWICONS USEQUALKEYS NOOPENINTABS HEADING</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>智能收藏夹(S)</label>
+				<tip>显示已添加的任何智能收藏夹(tm) 项目</tip>
+				<icon1>#smartfavorites</icon1>
+				<function type="normal">
+					<instruction>Favorites SMART SHOWICONS USEQUALKEYS NOOPENINTABS HEADING</instruction>
+				</function>
+			</button>
+		</button>
+		<button backcol="none" display="label" label_pos="right" textcol="none">
+			<label>结束隐藏</label>
+			<function type="normal">
+				<instruction>@hideblock:end</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="icon" field_type="path_treepath" hotkey_label="yes" label_pos="right" no_label="yes" size="full" textcol="none">
+			<label>位置</label>
+			<tip>显示当前文件夹路径,并允许您键入要转到的新文件夹的路径 (附带单独可选的文件夹树分支)</tip>
+			<hotkeys>
+				<key>f4</key>
+				<key>alt+D</key>
+				<key>ctrl+L</key>
+			</hotkeys>
+			<icon1>#pathfield</icon1>
+			<function type="normal">
+				<instruction>Go PATHFIELDPATHTREE</instruction>
+			</function>
+		</button>
+	</buttons>
+	<default_info hash="0xcb18de66,0x853b4c7,0x75eea91,0x596c8f09,0x6f5ba170" type="File Display" version="13.0" />
+</toolbar>

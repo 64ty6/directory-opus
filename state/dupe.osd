@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<dupe flags="0x4002a000" flags2="0x4002a000" minsize="100" range="100" splitter="0.500000">
+	<exclude />
+	<filtername>*</filtername>
+	<collection>重复文件</collection>
+	<indexed engine="0" query="" />
+</dupe>

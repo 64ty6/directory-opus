@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<backup_restore_config>
+	<backup flags="60">
+		<pathstring>D:\Backup</pathstring>
+		<tree>0x1000</tree>
+	</backup>
+	<export flags="2" version="0" />
+</backup_restore_config>

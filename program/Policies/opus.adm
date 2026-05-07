@@ -1,0 +1,40 @@
+CLASS MACHINE
+CATEGORY "GPSoftware"
+	CATEGORY "Directory Opus"
+		KEYNAME "SOFTWARE\Policies\GPSoftware\Directory Opus"
+		
+		POLICY !!DisableCustomize_Policy
+			EXPLAIN !!DisableCustomize_Explain
+			PART !!DisableCustomize_Policy DROPDOWNLIST
+				VALUENAME "DisableCustomize"
+				ITEMLIST
+					NAME !!DisableCustomize_Option1 VALUE NUMERIC 1
+					NAME !!DisableCustomize_Option2 VALUE NUMERIC 2
+				END ITEMLIST
+			END PART
+		END POLICY
+		
+		POLICY !!DisablePreferences_Policy
+			EXPLAIN !!DisablePreferences_Explain
+			PART !!DisablePreferences_Policy DROPDOWNLIST
+				VALUENAME "DisablePreferences"
+				ITEMLIST
+					NAME !!DisablePreferences_Option1 VALUE NUMERIC 1
+					NAME !!DisablePreferences_Option2 VALUE NUMERIC 2
+				END ITEMLIST
+			END PART
+		END POLICY
+		
+		
+	END CATEGORY
+END CATEGORY
+
+[strings]
+DisableCustomize_Policy=Disable Customize
+DisableCustomize_Explain=Prevent the user's access to the Customize function in Directory Opus, to stop them modifying their toolbars and menus.
+DisableCustomize_Option1=Disable Customize mode
+DisableCustomize_Option2=Disable except for Administrators
+DisablePreferences_Policy=Disable Preferences
+DisablePreferences_Explain=Prevent the user's access to the Preferences function in Directory Opus, to stop them modifying their configuration.
+DisablePreferences_Option1=Disable Preferences
+DisablePreferences_Option2=Disable except for Administrators

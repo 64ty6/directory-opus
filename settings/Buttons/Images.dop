@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<toolbar>
+	<buttons backcol="none" display="label" textcol="none" type="menu">
+		<button backcol="none" display="label" field_type="label" label_pos="right" size="full" textcol="none">
+			<label>旋转</label>
+			<function type="normal">
+				<instruction>Set LABEL</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="icon" label_pos="right" no_label="yes" textcol="none">
+			<label>向左旋转</label>
+			<tip>选定的图像向左旋转90度</tip>
+			<icon1>#rotateleft</icon1>
+			<function type="normal">
+				<instruction>Image ROTATE=270 HERE REPLACE PRESERVEDATE</instruction>
+				<instruction>@nodeselect</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="icon" label_pos="right" no_label="yes" separate="yes" textcol="none">
+			<label>向右旋转</label>
+			<tip>选定的图像向右旋转90度</tip>
+			<icon1>#rotateright</icon1>
+			<function type="normal">
+				<instruction>Image ROTATE=90 HERE REPLACE PRESERVEDATE</instruction>
+				<instruction>@nodeselect</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none" type="menu_button">
+			<label>转换</label>
+			<tip>转换/旋转图像,调整图像大小</tip>
+			<icon1>#imageconversion</icon1>
+			<function type="normal">
+				<instruction>Image HERE CONVERT</instruction>
+			</function>
+			<button backcol="none" display="label" label_pos="right" textcol="none">
+				<label>&amp;PNG</label>
+				<tip>转换选择的图像为 PNG 格式</tip>
+				<function type="normal">
+					<instruction>Image HERE CONVERT=png</instruction>
+					<instruction>@nodeselect</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" label_pos="right" textcol="none">
+				<label>&amp;JPEG</label>
+				<tip>将选定图片转换为JPEG格式</tip>
+				<function type="normal">
+					<instruction>Image HERE CONVERT=jpg QUALITY=100</instruction>
+					<instruction>@nodeselect</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" label_pos="right" textcol="none">
+				<label>&amp;GIF</label>
+				<tip>转换选择的图像为 GIF 格式</tip>
+				<function type="normal">
+					<instruction>Image HERE CONVERT=gif</instruction>
+					<instruction>@nodeselect</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none">
+				<label>&amp;BMP</label>
+				<tip>将选定图片转换为BMP格式</tip>
+				<function type="normal">
+					<instruction>Image HERE CONVERT=bmp</instruction>
+					<instruction>@nodeselect</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" label_pos="right" textcol="none">
+				<label>图像转换预设</label>
+				<tip>图像转换预设列表</tip>
+				<function type="normal">
+					<instruction>Image CONVERT PRESET=!list</instruction>
+				</function>
+			</button>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>显示</label>
+			<tip>显示当前选中的图片</tip>
+			<icon1>#show</icon1>
+			<function type="normal">
+				<instruction>Show AUTOFILELIST</instruction>
+				<instruction>@nodeselect</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+			<label>设置壁纸</label>
+			<tip>将选择的图片设为桌面壁纸</tip>
+			<icon1>#setwallpaper</icon1>
+			<function type="normal">
+				<instruction>Properties SETWALLPAPER=menu</instruction>
+				<instruction>@nodeselect</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="icon" label_pos="right" no_label="yes" textcol="none">
+			<label>按名称排序</label>
+			<tip>列表按名称排序</tip>
+			<icon1>#sort_alpha</icon1>
+			<function type="normal">
+				<instruction>Set SORTBY=name</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="icon" label_pos="right" no_label="yes" textcol="none">
+			<label>按日期排序</label>
+			<tip>列表按最后修改日期排序</tip>
+			<icon1>#sort_date</icon1>
+			<function type="normal">
+				<instruction>Set SORTBY=+modified</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="icon" label_pos="right" no_label="yes" separate="yes" textcol="none">
+			<label>按拍摄日期排序</label>
+			<tip>照片按照拍摄时间排序</tip>
+			<icon1>#sort_shooting</icon1>
+			<function type="normal">
+				<instruction>Set SORTBY=+datetaken</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="label" dpi="150" field_type="thumbnailsize" label_pos="right" size="180" textcol="none">
+			<label>缩略图大小(H)</label>
+			<tip>显示一个滑动杆,允许您在当前窗口中动态调整缩略图大小</tip>
+			<function type="normal">
+				<instruction>Show THUMBNAILSIZE=field</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="label" label_pos="right" textcol="none">
+			<label>缩略图大小按钮</label>
+			<tip>使缩略图大小按钮到设置的最大值</tip>
+			<icon1>#thumbnailsize</icon1>
+			<function type="normal">
+				<instruction>Show THUMBNAILSIZE list</instruction>
+			</function>
+		</button>
+	</buttons>
+	<default_info hash="0xf430ac8e,0xfb1248c3,0x1b3d5ada,0x58d7d67b,0xb7801aa0" type="Images" version="13.0" />
+</toolbar>

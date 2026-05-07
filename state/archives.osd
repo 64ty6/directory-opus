@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<archives>
+	<extraction_formats>.000;.001;.7z;.arj;.bz2;.bzip2;.cab;.cb7;.cbr;.cbz;.esd;.gz;.gzip;.lha;.lzh;.lzma;.lzma86;.r00;.r01;.rar;.swm;.tar;.taz;.tbz;.tbz2;.tgz;.tlz;.tlzma;.tpz;.txz;.wim;.xz;.z;.zip;.jar</extraction_formats>
+	<extraction_mappings>^(.*)\.tar\.(bz2|bzip2|gz|gzip|lzma|lzma86|z|xz)$=\1;^(.*)\.7z\.0+1$=\1;^(.*)\.part0*1\.rar$=\1</extraction_mappings>
+</archives>

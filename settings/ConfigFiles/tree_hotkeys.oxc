@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<hotkeys done_def="expand_all,expand_current,collapse_current,toggle_pin">
+	<key defkey="collapse_current">
+		<label>折叠选定项</label>
+		<tip>折叠选定的分支或(第二次使用时)其下的所有二级分支</tip>
+		<hotkeys>
+			<key>189,0</key>
+			<key>num-</key>
+		</hotkeys>
+		<function type="normal">
+			<instruction>Go TREECOLLAPSE=focus,second</instruction>
+		</function>
+	</key>
+	<key defkey="expand_all">
+		<label>展开所有项</label>
+		<tip>展开所选分支下的所有分支</tip>
+		<hotkeys>
+			<key>shift+8</key>
+			<key>num*</key>
+		</hotkeys>
+		<function type="normal">
+			<instruction>Go TREEEXPAND=focus,all</instruction>
+		</function>
+	</key>
+	<key defkey="expand_current">
+		<label>展开选定项</label>
+		<tip>展开选定的分支或(第二次使用时)其下的所有二级分支</tip>
+		<hotkeys>
+			<key>187,1</key>
+			<key>num+</key>
+		</hotkeys>
+		<function type="normal">
+			<instruction>Go TREEEXPAND=focus,second</instruction>
+		</function>
+	</key>
+	<key defkey="toggle_pin" hotkey="ctrl+space">
+		<label>切换图钉</label>
+		<tip>切换所选分支的扩展图钉</tip>
+		<function type="normal">
+			<instruction>Go TREESETPINSTATE</instruction>
+		</function>
+	</key>
+</hotkeys>

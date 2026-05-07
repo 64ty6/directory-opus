@@ -1,0 +1,737 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<toolbar>
+	<buttons backcol="none" display="label" textcol="none" type="menu">
+		<button always_enable="yes" backcol="none" display="both" hotkey="ctrl+1" hotkey_label="yes" label_pos="right" textcol="none" type="menu_button">
+			<label>复制文件(&amp;C)</label>
+			<tip>复制所有选定的文件和文件夹到目标窗口</tip>
+			<icon1>#copy</icon1>
+			<function type="normal">
+				<instruction>@icon:recursivefilter,Set COPYFILTER=Toggle</instruction>
+				<instruction>@keydown:none</instruction>
+				<instruction>Copy</instruction>
+				<instruction>@keydown:shift</instruction>
+				<instruction>Copy AS</instruction>
+			</function>
+			<button always_enable="yes" backcol="none" display="both" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>复制文件(&amp;C)</label>
+				<tip>复制所有选定的文件和文件夹到目标窗口</tip>
+				<icon1>#copy</icon1>
+				<function type="normal">
+					<instruction>@icon:recursivefilter,Set COPYFILTER=Toggle</instruction>
+					<instruction>@keydown:none</instruction>
+					<instruction>Copy</instruction>
+					<instruction>@keydown:shift</instruction>
+					<instruction>Copy AS</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" hotkey="ctrl+shift+1" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>复制为</label>
+				<tip>复制所有选定的文件和文件夹到目标窗口并将其重命名</tip>
+				<icon1>#copyas</icon1>
+				<function type="normal">
+					<instruction>Copy AS</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>创建副本</label>
+				<tip>在源窗口中创建所有选中的文件和文件夹的副本</tip>
+				<icon1>#duplicate</icon1>
+				<function type="normal">
+					<instruction>Copy DUPLICATE</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+				<label>复制为以日期命名的名称</label>
+				<tip>复制所有选定的文件和文件夹，将当前日期和时间附加到其名称中</tip>
+				<icon1>#duplicate</icon1>
+				<function type="normal">
+					<instruction>Copy DUPLICATE PATTERN * AS &quot;* - {date|D#yyyy-MM-dd} {time|T#HH-mm-ss}&quot; IGNOREEXT</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>更新所有(&amp;U)</label>
+				<tip>从源到目标更新（复制）所有已更改（具有最新时间戳）或根本不存在的文件</tip>
+				<icon1>#updateall</icon1>
+				<function type="normal">
+					<instruction>Copy UPDATEALL</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+				<label>更新已有(&amp;P)</label>
+				<tip>从源到目标更新（复制）所有已更改的现有文件（具有最新的时间戳）</tip>
+				<icon1>#updateexisting</icon1>
+				<function type="normal">
+					<instruction>Copy UPDATEEXISTING</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>创建快捷方式</label>
+				<tip>在目标创建指向源内所选项目的快捷方式</tip>
+				<icon1>#shortcut</icon1>
+				<function type="normal">
+					<instruction>Copy MAKELINK</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none" type="menu">
+				<label>创建高级链接</label>
+				<icon1>#shortcut</icon1>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>创建自动化</label>
+					<tip>自动选择软链接，交接点，硬链接或快捷方式类型以在目标内创建指向源的所选项目</tip>
+					<function type="normal">
+						<instruction>Copy MAKELINK=auto</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>创建自动化(避免软链接)</label>
+					<tip>在目标创建文件夹的交接点或快捷方式，文件的硬链接或快捷方式以指向源内所选项目</tip>
+					<function type="normal">
+						<instruction>Copy MAKELINK=autonosoft</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>创建交接点</label>
+					<tip>在目标创建指向源内所选文件夹的交接点</tip>
+					<function type="normal">
+						<instruction>Copy MAKELINK=junction</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>创建相对软链接</label>
+					<tip>在目标创建指向源内所选项目的软链接，如果可能则使用相对路径</tip>
+					<function type="normal">
+						<instruction>Copy MAKELINK=relsoftlink</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>创建软链接</label>
+					<tip>在目标使用绝对路径创建指向源内所选项目的软链接</tip>
+					<function type="normal">
+						<instruction>Copy MAKELINK=softlink</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>创建硬链接</label>
+					<tip>在目标创建指向源内所选文件的硬链接</tip>
+					<function type="normal">
+						<instruction>Copy MAKELINK=hardlink</instruction>
+					</function>
+				</button>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+				<label>发送到</label>
+				<tip>显示系统发送到菜单</tip>
+				<icon1>#copy</icon1>
+				<function type="normal">
+					<instruction>FileType SENDTOMENU</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>启用复制过滤器(&amp;O)</label>
+				<tip>对复制操作做打开或关闭过滤器</tip>
+				<icon1>#recursivefilter</icon1>
+				<function type="normal">
+					<instruction>Set COPYFILTER=Toggle</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>复制设置(&amp;Y)...</label>
+				<tip>&quot;选项&quot;中&quot;复制设置&quot;页面的快捷方式</tip>
+				<icon1>#prefs</icon1>
+				<function type="normal">
+					<instruction>Prefs PAGE=copyopts</instruction>
+				</function>
+			</button>
+		</button>
+		<button backcol="none" display="both" hotkey="ctrl+2" hotkey_label="yes" label_pos="right" textcol="none" type="menu_button">
+			<label>移动(&amp;M)</label>
+			<tip>将选定的文件与目录移动到目标窗口</tip>
+			<icon1>#move</icon1>
+			<function type="normal">
+				<instruction>@keydown:none</instruction>
+				<instruction>Copy MOVE</instruction>
+				<instruction>@keydown:shift</instruction>
+				<instruction>Copy MOVE AS</instruction>
+			</function>
+			<button backcol="none" display="both" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>移动(&amp;M)</label>
+				<tip>将选定的文件与目录移动到目标窗口</tip>
+				<icon1>#move</icon1>
+				<function type="normal">
+					<instruction>@keydown:none</instruction>
+					<instruction>Copy MOVE</instruction>
+					<instruction>@keydown:shift</instruction>
+					<instruction>Copy MOVE AS</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" hotkey="ctrl+shift+2" hotkey_label="yes" label_pos="right" separate="yes" textcol="none">
+				<label>移动为</label>
+				<tip>将选定的文件与目录移动到目标窗口并将其重命名</tip>
+				<icon1>#moveas</icon1>
+				<function type="normal">
+					<instruction>Copy MOVE AS</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>移动到以日期命名的文件夹</label>
+				<tip>移动选定的项目到新文件夹并用当前的日期和时间自动命名</tip>
+				<icon1>#move</icon1>
+				<function type="normal">
+					<instruction>Copy MOVE HERE CREATEFOLDER=&quot;{date|yyyy-MM-dd} {time|HH-mm-ss}&quot;</instruction>
+				</function>
+			</button>
+		</button>
+		<button backcol="none" display="both" hotkey="ctrl+3" hotkey_label="yes" label_pos="right" separate="yes" textcol="none" type="menu_button">
+			<label>重命名(&amp;N)</label>
+			<tip>重命名选定的文件与文件夹</tip>
+			<icon1>#rename</icon1>
+			<function type="normal">
+				<instruction>@disablenosel</instruction>
+				<instruction>@nodeselect</instruction>
+				<instruction>=return(&quot;Rename &quot; + ($glob:dopus_Rename_Simple ? &quot;SIMPLE&quot; : &quot;ADVANCED&quot;))</instruction>
+			</function>
+			<button backcol="none" display="both" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>重命名(&amp;N)</label>
+				<tip>重命名选定的文件与文件夹</tip>
+				<icon1>#rename</icon1>
+				<function type="normal">
+					<instruction>@disablenosel</instruction>
+					<instruction>@nodeselect</instruction>
+					<instruction>=return(&quot;Rename &quot; + ($glob:dopus_Rename_Simple ? &quot;SIMPLE&quot; : &quot;ADVANCED&quot;))</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>使用简单重命名(&amp;S)</label>
+				<tip>打开后，默认的重命名命令将使用简单重命名对话框</tip>
+				<icon1>#rename</icon1>
+				<function type="normal">
+					<instruction>@toggle:=$glob:dopus_Rename_Simple</instruction>
+					<instruction>=$glob!:dopus_Rename_Simple = !$glob:dopus_Rename_Simple</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>重命名预置(收藏)</label>
+				<tip>显示重命名预设列表</tip>
+				<icon1>#rename2</icon1>
+				<function type="normal">
+					<instruction>Rename PRESET=!list,favesonly HEADING</instruction>
+					<instruction>@nodeselect</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>重命名预置(非收藏)</label>
+				<tip>显示重命名预设列表</tip>
+				<icon1>#rename2</icon1>
+				<function type="normal">
+					<instruction>Rename PRESET=!list,nofaves HEADING</instruction>
+					<instruction>@nodeselect</instruction>
+				</function>
+			</button>
+		</button>
+		<button backcol="none" display="both" hotkey="ctrl+N" hotkey_label="yes" label_pos="right" separate="yes" textcol="none" type="menu_button">
+			<label>新建文件夹(&amp;W)</label>
+			<tip>新建文件夹</tip>
+			<icon1>#makedir</icon1>
+			<function type="normal">
+				<instruction>CreateFolder</instruction>
+			</function>
+			<button backcol="none" display="both" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>新建文件夹(&amp;W)</label>
+				<tip>新建文件夹</tip>
+				<icon1>#makedir</icon1>
+				<function type="normal">
+					<instruction>CreateFolder</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" hotkey="ctrl+H" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>新建压缩文件(&amp;A)...</label>
+				<tip>新建压缩文件</tip>
+				<icon1>#newzipfile</icon1>
+				<function type="normal">
+					<instruction>CreateFolder ARCHIVE</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+				<label>移动到新文件夹</label>
+				<tip>将所选项目移动到新的子文件夹中，首先提示输入名称</tip>
+				<icon1>#move</icon1>
+				<function type="normal">
+					<instruction>Copy MOVE HERE CREATEFOLDER</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" hotkey="ctrl+O" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>新建文本文档</label>
+				<tip>创建一个新的,空文本文件</tip>
+				<icon1>#newtextfile</icon1>
+				<function type="normal">
+					<instruction>FileType NEW=.txt</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+				<label>新建</label>
+				<tip>新建一个文件或文件夹</tip>
+				<icon1>#newfile</icon1>
+				<function type="normal">
+					<instruction>FileType NEWMENU</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>新建以日期命名的文件夹</label>
+				<tip>新建一个用当前日期和时间自动命名的文件夹</tip>
+				<icon1>#makedir</icon1>
+				<function type="normal">
+					<instruction>CreateFolder NAME=&quot;{date|yyyy-MM-dd} {time|HH-mm-ss}&quot;</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>移动到以日期命名的文件夹</label>
+				<tip>将所选项目移动到以当前日期和时间命名的新子文件夹中</tip>
+				<icon1>#move</icon1>
+				<function type="normal">
+					<instruction>Copy MOVE HERE CREATEFOLDER=&quot;{date|yyyy-MM-dd} {time|HH-mm-ss}&quot;</instruction>
+				</function>
+			</button>
+		</button>
+		<button always_enable="yes" backcol="none" display="both" hotkey_label="yes" label_pos="right" separate="yes" textcol="none" type="menu_button">
+			<label>删除(&amp;D)</label>
+			<tip>删除选定的文件和文件夹</tip>
+			<hotkeys>
+				<key>delete</key>
+				<key>shift+delete</key>
+			</hotkeys>
+			<icon1>#delete</icon1>
+			<function type="normal">
+				<instruction>@icon:deletefilter,Set DELFILTER=Toggle</instruction>
+				<instruction>Delete SHIFT</instruction>
+			</function>
+			<button always_enable="yes" backcol="none" display="both" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>删除(&amp;D)</label>
+				<tip>删除选定的文件和文件夹</tip>
+				<icon1>#delete</icon1>
+				<function type="normal">
+					<instruction>@icon:deletefilter,Set DELFILTER=Toggle</instruction>
+					<instruction>Delete SHIFT</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+				<label>安全擦除(&amp;W)</label>
+				<tip>用 NSA 认可的算法擦写选中的文件多达 32 次以防止文件恢复</tip>
+				<icon1>#deletesecure</icon1>
+				<function type="normal">
+					<instruction>Delete SECURE</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+				<label>从收集区中删除(&amp;R)</label>
+				<tip>从文件收集中删除文件或文件夹</tip>
+				<icon1>#removecollection</icon1>
+				<function type="normal">
+					<instruction>Delete REMOVECOLLECTION</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>转到回收站(&amp;Y)</label>
+				<icon1>#gotrash</icon1>
+				<function type="normal">
+					<instruction>Go /trash USEQUALKEYS</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>清空回收站(&amp;E)</label>
+				<tip>清空回收站，永久删除其中的所有内容</tip>
+				<icon1>#deletepermanent</icon1>
+				<function type="normal">
+					<instruction>Delete EMPTYRECYCLE</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+				<label>安全清空回收站(E)</label>
+				<tip>安全地擦除回收站的内容，然后将其清空</tip>
+				<icon1>#deletesecure</icon1>
+				<function type="normal">
+					<instruction>Delete EMPTYRECYCLE SECURE=1</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>启用回收站(&amp;C)</label>
+				<tip>选择 Opus 是将文件发送到回收站还是永久删除它们</tip>
+				<icon1>#recycleenable</icon1>
+				<function type="normal">
+					<instruction>Set DELRECYCLEBIN=Toggle</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>启用回收确认(Y)</label>
+				<tip>删除到回收站时显示确认消息</tip>
+				<icon1>#recycleconfirm</icon1>
+				<function type="normal">
+					<instruction>Set DELRECYCLECONFIRM=Toggle</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+				<label>启用删除过滤器(E)</label>
+				<tip>对删除操作做打开或关闭过滤器</tip>
+				<icon1>#deletefilter</icon1>
+				<function type="normal">
+					<instruction>Set DELFILTER=Toggle</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>删除设置(&amp;S)...</label>
+				<tip>&quot;选项&quot;中&quot;删除设置&quot;页面的快捷方式</tip>
+				<icon1>#prefs</icon1>
+				<function type="normal">
+					<instruction>Prefs PAGE=deleting</instruction>
+				</function>
+			</button>
+		</button>
+		<button backcol="none" display="both" hotkey="ctrl+shift+A" hotkey_label="yes" label_pos="right" separate="yes" textcol="none">
+			<label>管理员</label>
+			<tip>临时提升当前窗口权限,这允许您在不经 UAC 提示的情况下对受保护的文件进行多种操作</tip>
+			<icon1>#adminmode</icon1>
+			<function type="normal">
+				<instruction>Set ADMIN=Toggle</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" hotkey="ctrl+4" hotkey_label="yes" label_pos="right" separate="yes" textcol="none" type="menu_button">
+			<label>压缩文件(&amp;I)</label>
+			<tip>在当前的文件夹中添加选择的文件和文件夹为一个压缩文件</tip>
+			<icon1>#addtozip</icon1>
+			<function type="normal">
+				<instruction>Copy ADDTOARCHIVE HERE</instruction>
+			</function>
+			<button backcol="none" display="both" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>压缩文件(&amp;I)</label>
+				<tip>在当前的文件夹中添加选择的文件和文件夹为一个压缩文件</tip>
+				<icon1>#addtozip</icon1>
+				<function type="normal">
+					<instruction>Copy ADDTOARCHIVE HERE</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" hotkey="ctrl+shift+4" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>添加到不同的压缩文件</label>
+				<tip>在当前文件夹中创建选定的文件和文件夹为单独压缩文件</tip>
+				<icon1>#addtozip</icon1>
+				<function type="normal">
+					<instruction>Copy ARCHIVE=single HERE</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>添加到指定压缩文件</label>
+				<tip>在目标文件夹中添加选定的文件和文件夹为压缩文件</tip>
+				<icon1>#addtozip</icon1>
+				<function type="normal">
+					<instruction>Copy ADDTOARCHIVE</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+				<label>压缩成&amp;Zip并邮寄(E)</label>
+				<tip>将文件压缩成Zip并作为Email附件发送</tip>
+				<icon1>#zipandmail</icon1>
+				<function type="normal">
+					<instruction>Copy ARCHIVE SENDMAIL</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+				<label>解压到文件夹</label>
+				<tip>在当前位置将选定压缩文件以相同名字解压到单独文件夹</tip>
+				<icon1>#extract</icon1>
+				<function type="normal">
+					<instruction>Copy EXTRACT=sub HERE</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>解压到目标文件夹</label>
+				<tip>在目标文件夹中直接解压所有选定的压缩文件</tip>
+				<icon1>#extract</icon1>
+				<function type="normal">
+					<instruction>Copy EXTRACT</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>解压到指定文件夹</label>
+				<tip>在目标文件夹中将选定压缩文件以相同名字解压到单独文件夹</tip>
+				<icon1>#extract</icon1>
+				<function type="normal">
+					<instruction>Copy EXTRACT=sub</instruction>
+				</function>
+			</button>
+		</button>
+		<button backcol="none" display="both" hotkey="alt+enter" hotkey_label="yes" label_pos="right" separate="yes" textcol="none" type="menu_button">
+			<label>属性(&amp;R)</label>
+			<tip>查看选定文件与文件夹的属性</tip>
+			<icon1>#properties</icon1>
+			<function type="normal">
+				<instruction>Properties</instruction>
+			</function>
+			<button backcol="none" display="both" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>属性(&amp;R)</label>
+				<tip>查看选定文件与文件夹的属性</tip>
+				<icon1>#properties</icon1>
+				<function type="normal">
+					<instruction>Properties</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" hotkey="ctrl+B" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>属性和时间</label>
+				<tip>更改选定文件的属性与时间戳</tip>
+				<icon1>#setattr</icon1>
+				<function type="normal">
+					<instruction>SetAttr</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" hotkey="ctrl+P" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>描述</label>
+				<tip>为选定的文件输入您自己的描述</tip>
+				<icon1>#setcomment</icon1>
+				<function type="normal">
+					<instruction>SetAttr DESCRIPTION</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" hotkey="ctrl+M" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>编辑元数据</label>
+				<tip>编辑所选文件的元数据</tip>
+				<icon1>#editmeta</icon1>
+				<function type="normal">
+					<instruction>SetAttr META</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>更新修改日期(&amp;M)</label>
+				<tip>设置所选文件的最后修改时间戳为当前日期和时间</tip>
+				<icon1>#setdate</icon1>
+				<function type="normal">
+					<instruction>SetAttr MODIFIED=now</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>设置标记</label>
+				<tip>为文件或文件夹指定标记</tip>
+				<icon1>#setcolor</icon1>
+				<function type="normal">
+					<instruction>Properties SETLABEL !menu LABELCATEGORY raw:~(Status)</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>设置状态</label>
+				<tip>指派可显示在状态列的图标.</tip>
+				<icon1>#status</icon1>
+				<function type="normal">
+					<instruction>Properties SETLABEL !menu LABELCATEGORY raw:Status ADDLABEL SETLABELTOGGLE</instruction>
+					<instruction>[</instruction>
+					<instruction>Set COLUMNSADD=Status(!1+Name)</instruction>
+					<instruction>]</instruction>
+				</function>
+			</button>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none" type="menu_button">
+			<label>幻灯片播放</label>
+			<tip>选择图片作为显示的幻灯片</tip>
+			<icon1>#slideshow</icon1>
+			<function type="normal">
+				<instruction>Show SLIDESHOW AUTOFILELIST FULLSCREEN</instruction>
+			</function>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>幻灯片播放</label>
+				<tip>选择图片作为显示的幻灯片</tip>
+				<icon1>#slideshow</icon1>
+				<function type="normal">
+					<instruction>Show SLIDESHOW AUTOFILELIST FULLSCREEN</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>显示图片(&amp;S)</label>
+				<tip>显示当前选中的图片</tip>
+				<icon1>#show</icon1>
+				<function type="normal">
+					<instruction>Show AUTOFILELIST</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>打开链接的查看器(&amp;L)</label>
+				<tip>打开一个独立的查看器，其作用类似于分离的查看器窗格</tip>
+				<icon1>#viewerlink</icon1>
+				<function type="normal">
+					<instruction>Show LISTERLINK USEEXISTING=yes,avoid</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>播放声音(&amp;P)</label>
+				<tip>播放当前选定的 WAV 文件</tip>
+				<icon1>#play</icon1>
+				<function type="normal">
+					<instruction>Play</instruction>
+				</function>
+			</button>
+		</button>
+		<button backcol="none" display="label" field_type="spacer" label_pos="right" size="full" textcol="none">
+			<label>分隔符</label>
+			<function type="normal">
+				<instruction>Set SPACER</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" dropdown_glyph="yes" label_pos="left" textcol="none" type="menu">
+			<label>帮助(&amp;H)</label>
+			<icon1>#help</icon1>
+			<button backcol="none" display="both" hotkey="f1" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>帮助(&amp;H)</label>
+				<tip>显示 Directory Opus 的联机帮助</tip>
+				<icon1>#help</icon1>
+				<function type="normal">
+					<instruction>Help</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>版本说明(&amp;N)</label>
+				<tip>显示当前版本的版本说明.</tip>
+				<icon1>#releasenotes</icon1>
+				<function type="normal">
+					<instruction>Help RELEASENOTES</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none" type="menu">
+				<label>日志(&amp;L)</label>
+				<icon1>#logs</icon1>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>F&amp;TP 日志(F)</label>
+					<tip>显示活动的 FTP 日志</tip>
+					<function type="normal">
+						<instruction>Set UTILITY=FTPLog,Toggle</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>文件日志(&amp;F)</label>
+					<tip>显示文件和文件夹操作日志</tip>
+					<function type="normal">
+						<instruction>Set UTILITY=FileLog,Toggle</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>撤消日志(&amp;U)</label>
+					<tip>撤消上次的文件操作(复制、删除、重命名、移动等)</tip>
+					<function type="normal">
+						<instruction>Set UTILITY=Undo,Toggle</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>邮件日志(&amp;E)</label>
+					<tip>显示发送和未发送邮件的日志</tip>
+					<function type="normal">
+						<instruction>Set UTILITY=Email,Toggle</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>脚本日志(&amp;S)</label>
+					<tip>显示脚本和求值器输出的日志</tip>
+					<function type="normal">
+						<instruction>Set UTILITY=ScriptLog,Toggle</instruction>
+					</function>
+				</button>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none" type="menu">
+				<label>&amp;Directory Opus 网页(D)</label>
+				<icon1>#weblinks</icon1>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>&amp;Directory Opus 主页(D)</label>
+					<tip>访问 GP Software 主站点</tip>
+					<function type="normal">
+						<instruction>https://{gps-redirect}?page=home</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none">
+					<label>技术支持(&amp;T)</label>
+					<tip>Directory Opus技术支持论坛</tip>
+					<function type="normal">
+						<instruction>https://{gps-redirect}?page=resource</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>产品更新(&amp;P)</label>
+					<tip>访问最近的 Directory Opus 推送</tip>
+					<function type="normal">
+						<instruction>https://{gps-redirect}?page=news</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>常见问题(&amp;F)</label>
+					<tip>访问FAQ</tip>
+					<function type="normal">
+						<instruction>https://{gps-redirect}?page=faq</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none">
+					<label>在线支持(&amp;O)</label>
+					<tip>Directory Opus 在线支持网页</tip>
+					<function type="normal">
+						<instruction>https://{gps-redirect}?page=support</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>视频教程</label>
+					<tip>打开Directory Opus YouTube 频道</tip>
+					<function type="normal">
+						<instruction>https://{gps-redirect}?page=youtube</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>书面教程(&amp;W)</label>
+					<tip>打开Directory Opus的教程区</tip>
+					<function type="normal">
+						<instruction>https://{gps-redirect}?page=intro</instruction>
+					</function>
+				</button>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>检查程序更新(&amp;C)...</label>
+				<tip>检查 Directory Opus 的更新版本</tip>
+				<icon1>#checkforupdates</icon1>
+				<function type="normal">
+					<instruction>Help CHECKUPDATE</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+				<label>提交崩溃日志...</label>
+				<tip>允许您查看和提交由于程序崩溃而创建的任何日志文件</tip>
+				<icon1>#crashlogs</icon1>
+				<function type="normal">
+					<instruction>Help CRASHLOGS</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none" type="menu">
+				<label>安全截图(&amp;S)</label>
+				<icon1>#screenshot</icon1>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>本窗口(&amp;T)</label>
+					<tip>将本窗口安全截屏并复制</tip>
+					<function type="normal">
+						<instruction>Clipboard SCREENSHOT=secure</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>全屏(&amp;W)</label>
+					<tip>复制整个屏幕的安全截屏</tip>
+					<function type="normal">
+						<instruction>Clipboard SCREENSHOT=secure,all</instruction>
+					</function>
+				</button>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>授权管理(L)...</label>
+				<tip>管理 Directory Opus 证书</tip>
+				<icon1>#licencemanager</icon1>
+				<function type="normal">
+					<instruction>Help LICENCEMANAGER</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>关于 D&amp;irectory Opus (A)...</label>
+				<tip>显示 Directory Opus 版权和版本信息</tip>
+				<icon1>#about</icon1>
+				<function type="normal">
+					<instruction>Help ABOUT</instruction>
+				</function>
+			</button>
+		</button>
+	</buttons>
+	<default_info hash="0xee08eca6,0xd9fe9315,0x97257e32,0x599a29cc,0x4dfad0c9" type="Operations" version="13.0" />
+</toolbar>

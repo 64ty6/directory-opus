@@ -1,0 +1,1493 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<toolbar>
+	<buttons backcol="none" display="label" textcol="none" type="menu">
+		<button backcol="none" display="label" label_pos="right" textcol="none" type="menu">
+			<label>文件(&amp;F)</label>
+			<button backcol="none" display="both" hotkey="ctrl+E" hotkey_label="yes" label_pos="right" separate="yes" textcol="none">
+				<label>打开新窗口(&amp;N)</label>
+				<tip>打开新窗口</tip>
+				<icon1>#newlister</icon1>
+				<function type="normal">
+					<instruction>Go NEW</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>关闭窗口(&amp;C)</label>
+				<tip>关闭当前窗口</tip>
+				<hotkeys>
+					<key>alt+f4</key>
+					<key>shift+escape</key>
+				</hotkeys>
+				<icon1>#closelister</icon1>
+				<function type="normal">
+					<instruction>Close</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>退出 &amp;Directory Opus(X)</label>
+				<tip>退出 Directory Opus</tip>
+				<icon1>#exit</icon1>
+				<function type="normal">
+					<instruction>Close PROGRAM=confirm</instruction>
+				</function>
+			</button>
+		</button>
+		<button backcol="none" display="label" label_pos="right" textcol="none" type="menu">
+			<label>编辑(&amp;E)</label>
+			<button backcol="none" display="both" hotkey="ctrl+Z" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>撤消(&amp;U)</label>
+				<tip>撤消上次的文件操作(复制、删除、重命名、移动等)</tip>
+				<icon1>#undo</icon1>
+				<function type="normal">
+					<instruction>Undo</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none" type="menu">
+				<label>撤消列表(&amp;L)</label>
+				<tip>显示撤消列表中的项目,允许您有选择地撤消以前的操作</tip>
+				<icon1>#undolist</icon1>
+				<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none">
+					<label>撤消列表(L)</label>
+					<tip>显示撤消列表中的项目,允许您有选择地撤消以前的操作</tip>
+					<function type="normal">
+						<instruction>Undo LIST</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" textcol="none">
+					<label>其它...</label>
+					<tip>显示撤销日志,它可以让您选择撤销您先前的行为</tip>
+					<icon1>#undodlg</icon1>
+					<function type="normal">
+						<instruction>Undo PAGE</instruction>
+					</function>
+				</button>
+			</button>
+			<button backcol="none" display="both" hotkey="ctrl+X" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>剪切(&amp;T)</label>
+				<tip>剪切选定的文件与文件夹到剪贴板</tip>
+				<icon1>#clipcut</icon1>
+				<function type="normal">
+					<instruction>Clipboard CUT</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>复制(&amp;C)</label>
+				<tip>将选定的文件与文件夹复制到剪贴板</tip>
+				<hotkeys>
+					<key>ctrl+C</key>
+					<key>ctrl+insert</key>
+				</hotkeys>
+				<icon1>#clipcopy</icon1>
+				<function type="normal">
+					<instruction>Clipboard COPY</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" hotkey_label="yes" label_pos="right" separate="yes" textcol="none">
+				<label>粘贴(&amp;P)</label>
+				<tip>将剪贴板中的文件粘贴到目标文件夹\n\n%1</tip>
+				<hotkeys>
+					<key>ctrl+V</key>
+					<key>shift+insert</key>
+				</hotkeys>
+				<icon1>#clippaste</icon1>
+				<function type="normal">
+					<instruction>Clipboard PASTE</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" hotkey="ctrl+shift+N" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>复制文件名称</label>
+				<tip>复制所有选定文件的文件名到剪贴板</tip>
+				<icon1>#copyfilenames</icon1>
+				<function type="normal">
+					<instruction>Clipboard COPYNAMES=nopaths</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" hotkey="ctrl+shift+C" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>复制完整路径</label>
+				<tip>复制所有选定文件的完整路径到剪贴板</tip>
+				<icon1>#copyfilenames</icon1>
+				<function type="normal">
+					<instruction>Clipboard COPYNAMES=unc</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none" type="menu">
+				<label>复制其他</label>
+				<icon1>#copyfilenames</icon1>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>仅短文件名</label>
+					<tip>复制所有选定文件的短 (8.3) 文件名到剪贴板</tip>
+					<function type="normal">
+						<instruction>Clipboard COPYNAMES=short,nopaths,single</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>短路径名</label>
+					<tip>复制所有选定的文件短 (8.3) 路径名到剪贴板</tip>
+					<function type="normal">
+						<instruction>Clipboard COPYNAMES=short</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>&amp;URLs</label>
+					<tip>复制所有选定文件的位置为 URL 到剪贴板</tip>
+					<function type="normal">
+						<instruction>Clipboard COPYNAMES=url</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>复制完整路径(双反斜杠)</label>
+					<tip>复制完整路径并更改 \\ 为 \\\\ 以轻松粘贴到各种编程语言内.</tip>
+					<function type="normal">
+						<instruction>Clipboard COPYNAMES=unc REGEXP (.*)\\(.*)# \1|\2 (.*)[|](.*)# \1\\\\\2</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none" type="menu">
+					<label>校验值</label>
+					<button backcol="none" display="label" label_pos="right" textcol="none">
+						<label>&amp;MD5</label>
+						<tip>复制所有选定文件的 MD5 校验值到剪贴板</tip>
+						<function type="normal">
+							<instruction>Clipboard COPYNAMES=hash:md5</instruction>
+						</function>
+					</button>
+					<button backcol="none" display="label" label_pos="right" textcol="none">
+						<label>M&amp;D5 (替代)</label>
+						<tip>复制所有选定文件的 MD5 校验到剪贴板 (备用格式)</tip>
+						<function type="normal">
+							<instruction>Clipboard COPYNAMES=hash:md5,fmt:2</instruction>
+						</function>
+					</button>
+					<button backcol="none" display="label" label_pos="right" textcol="none">
+						<label>&amp;SHA-1</label>
+						<tip>复制所有选定文件的 SHA-1 校验值到剪贴板</tip>
+						<function type="normal">
+							<instruction>Clipboard COPYNAMES=hash:sha1</instruction>
+						</function>
+					</button>
+					<button backcol="none" display="label" label_pos="right" textcol="none">
+						<label>S&amp;HA-1 (替代)</label>
+						<tip>复制所有选定文件的 SHA-1 校验 (备用格式) 到剪贴板</tip>
+						<function type="normal">
+							<instruction>Clipboard COPYNAMES=hash:sha1,fmt:2</instruction>
+						</function>
+					</button>
+					<button backcol="none" display="label" label_pos="right" textcol="none">
+						<label>&amp;BLAKE3</label>
+						<tip>将所有选定文件的 BLAKE3 校验值复制到剪贴板</tip>
+						<function type="normal">
+							<instruction>Clipboard COPYNAMES=hash:blake3</instruction>
+						</function>
+					</button>
+					<button backcol="none" display="label" label_pos="right" textcol="none">
+						<label>B&amp;LAKE3 (替代)</label>
+						<tip>将所有选定文件的 BLAKE3 校验值复制到剪贴板（备用格式）</tip>
+						<function type="normal">
+							<instruction>Clipboard COPYNAMES=hash:blake3,fmt:2</instruction>
+						</function>
+					</button>
+				</button>
+				<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none">
+					<label>文件夹路径</label>
+					<tip>复制当前文件夹路径到剪贴板</tip>
+					<function type="normal">
+						<instruction>Clipboard COPYNAMES=unc FILE {sourcepath}</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>完整文件夹列表</label>
+					<tip>复制当前文件夹的完整列表到剪贴板</tip>
+					<function type="normal">
+						<instruction>Print FOLDER AS=txt TO=clip FLATVIEW=no QUIET</instruction>
+					</function>
+				</button>
+			</button>
+			<button backcol="none" display="both" hotkey="ctrl+K" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>计算文件夹大小</label>
+				<tip>计算选定文件夹的字节数</tip>
+				<icon1>#getsizes</icon1>
+				<function type="normal">
+					<instruction>GetSizes</instruction>
+					<instruction>@nodeselect</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>切换大小格式</label>
+				<tip>切换精确字节大小和字节，KB，MB, GB 等</tip>
+				<icon1>#filetype2</icon1>
+				<function type="script">
+					<instruction>@script vbscript</instruction>
+					<instruction>Function OnClick(ByRef clickData)</instruction>
+					<instruction />
+					<instruction>	sizeIdx = -1</instruction>
+					<instruction>	sizeKbIdx = -1</instruction>
+					<instruction>	sizeAutoIdx = -1</instruction>
+					<instruction>	disksizeIdx = -1</instruction>
+					<instruction>	disksizeKbIdx = -1</instruction>
+					<instruction>	disksizeAutoIdx = -1</instruction>
+					<instruction>	idx = 0</instruction>
+					<instruction />
+					<instruction>	For Each colItem in clickData.func.sourcetab.format.columns</instruction>
+					<instruction>		If (colItem.name = &quot;size&quot;) Then sizeIdx = idx</instruction>
+					<instruction>		If (colItem.name = &quot;sizekb&quot;) Then sizeKbIdx = idx</instruction>
+					<instruction>		If (colItem.name = &quot;sizeauto&quot;) Then sizeAutoIdx = idx</instruction>
+					<instruction>		If (colItem.name = &quot;disksize&quot;) Then disksizeIdx = idx</instruction>
+					<instruction>		If (colItem.name = &quot;disksizekb&quot;) Then disksizeKbIdx = idx</instruction>
+					<instruction>		If (colItem.name = &quot;disksizeauto&quot;) Then disksizeAutoIdx = idx</instruction>
+					<instruction>		idx = idx + 1</instruction>
+					<instruction>	Next</instruction>
+					<instruction />
+					<instruction>	Set cmd = clickData.func.command</instruction>
+					<instruction />
+					<instruction>	If (sizeIdx &lt;&gt; -1 And sizeAutoIdx = -1 And sizeKbIdx = -1) Then</instruction>
+					<instruction>		cmd.RunCommand &quot;Set COLUMNSREMOVE=size COLUMNSADD=sizeauto(&quot; &amp; sizeIdx &amp; &quot;)&quot;</instruction>
+					<instruction>	ElseIf (sizeIdx = -1 And sizeAutoIdx &lt;&gt; -1 And SizeKbIdx = -1) Then</instruction>
+					<instruction>		cmd.RunCommand &quot;Set COLUMNSREMOVE=sizeauto COLUMNSADD=size(&quot; &amp; sizeAutoIdx &amp; &quot;)&quot;</instruction>
+					<instruction>	ElseIf (sizeIdx = -1 And sizeAutoIdx = -1 And SizeKbIdx &lt;&gt; -1) Then</instruction>
+					<instruction>		cmd.RunCommand &quot;Set COLUMNSREMOVE=sizekb COLUMNSADD=size(&quot; &amp; sizeKbIdx &amp; &quot;)&quot;</instruction>
+					<instruction>	End If</instruction>
+					<instruction>	</instruction>
+					<instruction>	If (disksizeIdx &lt;&gt; -1 And disksizeAutoIdx = -1 And disksizeKbIdx = -1) Then</instruction>
+					<instruction>		cmd.RunCommand &quot;Set COLUMNSREMOVE=disksize COLUMNSADD=disksizeauto(&quot; &amp; disksizeIdx &amp; &quot;)&quot;</instruction>
+					<instruction>	ElseIf (disksizeIdx = -1 And disksizeAutoIdx &lt;&gt; -1 And disksizeKbIdx = -1) Then</instruction>
+					<instruction>		cmd.RunCommand &quot;Set COLUMNSREMOVE=disksizeauto COLUMNSADD=disksize(&quot; &amp; disksizeAutoIdx &amp; &quot;)&quot;</instruction>
+					<instruction>	ElseIf (disksizeIdx = -1 And disksizeAutoIdx = -1 And disksizeKbIdx &lt;&gt; -1) Then</instruction>
+					<instruction>		cmd.RunCommand &quot;Set COLUMNSREMOVE=disksizekb COLUMNSADD=disksize(&quot; &amp; disksizeKbIdx &amp; &quot;)&quot;</instruction>
+					<instruction>	End If</instruction>
+					<instruction />
+					<instruction>End Function</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>计算&amp;MD5校验值</label>
+				<tip>计算并显示所选文件的 MD5 校验值</tip>
+				<icon1>#filecommands</icon1>
+				<function type="normal">
+					<instruction>@nodeselect</instruction>
+					<instruction>GetSizes HASH=md5</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>计算&amp;SHA-1校验值</label>
+				<tip>计算并显示所选文件的 SHA-1 校验值</tip>
+				<icon1>#filecommands</icon1>
+				<function type="normal">
+					<instruction>@nodeselect</instruction>
+					<instruction>GetSizes HASH=sha1</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+				<label>计算 &amp;BLAKE3 校验值</label>
+				<tip>计算并显示所有选定文件的 BLAKE3 校验值</tip>
+				<icon1>#filecommands</icon1>
+				<function type="normal">
+					<instruction>@nodeselect</instruction>
+					<instruction>GetSizes HASH=blake3</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" hotkey="ctrl+A" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>全选(&amp;A)</label>
+				<tip>选择活动窗口中的所有文件与文件夹</tip>
+				<icon1>#selectall</icon1>
+				<function type="normal">
+					<instruction>Select ALL</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" hotkey="ctrl+S" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>条件选择</label>
+				<tip>在活动窗口中用通配符模式选择文件和文件夹</tip>
+				<icon1>#selectwild</icon1>
+				<function type="normal">
+					<instruction>Select</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" hotkey="ctrl+I" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>反向选择</label>
+				<tip>在活动窗口中反选</tip>
+				<icon1>#selectinvert</icon1>
+				<function type="normal">
+					<instruction>Select INVERT</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none" type="menu">
+				<label>选择其他</label>
+				<icon1>#advancedselect</icon1>
+				<button backcol="none" display="both" label_pos="right" textcol="none">
+					<label>重新选择文件</label>
+					<tip>选择所有在上一命令中使用过的文件</tip>
+					<icon1>#reselect</icon1>
+					<function type="normal">
+						<instruction>Select RESELECT</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+					<label>选择相同的扩展名</label>
+					<tip>选择具有相同扩展名的文件.</tip>
+					<icon1>#advancedselect</icon1>
+					<function type="normal">
+						<instruction>Select SIMILAR</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" textcol="none">
+					<label>选择空文件夹(&amp;E)</label>
+					<tip>选择不包含子文件或子文件夹的文件夹</tip>
+					<icon1>#filterfolder</icon1>
+					<function type="normal">
+						<instruction>Select DESELECTNOMATCH FILTERDEF type match folders and foldercontent nomatch ( name match * )</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" textcol="none">
+					<label>选择零字节文件夹(&amp;Z)</label>
+					<tip>选择空文件夹或下面只有空文件或类似文件夹的文件夹</tip>
+					<icon1>#filterfolder</icon1>
+					<function type="normal">
+						<instruction>Select DESELECTNOMATCH FILTERDEF type match folders and size match = 0 bytes</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+					<label>选择展开的文件夹项目(&amp;X)</label>
+					<tip>选择任何当前展开的文件夹下的所有内容</tip>
+					<icon1>#folderexpanded</icon1>
+					<function type="normal">
+						<instruction>@enableif:Set EXPANDABLEFOLDERS=On</instruction>
+						<instruction>@nofilenamequoting</instruction>
+						<instruction>Select DESELECTNOMATCH FILTERDEF location match &quot;{sourcepath|escregex|escbackslash}.+&quot; regex</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" textcol="none">
+					<label>选择源的目标</label>
+					<tip>在目标文件夹中选择与来源文件中选定文件名称相同的文件</tip>
+					<icon1>#syncpane1</icon1>
+					<function type="normal">
+						<instruction>Select SOURCETODEST DESELECTNOMATCH</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" textcol="none">
+					<label>源全部到目标</label>
+					<tip>在目标内选择与源内文件相同的文件.</tip>
+					<icon1>#syncpane1</icon1>
+					<function type="normal">
+						<instruction>Select SOURCETODEST=in DESELECTNOMATCH</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" textcol="none">
+					<label>源全部到目标(忽略扩展名)</label>
+					<tip>在目标内选择与源内文件相同的文件.允许扩展名标题.</tip>
+					<icon1>#syncpane1</icon1>
+					<function type="normal">
+						<instruction>Select SOURCETODEST=in,noext DESELECTNOMATCH</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+					<label>选择来源文件夹中有而目标文件夹中没有的文件</label>
+					<tip>选择那些来源文件夹中有而目标文件夹内没有的文件名.</tip>
+					<icon1>#syncpane1</icon1>
+					<function type="normal">
+						<instruction>Select DESTTOSOURCE=notin DESELECTNOMATCH</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" textcol="none">
+					<label>选中项自动打勾</label>
+					<tip>设置复选框的状态以匹配当前的选择</tip>
+					<icon1>#checkboxmode</icon1>
+					<function type="normal">
+						<instruction>Select TOCHECKS</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+					<label>打勾项自动选中</label>
+					<tip>设置选择来匹配复选框状态</tip>
+					<icon1>#checkboxmode</icon1>
+					<function type="normal">
+						<instruction>Select FROMCHECKS </instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" textcol="none">
+					<label>选择重复项(&amp;U)...</label>
+					<tip>选择由重复文件查找器定位的文件</tip>
+					<icon1>#dupepane</icon1>
+					<function type="normal">
+						<instruction>Select DUPES</instruction>
+					</function>
+				</button>
+			</button>
+		</button>
+		<button backcol="none" display="label" label_pos="right" textcol="none" type="menu">
+			<label>FTP (&amp;P)</label>
+			<button backcol="none" display="both" hotkey="ctrl+Q" hotkey_label="yes" label_pos="right" separate="yes" textcol="none">
+				<label>&amp;FTP 链接(C)...</label>
+				<tip>连接一个 FTP 站点</tip>
+				<icon1>#ftpconnect</icon1>
+				<function type="normal">
+					<instruction>Go FTP</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" hotkey="ctrl+shift+Q" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>编辑站点列表(&amp;E)...</label>
+				<tip>打开 FTP 站点列表编辑器</tip>
+				<icon1>#ftpaddressbook</icon1>
+				<function type="normal">
+					<instruction>Prefs FTPSITES</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>添加到站点列表(&amp;A)</label>
+				<tip>添加当前 FTP 站点到站点列表</tip>
+				<icon1>#ftpaddsite</icon1>
+				<function type="normal">
+					<instruction>Prefs ADDFTPSITE</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>站点属性(&amp;S)</label>
+				<tip>显示当前 FTP 站点的属性对话框</tip>
+				<icon1>#ftpsiteproperties</icon1>
+				<function type="normal">
+					<instruction>Properties FTPSITE</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>显示 F&amp;TP 日志(L)</label>
+				<tip>显示活动的 FTP 日志</tip>
+				<icon1>#ftplog</icon1>
+				<function type="normal">
+					<instruction>Set UTILITY=FTPLog,Toggle</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" label_pos="right" textcol="none">
+				<label>FTP 地址(F)</label>
+				<tip>在菜单或工具栏上列出 FTP 通讯簿项目</tip>
+				<function type="normal">
+					<instruction>Go FTPSITELIST FTPSITEICONS USEQUALKEYS HEADING</instruction>
+				</function>
+			</button>
+		</button>
+		<button backcol="none" display="label" label_pos="right" textcol="none" type="menu">
+			<label>工具(&amp;T)</label>
+			<button backcol="none" display="both" hotkey="ctrl+F" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>查找文件</label>
+				<tip>按文件名,内容或其它依据查找文件</tip>
+				<icon1>#find</icon1>
+				<function type="normal">
+					<instruction>Set UTILITY=Find,Toggle</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none" type="menu">
+				<label>查找预设</label>
+				<icon1>#findpresets</icon1>
+				<button backcol="none" display="both" label_pos="right" textcol="none">
+					<label>查找空文件夹(&amp;E)</label>
+					<tip>查找当前位置下方不包含子文件或子文件夹的文件夹</tip>
+					<icon1>#find</icon1>
+					<function type="normal">
+						<instruction>Find FILTERDEF type match folders and foldercontent nomatch ( name match * )</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+					<label>查找零字节文件夹(&amp;Z)</label>
+					<tip>查找当前位置下方的空文件夹或下面只有空文件或类似文件夹的文件夹</tip>
+					<icon1>#find</icon1>
+					<function type="normal">
+						<instruction>Find FILTERDEF type match folders and size match = 0 bytes</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" textcol="none">
+					<label>查找预设列表</label>
+					<tip>为已保存的查找预设生成一个列表，让您针对当前文件夹快速运行它们</tip>
+					<icon1>#findpresets</icon1>
+					<function type="normal">
+						<instruction>Find PRESET=!list HERE</instruction>
+					</function>
+				</button>
+			</button>
+			<button backcol="none" display="both" hotkey="ctrl+Y" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>同步</label>
+				<tip>显示或隐藏同步面板</tip>
+				<icon1>#syncpane</icon1>
+				<function type="normal">
+					<instruction>Set UTILITY=Sync,Toggle</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" hotkey="ctrl+U" hotkey_label="yes" label_pos="right" separate="yes" textcol="none">
+				<label>查找重复文件</label>
+				<tip>显示或隐藏重复文件查找面板</tip>
+				<icon1>#dupepane</icon1>
+				<function type="normal">
+					<instruction>Set UTILITY=Dupe,Toggle</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>文件日志(&amp;F)</label>
+				<tip>显示文件和文件夹操作日志</tip>
+				<icon1>#filelog</icon1>
+				<function type="normal">
+					<instruction>Set UTILITY=FileLog,Toggle</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>脚本日志(&amp;S)</label>
+				<tip>显示脚本和求值器输出的日志</tip>
+				<icon1>#scriptlog</icon1>
+				<function type="normal">
+					<instruction>Set UTILITY=ScriptLog,Toggle</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+				<label>Op&amp;us CLI / Ad-Hoc 脚本编辑器</label>
+				<tip>打开您可以直接键入并运行 Opus 脚本代码和命令的窗口</tip>
+				<icon1>#pathfield</icon1>
+				<function type="normal">
+					<instruction>CLI SCRIPTMODE</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>合并文件...</label>
+				<tip>将选定的文件合并成一个文件</tip>
+				<icon1>#join</icon1>
+				<function type="normal">
+					<instruction>@nodeselect</instruction>
+					<instruction>Join</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+				<label>分割文件...</label>
+				<tip>将选定的文件分割成两个或更多的小文件</tip>
+				<icon1>#split</icon1>
+				<function type="normal">
+					<instruction>@nodeselect</instruction>
+					<instruction>Split</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+				<label>打印 / 导出文件夹列表...</label>
+				<tip>将文件夹内容输出到打印机或文件</tip>
+				<icon1>#printfolder</icon1>
+				<function type="normal">
+					<instruction>Print FOLDER</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none" type="menu">
+				<label>转换图像</label>
+				<icon1>#imageconversion</icon1>
+				<button backcol="none" display="both" label_pos="right" textcol="none">
+					<label>转换...</label>
+					<tip>转换/旋转图像,调整图像大小</tip>
+					<icon1>#imageconversion</icon1>
+					<function type="normal">
+						<instruction>Image HERE CONVERT</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none" type="menu">
+					<label>另存为</label>
+					<icon1>#imageconversion</icon1>
+					<button backcol="none" display="label" label_pos="right" textcol="none">
+						<label>&amp;JPEG 图像</label>
+						<tip>转换选择的图像为 JPG 格式</tip>
+						<function type="normal">
+							<instruction>Image HERE CONVERT=jpg</instruction>
+						</function>
+					</button>
+					<button backcol="none" display="label" label_pos="right" textcol="none">
+						<label>&amp;PNG 图片</label>
+						<tip>转换选择的图像为 PNG 格式</tip>
+						<function type="normal">
+							<instruction>Image HERE CONVERT=png</instruction>
+						</function>
+					</button>
+					<button backcol="none" display="label" label_pos="right" textcol="none">
+						<label>&amp;GIF 图像</label>
+						<tip>转换选择的图像为 GIF 格式</tip>
+						<function type="normal">
+							<instruction>Image HERE CONVERT=gif</instruction>
+						</function>
+					</button>
+					<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none">
+						<label>&amp;BMP 图像</label>
+						<tip>转换选择的图像为 BMP 格式</tip>
+						<function type="normal">
+							<instruction>Image HERE CONVERT=bmp</instruction>
+						</function>
+					</button>
+					<button backcol="none" display="label" label_pos="right" textcol="none">
+						<label>图像转换预设</label>
+						<tip>图像转换预设列表</tip>
+						<function type="normal">
+							<instruction>Image CONVERT PRESET=!list</instruction>
+						</function>
+					</button>
+				</button>
+				<button backcol="none" display="both" label_pos="right" textcol="none">
+					<label>向左旋转</label>
+					<tip>选定的图像向左旋转90度</tip>
+					<icon1>#rotateleft</icon1>
+					<function type="normal">
+						<instruction>Image ROTATE=270 HERE REPLACE PRESERVEDATE</instruction>
+						<instruction>@nodeselect</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+					<label>向右旋转</label>
+					<tip>选定的图像向右旋转90度</tip>
+					<icon1>#rotateright</icon1>
+					<function type="normal">
+						<instruction>Image ROTATE=90 HERE REPLACE PRESERVEDATE</instruction>
+						<instruction>@nodeselect</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" textcol="none">
+					<label>生成缩略图</label>
+					<tip>创建选择图像的小 PNG 缩略图版本</tip>
+					<icon1>#imageconversion</icon1>
+					<function type="normal">
+						<instruction>Image CONVERT=png HERE ADDSUFFIX HEIGHT=128 WIDTH=128 PRESERVEASPECTRATIO</instruction>
+					</function>
+				</button>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+				<label>设置为壁纸(S)</label>
+				<tip>将选择的图片设为桌面壁纸</tip>
+				<icon1>#setwallpaper</icon1>
+				<function type="normal">
+					<instruction>Properties SETWALLPAPER=menu</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>映射网络驱动器(&amp;M)...</label>
+				<tip>连接到网络驱动器</tip>
+				<icon1>#mapnetworkdrive</icon1>
+				<function type="normal">
+					<instruction>Go CONNECT</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+				<label>断开网络驱动器(&amp;D)...</label>
+				<tip>断开网络驱动器</tip>
+				<icon1>#disconnectnetworkdrive</icon1>
+				<function type="normal">
+					<instruction>Go DISCONNECT</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+				<label>控制面板</label>
+				<tip>打开 Windows 控制面板</tip>
+				<icon1>#gocontrolpanel</icon1>
+				<function type="normal">
+					<instruction>Go /controls</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>在资源管理器中打开</label>
+				<tip>在资源管理器中打开当前文件夹</tip>
+				<icon1>#folder</icon1>
+				<function type="normal">
+					<instruction>&quot;/windows\Explorer.exe&quot; /e, {sourcepath$}</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>在这里运行&amp;PowerShell(P)</label>
+				<tip>打开Powershell，并将目录设置为DOpus当前路径</tip>
+				<icon1>#cli</icon1>
+				<function type="normal">
+					<instruction>CLI DOSPROMPT=powershell</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>以管理员权限运行 P&amp;owerShell</label>
+				<tip>以管理员权限运行Powershell，并将目录设置为DOpus当前路径</tip>
+				<icon1>#cliadmin</icon1>
+				<function type="normal">
+					<instruction>CLI DOSPROMPT=admin,powershell</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>在此处打开命令提示符(&amp;C)</label>
+				<tip>在当前窗口路径打开命令提示符窗口</tip>
+				<icon1>#cli</icon1>
+				<function type="normal">
+					<instruction>CLI DOSPROMPT</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>在此处打开命令提示符(管理员权限)</label>
+				<tip>把当前文件夹设置为窗口当前目录并以管理员权限打开一个命令行窗口</tip>
+				<icon1>#cliadmin</icon1>
+				<function type="normal">
+					<instruction>CLI DOSPROMPT=admin</instruction>
+				</function>
+			</button>
+		</button>
+		<button backcol="none" display="label" label_pos="right" textcol="none" type="menu">
+			<label>设置(&amp;S)</label>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>选项(&amp;P)...</label>
+				<tip>打开 Directory Opus选项编辑器</tip>
+				<icon1>#prefs</icon1>
+				<function type="normal">
+					<instruction>Prefs</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>自定义工具栏和热键(&amp;C)...</label>
+				<tip>自定义工具栏、菜单和热键</tip>
+				<icon1>#customize</icon1>
+				<function type="normal">
+					<instruction>Prefs CUSTOMIZE</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none" type="menu">
+				<label>工具栏(&amp;T)</label>
+				<icon1>#toolbarlist</icon1>
+				<button backcol="none" display="both" label_pos="right" textcol="none" type="menu">
+					<label>工具栏组(&amp;S)</label>
+					<icon1>#toolbarlist</icon1>
+					<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none">
+						<label>工具栏组列表</label>
+						<tip>用列表显示已保存的工具栏组.</tip>
+						<function type="normal">
+							<instruction>Toolbar LIST=sets</instruction>
+						</function>
+					</button>
+					<button backcol="none" display="label" label_pos="right" textcol="none">
+						<label>保存工具栏组</label>
+						<tip>将当前工具栏保存为新的工具栏组.</tip>
+						<function type="normal">
+							<instruction>Toolbar SAVESET</instruction>
+						</function>
+					</button>
+					<button backcol="none" display="label" label_pos="right" textcol="none">
+						<label>编辑工具栏组</label>
+						<tip>显示工具栏组选项页面</tip>
+						<function type="normal">
+							<instruction>Prefs PAGE=toolbarsets</instruction>
+						</function>
+					</button>
+				</button>
+				<button backcol="none" display="both" label_pos="right" textcol="none">
+					<label>设置为默认工具栏组(&amp;D)</label>
+					<tip>将当前工具栏保存为默认工具栏组</tip>
+					<icon1>#savetoolbarstate</icon1>
+					<function type="normal">
+						<instruction>Toolbar SETDEFAULT</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+					<label>恢复为默认工具栏组(&amp;R)</label>
+					<tip>将本窗口内工具栏恢复为默认</tip>
+					<icon1>#deftoolbar</icon1>
+					<function type="normal">
+						<instruction>Toolbar !default LOADSET=replace</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" textcol="none">
+					<label>将工具栏恢复出厂设置(&amp;F)</label>
+					<tip>将工具栏重置到初始设置</tip>
+					<icon1>#resettoolbars</icon1>
+					<function type="normal">
+						<instruction>Toolbar RESETDEFAULTS</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none">
+					<label>可用的工具栏</label>
+					<tip>显示可用工具栏的清单</tip>
+					<function type="normal">
+						<instruction>Toolbar LIST HEADING</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" textcol="none">
+					<label>选取地址栏的工具栏(&amp;H)...</label>
+					<tip>对显示在每个文件显示上方的地址栏中的工具栏进行添加、删除或重新排序</tip>
+					<icon1>#toolbarlist</icon1>
+					<function type="normal">
+						<instruction>Prefs PAGE=fdbtoolbar</instruction>
+					</function>
+				</button>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>文件类型(&amp;F)...</label>
+				<tip>打开文件类型编辑器</tip>
+				<icon1>#filetype</icon1>
+				<function type="normal">
+					<instruction>Prefs FILETYPES</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>脚本(&amp;S)...</label>
+				<tip>打开&quot;脚本管理&quot;对话框</tip>
+				<icon1>#script</icon1>
+				<function type="normal">
+					<instruction>Prefs SCRIPTS</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+				<label>安装脚本(&amp;N)...</label>
+				<tip>安装他人与您共享的脚本</tip>
+				<icon1>#installscript</icon1>
+				<function type="normal">
+					<instruction>Prefs SCRIPTINSTALL</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>设置默认窗口(D)</label>
+				<tip>将现有窗口的配置另存为默认设置</tip>
+				<icon1>#setdefaultlister</icon1>
+				<function type="normal">
+					<instruction>Prefs SETLISTERDEFAULTS</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none" type="menu">
+				<label>窗口布局(&amp;L)</label>
+				<icon1>#layoutlist</icon1>
+				<button backcol="none" display="both" label_pos="right" textcol="none">
+					<label>编辑布局(&amp;E)...</label>
+					<tip>显示布局编辑器</tip>
+					<icon1>#savedlayoutsedit</icon1>
+					<function type="normal">
+						<instruction>Prefs LAYOUTEDIT</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" textcol="none">
+					<label>保存本窗口(&amp;S)...</label>
+					<tip>将当前的窗口保存为布局</tip>
+					<icon1>#savesinglelister</icon1>
+					<function type="normal">
+						<instruction>Prefs LAYOUTSAVE=single</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" textcol="none">
+					<label>保存所有窗口...</label>
+					<tip>将所有打开的窗口保存为一个布局</tip>
+					<icon1>#savealllisters</icon1>
+					<function type="normal">
+						<instruction>Prefs LAYOUTSAVE</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" textcol="none">
+					<label>已保存的布局</label>
+					<tip>显示包含已保存布局列表</tip>
+					<icon1>#layoutlist</icon1>
+					<function type="normal">
+						<instruction>Prefs LAYOUTLIST SHOWICONS HEADING</instruction>
+					</function>
+				</button>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>深色模式(&amp;D)</label>
+				<tip>在深色和浅色之间切换</tip>
+				<icon1>#darklightmode</icon1>
+				<function type="normal">
+					<instruction>Set DARKMODE=togglesmart</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+				<label>主题(&amp;H)...</label>
+				<tip>加载或保存更改颜色和字体等内容的主题</tip>
+				<icon1>#themes</icon1>
+				<function type="normal">
+					<instruction>Prefs PAGE=themes</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>备份与恢复(&amp;B)...</label>
+				<tip>备份与恢复您的 Directory Opus 配置</tip>
+				<icon1>#saveprefs</icon1>
+				<function type="normal">
+					<instruction>Prefs BACKUPRESTORE</instruction>
+				</function>
+			</button>
+		</button>
+		<button backcol="none" display="label" field_type="spacer" label_pos="right" size="full" textcol="none">
+			<label>分隔符</label>
+			<function type="normal">
+				<instruction>Set SPACER</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="label" dropdown_glyph="yes" label_pos="right" textcol="none" type="menu">
+			<label>显示(&amp;V)</label>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>大图标(&amp;G)</label>
+				<tip>使用大图标显示项目</tip>
+				<icon1>#largeicons</icon1>
+				<function type="normal">
+					<instruction>Set VIEW=LargeIcons</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>小图标(&amp;M)</label>
+				<tip>使用小图标显示项目</tip>
+				<icon1>#smallicons</icon1>
+				<function type="normal">
+					<instruction>Set VIEW=SmallIcons</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>列表(&amp;L)</label>
+				<tip>在列表中显示各项目</tip>
+				<icon1>#listmode</icon1>
+				<function type="normal">
+					<instruction>Set VIEW=List</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>详情(&amp;D)</label>
+				<tip>显示每个项目的详情</tip>
+				<icon1>#detailsmode</icon1>
+				<function type="normal">
+					<instruction>Set VIEW=Details</instruction>
+					<instruction>Set COLUMNSREMOVE=thumbnail</instruction>
+					<instruction>@toggle:if&amp;!COLUMNSTOGGLE=thumbnail</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>详细信息+缩略图</label>
+				<tip>为每项显示详情和缩略图列</tip>
+				<icon1>#thumbtails</icon1>
+				<function type="normal">
+					<instruction>@disableifpath:shell</instruction>
+					<instruction>Set VIEW=Details</instruction>
+					<instruction>Set COLUMNSADD=thumbnail(0,{dpi|96})</instruction>
+					<instruction>@toggle:if&amp;COLUMNSTOGGLE=thumbnail</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>增强模式(&amp;P)</label>
+				<tip>显示每个项目的详情(比详情模式提供更多的定制选项)</tip>
+				<icon1>#powermode</icon1>
+				<function type="normal">
+					<instruction>Set VIEW=Power</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>缩略图(&amp;T)</label>
+				<tip>显示图像文件的缩略图</tip>
+				<icon1>#thumbnails</icon1>
+				<function type="normal">
+					<instruction>Set VIEW=Thumbnails</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+				<label>平铺(L)</label>
+				<tip>按配置以平铺方式显示文件</tip>
+				<icon1>#tile</icon1>
+				<function type="normal">
+					<instruction>Set VIEW=Tiles</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none" type="menu">
+				<label>排序方式(&amp;S)</label>
+				<icon1>#sort_alpha</icon1>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>可分类栏</label>
+					<tip>显示当前属性栏的列表以便更改排序方式</tip>
+					<function type="normal">
+						<instruction>Set SORTBY=sortlist</instruction>
+					</function>
+				</button>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none" type="menu">
+				<label>分组依据(G)</label>
+				<icon1>#groupby</icon1>
+				<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none">
+					<label>可分组栏</label>
+					<tip>显示允许您改变分组的当前栏的清单</tip>
+					<function type="normal">
+						<instruction>Set GROUPBY=grouplist</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>展开所有组</label>
+					<tip>展开所有文件组</tip>
+					<function type="normal">
+						<instruction>Go GROUPEXPAND=*</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>折叠所有组</label>
+					<tip>关闭所有文件组</tip>
+					<function type="normal">
+						<instruction>Go GROUPCOLLAPSE=*</instruction>
+					</function>
+				</button>
+			</button>
+		</button>
+		<button backcol="none" display="icon" hotkey="ctrl+shift+D" hotkey_label="yes" label_pos="right" no_label="yes" textcol="none">
+			<label>详情(D)</label>
+			<tip>显示每个项目的详情</tip>
+			<icon1>#detailsmode</icon1>
+			<function type="normal">
+				<instruction>Set VIEW=Details</instruction>
+				<instruction>Set COLUMNSREMOVE=thumbnail</instruction>
+				<instruction>@toggle:if&amp;!COLUMNSTOGGLE=thumbnail</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="icon" hotkey="ctrl+shift+H" hotkey_label="yes" label_pos="right" no_label="yes" textcol="none">
+			<label>详细信息+缩略图</label>
+			<tip>为每项显示详情和缩略图列</tip>
+			<icon1>#thumbtails</icon1>
+			<function type="normal">
+				<instruction>@disableifpath:shell</instruction>
+				<instruction>Set VIEW=Details</instruction>
+				<instruction>Set COLUMNSADD=thumbnail(0,{dpi|96})</instruction>
+				<instruction>@toggle:if&amp;COLUMNSTOGGLE=thumbnail</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="icon" hotkey="ctrl+shift+M" hotkey_label="yes" label_pos="right" no_label="yes" separate="yes" textcol="none">
+			<label>缩略图(T)</label>
+			<tip>显示图像文件的缩略图</tip>
+			<icon1>#thumbnails</icon1>
+			<function type="normal">
+				<instruction>Set VIEW=Thumbnails</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="label" dropdown_glyph="yes" label_pos="right" textcol="none" type="menu">
+			<label>文件夹(&amp;O)</label>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>文件夹选项(&amp;O)...</label>
+				<tip>编辑当前文件夹的外观和设置</tip>
+				<icon1>#format</icon1>
+				<function type="normal">
+					<instruction>Properties FOLDERFORMAT</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none" type="menu">
+				<label>文件夹格式</label>
+				<icon1>#folderformatslist</icon1>
+				<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+					<label>管理文件夹格式</label>
+					<tip>打开所有已保存的文件夹格式的互动列表</tip>
+					<icon1>#prefs</icon1>
+					<function type="normal">
+						<instruction>Prefs PAGE=folderformats</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" textcol="none">
+					<label>文件夹格式</label>
+					<tip>显示已收藏的文件夹格式列表</tip>
+					<icon1>#folderformatslist</icon1>
+					<function type="normal">
+						<instruction>Set FORMATLIST=icons</instruction>
+					</function>
+				</button>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+				<label>格式锁定</label>
+				<tip>在窗口中锁定或解锁当前格式</tip>
+				<icon1>#formatlock</icon1>
+				<function type="normal">
+					<instruction>Set FORMATLOCK=Toggle</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none" type="menu">
+				<label>文件夹标签页</label>
+				<icon1>#foldertabs</icon1>
+				<button backcol="none" display="both" hotkey="ctrl+T" hotkey_label="yes" label_pos="right" textcol="none">
+					<label>为当前文件夹新建标签页</label>
+					<tip>将当前文件夹在新标签页中打开</tip>
+					<icon1>#newtab</icon1>
+					<function type="normal">
+						<instruction>Go CURRENT NEWTAB</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+					<label>为上级文件夹新建标签页</label>
+					<tip>在新标签页中打开上级文件夹</tip>
+					<icon1>#goupnewtab</icon1>
+					<function type="normal">
+						<instruction>Go UP NEWTAB</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" textcol="none">
+					<label>为选定文件夹新建标签页</label>
+					<tip>为每个选定的文件夹(或文件夹的快捷方式)打开一个新标签页</tip>
+					<icon1>#duplicatetab</icon1>
+					<function type="normal">
+						<instruction>Go NEWTAB=nofocus,findexisting FROMSEL</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+					<label>为上级文件夹新建标签页</label>
+					<tip>为每个选定项目的上级文件夹打开一个新标签页 (在查找结果中有用)</tip>
+					<icon1>#duplicatetab</icon1>
+					<function type="normal">
+						<instruction>Go OPENCONTAINER NEWTAB=findexisting,nofocus</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" hotkey_label="yes" label_pos="right" textcol="none">
+					<label>关闭标签页</label>
+					<tip>关闭当前标签页</tip>
+					<hotkeys>
+						<key>ctrl+W</key>
+						<key>ctrl+f4</key>
+					</hotkeys>
+					<icon1>#closetab</icon1>
+					<function type="normal">
+						<instruction>Go TABCLOSE</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" hotkey_label="yes" label_pos="right" separate="yes" textcol="none">
+					<label>取消关闭标签页</label>
+					<tip>重新打开最后的标签页或已被关闭的标签</tip>
+					<hotkeys>
+						<key>ctrl+shift+T</key>
+						<key>ctrl+shift+W</key>
+					</hotkeys>
+					<icon1>#undoclosetab</icon1>
+					<function type="normal">
+						<instruction>Go TABUNDOCLOSE</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" textcol="none">
+					<label>管理标签页组</label>
+					<tip>打开标签页组的互动列表</tip>
+					<icon1>#prefs</icon1>
+					<function type="normal">
+						<instruction>Prefs PAGE=tabgroups</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" textcol="none">
+					<label>保存标签页(&amp;S)...</label>
+					<tip>将当前标签另存为新的标签页组</tip>
+					<icon1>#newtab</icon1>
+					<function type="normal">
+						<instruction>Go TABGROUPSAVE</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" textcol="none">
+					<label>保存标签页(两侧)(&amp;V)...</label>
+					<tip>将两个文件显示中的标签页另存为新的双栏标签页组</tip>
+					<icon1>#newtab</icon1>
+					<function type="normal">
+						<instruction>Go TABGROUPSAVE !both</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" textcol="none">
+					<label>保存的标签页组</label>
+					<tip>显示标签页组列表</tip>
+					<icon1>#foldertabgrouplist</icon1>
+					<function type="normal">
+						<instruction>Go TABGROUPLIST=icons USEQUALKEYS HEADING</instruction>
+					</function>
+				</button>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none" type="menu">
+				<label>平面显示(&amp;F)</label>
+				<icon1>#flatviewmixednofolders</icon1>
+				<button backcol="none" display="both" label_pos="right" textcol="none">
+					<label>分组式(&amp;G)</label>
+					<tip>显示当前栏的子文件夹中的所有内容 (按位置分组)</tip>
+					<icon1>#flatviewgrouped</icon1>
+					<function type="normal">
+						<instruction>Set FLATVIEW=On,Grouped</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" textcol="none">
+					<label>混合(&amp;M)</label>
+					<tip>显示当前栏的子文件夹中的所有内容</tip>
+					<icon1>#flatviewmixed</icon1>
+					<function type="normal">
+						<instruction>Set FLATVIEW=On,Mixed</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+					<label>混合 (无文件夹) (M)</label>
+					<tip>显示当前栏的子文件夹中的所有内容 (显示文件夹自身)</tip>
+					<icon1>#flatviewmixednofolders</icon1>
+					<function type="normal">
+						<instruction>Set FLATVIEW=On,MixedNoFolders</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="both" label_pos="right" textcol="none">
+					<label>关(&amp;O)</label>
+					<tip>关闭平面显示,返回常规文件夹显示</tip>
+					<icon1>#flatviewoff</icon1>
+					<function type="normal">
+						<instruction>Set FLATVIEW=Off</instruction>
+					</function>
+				</button>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>可展开的文件夹(&amp;X)</label>
+				<tip>文件显示箭头，单击时会显示各个子文件夹的内容</tip>
+				<icon1>#folderexpander</icon1>
+				<function type="normal">
+					<instruction>Set EXPANDABLEFOLDERS=Toggle CONFIRM</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+				<label>展开/折叠所有文件夹(X)</label>
+				<tip>在此处正下方展开所有文件夹，如果已展开，则折叠它们</tip>
+				<icon1>#folderexpanded</icon1>
+				<function type="normal">
+					<instruction>@enableif:enabled Set EXPANDABLEFOLDERS=Toggle</instruction>
+					<instruction>@toggle:disable</instruction>
+					<instruction>Set EXPANDABLEFOLDERS=On</instruction>
+					<instruction>Go * EXPANDBRANCH=wild,toggleall,top</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none" type="menu">
+				<label>友好日期</label>
+				<icon1>#recentlistclear</icon1>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>一周内的日期名称</label>
+					<tip>如果日期在一周内，则显示日期名称(&quot;今天&quot;、&quot;星期一&quot;等)而不是日期</tip>
+					<function type="normal">
+						<instruction>Set FRIENDLYDATES=normal</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>仅限今天</label>
+					<tip>对于今天的日期显示&quot;今天&quot;</tip>
+					<function type="normal">
+						<instruction>Set FRIENDLYDATES=today</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>不显示</label>
+					<tip>关闭友好日期</tip>
+					<function type="normal">
+						<instruction>Set FRIENDLYDATES=off</instruction>
+					</function>
+				</button>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>复选框模式(&amp;K)</label>
+				<tip>控制复选框模式的开启或关闭</tip>
+				<icon1>#checkboxmode</icon1>
+				<function type="normal">
+					<instruction>Set CHECKBOXMODE=Toggle CONFIRM</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>整行选择</label>
+				<tip>开启或关闭整行选择</tip>
+				<icon1>#fullrowselection</icon1>
+				<function type="normal">
+					<instruction>Set FULLROWSELECT=Toggle,NameCol</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+				<label>网格线</label>
+				<tip>切换开启或关闭网格线 (加强/详情模式)</tip>
+				<icon1>#gridlines</icon1>
+				<function type="normal">
+					<instruction>Set GRIDLINESH=toggle CONFIRM</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>显示所有</label>
+				<tip>在当前标签页显示所有内容，忽略本地和全局过滤设置，直到关闭</tip>
+				<icon1>#clearfilters</icon1>
+				<function type="normal">
+					<instruction>Set SHOWEVERYTHING=Toggle</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>显示系统文件</label>
+				<tip>显示系统文件和文件夹(属性是H和S的)，影响所有的窗口和标签页</tip>
+				<icon1>#showsystem</icon1>
+				<function type="normal">
+					<instruction>Set HIDESYSTEMFILES=Toggle INVERT</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>显示隐藏文件</label>
+				<tip>显示系统文件和文件夹(属性是H但不是S的)，影响所有的窗口和标签页</tip>
+				<icon1>#showhidden</icon1>
+				<function type="normal">
+					<instruction>Set GLOBALHIDEHIDDEN=Toggle INVERT</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+				<label>名称搜索</label>
+				<tip>输入通配符模式使过滤器文件在当前窗口中可见</tip>
+				<icon1>#recursivefilter</icon1>
+				<function type="normal">
+					<instruction>@label:=key=LanguageStr(&quot;key:fayt_filterbar&quot;); return (Len(key)&gt;0) ? (original_label+Chr(9)+key) : original_label;</instruction>
+					<instruction>Set QUICKFILTER</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>导航锁定(&amp;V)</label>
+				<tip>同步双栏窗口的导航操作</tip>
+				<icon1>#navlock</icon1>
+				<function type="normal">
+					<instruction>Set NAVLOCK=Toggle</instruction>
+				</function>
+			</button>
+		</button>
+		<button backcol="none" display="icon" label_pos="right" no_label="yes" textcol="none" timed="yes" type="menu_button">
+			<label>平面显示(&amp;F)</label>
+			<tip>显示当前栏的子文件夹中的所有内容</tip>
+			<icon1>#flatviewgrouped</icon1>
+			<function type="normal">
+				<instruction>@toggle:if Set FLATVIEW=Toggle</instruction>
+				<instruction>@icon:flatviewmixed,Set FLATVIEW=Mixed</instruction>
+				<instruction>@icon:flatviewmixednofolders,Set FLATVIEW=MixedNoFolders</instruction>
+				<instruction />
+				<instruction>@if:Set FLATVIEW=Mixed</instruction>
+				<instruction>Set FLATVIEW=Off</instruction>
+				<instruction>@if:Set FLATVIEW=Grouped</instruction>
+				<instruction>Set FLATVIEW=On,Mixed</instruction>
+				<instruction>@if:else</instruction>
+				<instruction>Set FLATVIEW=On,Grouped</instruction>
+			</function>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>分组式(&amp;G)</label>
+				<tip>显示当前栏的子文件夹中的所有内容 (按位置分组)</tip>
+				<icon1>#flatviewgrouped</icon1>
+				<function type="normal">
+					<instruction>Set FLATVIEW=On,Grouped</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>混合(&amp;M)</label>
+				<tip>显示当前栏的子文件夹中的所有内容</tip>
+				<icon1>#flatviewmixed</icon1>
+				<function type="normal">
+					<instruction>Set FLATVIEW=On,Mixed</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+				<label>混合 (无文件夹) (M)</label>
+				<tip>显示当前栏的子文件夹中的所有内容 (显示文件夹自身)</tip>
+				<icon1>#flatviewmixednofolders</icon1>
+				<function type="normal">
+					<instruction>Set FLATVIEW=On,MixedNoFolders</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>关(&amp;O)</label>
+				<tip>关闭平面显示,返回常规文件夹显示</tip>
+				<icon1>#flatviewoff</icon1>
+				<function type="normal">
+					<instruction>Set FLATVIEW=Off</instruction>
+				</function>
+			</button>
+		</button>
+		<button backcol="none" display="icon" label_pos="right" no_label="yes" separate="yes" textcol="none">
+			<label>导航锁定(V)</label>
+			<tip>同步双栏窗口的导航操作</tip>
+			<icon1>#navlock</icon1>
+			<function type="normal">
+				<instruction>Set NAVLOCK=Toggle</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="label" dropdown_glyph="yes" label_pos="right" textcol="none" type="menu">
+			<label>窗口(&amp;L)</label>
+			<button backcol="none" display="both" hotkey="f6" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>双栏(&amp;U)</label>
+				<tip>在一个窗口中同时显示两个文件夹</tip>
+				<icon1>#dualdisplay</icon1>
+				<function type="normal">
+					<instruction>Set DUAL=Toggle,Remember</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" hotkey="f7" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>查看器窗格(V)</label>
+				<tip>显示或隐藏窗口的查看器窗格</tip>
+				<icon1>#viewerpane</icon1>
+				<function type="normal">
+					<instruction>Set VIEWPANE=Toggle</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" hotkey="f8" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>文件夹树(&amp;F)</label>
+				<tip>显示或隐藏文件夹树</tip>
+				<icon1>#foldertree</icon1>
+				<function type="normal">
+					<instruction>Set TREE=Toggle</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" hotkey="shift+f8" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>双文件夹树(U)</label>
+				<tip>显示或隐藏第二文件夹树</tip>
+				<icon1>#foldertree</icon1>
+				<function type="normal">
+					<instruction>Set TREE=Toggle,Right</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" hotkey="f9" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>元数据窗格</label>
+				<tip>显示或隐藏元数据窗格</tip>
+				<icon1>#metapane</icon1>
+				<function type="normal">
+					<instruction>Set METAPANE=Toggle</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>状态栏(&amp;B)</label>
+				<tip>显示或隐藏状态栏</tip>
+				<icon1>#statusbar</icon1>
+				<function type="normal">
+					<instruction>Set STATUSBAR=Toggle</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" hotkey="ctrl+shift+B" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>收藏栏(&amp;V)</label>
+				<tip>显示或隐藏收藏栏</tip>
+				<icon1>#favoritesbar</icon1>
+				<function type="normal">
+					<instruction>Toolbar NAME=&quot;Favorites Bar&quot; STATE=top LOCAL=no TOGGLE</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>窗口样式</label>
+				<tip>显示窗口样式的列表</tip>
+				<icon1>#stylelist</icon1>
+				<function type="normal">
+					<instruction>Prefs STYLELIST HEADING SHOWICONS</instruction>
+				</function>
+			</button>
+		</button>
+		<button backcol="none" display="icon" label_pos="right" no_label="yes" textcol="none">
+			<label>横向双栏</label>
+			<tip>纵向显示两个文件夹</tip>
+			<icon1>#dualhorizontal</icon1>
+			<function type="normal">
+				<instruction>Set DUAL=Toggle,Horiz,Remember,ToggleLayout</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="icon" label_pos="right" no_label="yes" textcol="none">
+			<label>纵向双栏</label>
+			<tip>并排显示两个文件夹</tip>
+			<icon1>#dualdisplay</icon1>
+			<function type="normal">
+				<instruction>Set DUAL=Toggle,Vert,Remember,ToggleLayout</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="icon" hotkey_label="yes" label_pos="right" no_label="yes" textcol="none">
+			<label>元数据窗格</label>
+			<tip>显示或隐藏元数据窗格</tip>
+			<icon1>#metapane</icon1>
+			<function type="normal">
+				<instruction>Set METAPANE=Toggle</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="icon" label_pos="right" no_label="yes" separate="yes" textcol="none" type="three_button">
+			<label>查看器窗格(V)</label>
+			<icon1>#viewerpane</icon1>
+			<button backcol="none" display="both" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>查看器窗格(&amp;V)</label>
+				<tip>显示或隐藏窗口的查看器窗格</tip>
+				<icon1>#viewerpane</icon1>
+				<function type="normal">
+					<instruction>Set VIEWPANE=Toggle</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>打开链接的查看器(&amp;L)</label>
+				<tip>打开一个独立的查看器，其作用类似于分离的查看器窗格</tip>
+				<icon1>#viewerlink</icon1>
+				<function type="normal">
+					<instruction>Show LISTERLINK USEEXISTING=yes,avoid</instruction>
+				</function>
+			</button>
+		</button>
+		<button backcol="none" dpi="150" field_type="search" hotkey="f3" hotkey_label="yes" label_pos="right" no_label="yes" size="420" textcol="none">
+			<label>搜索(S)</label>
+			<tip>显示快速搜索栏允许您搜索当前文件夹</tip>
+			<function type="normal">
+				<instruction>Go QUERYFIELD</instruction>
+			</function>
+		</button>
+	</buttons>
+	<default_info hash="0x9cd7819,0x2ae649bb,0xac5303c1,0xaee9a701,0x26473f31" type="Menu" version="13.0" />
+</toolbar>

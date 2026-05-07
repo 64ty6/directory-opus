@@ -1,0 +1,885 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<toolbar>
+	<buttons backcol="none" display="label" textcol="none" type="menu">
+		<button backcol="none" display="label" label_pos="right" textcol="none" type="menu">
+			<label>文件(&amp;F)</label>
+			<button backcol="none" display="label" hotkey="ctrl+O" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>打开(&amp;O)...</label>
+				<tip>浏览要</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=open</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>下一张(&amp;N)</label>
+				<tip>显示文件夹或图像列表中的下一张图片</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=next</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>上一张(&amp;E)</label>
+				<tip>在文件夹或图像列表中显示上一张图片</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=prev</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none">
+				<label>链接到窗口选择(L)</label>
+				<tip>在打开查看器的窗口中跟踪并显示当前选定的文件</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=listerlink</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" label_pos="right" textcol="none">
+				<label>打开所在文件夹(I)</label>
+				<tip>打开包含当前文件的文件夹</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=selectfile</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" hotkey="f5" hotkey_label="yes" label_pos="right" separate="yes" textcol="none">
+				<label>刷新(R)</label>
+				<tip>重新加载当前文件，以防它已更改</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=refresh</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" hotkey="ctrl+S" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>保存</label>
+				<tip>保存对现有文件的更改</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=save</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" hotkey="ctrl+shift+S" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>另存为(&amp;A)...</label>
+				<tip>将当前图像保存到新文件</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=saveas</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" hotkey="ctrl+P" hotkey_label="yes" label_pos="right" separate="yes" textcol="none">
+				<label>打印(&amp;P)..</label>
+				<tip>打印当前文件</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=print</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" hotkey="ctrl+I" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>图像转换(&amp;I)</label>
+				<tip>打开当前图片的图像转换器</tip>
+				<function type="normal">
+					<instruction>@useimagedata</instruction>
+					<instruction>Image CONVERT</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none">
+				<label>定位图像(&amp;L)</label>
+				<tip>在线地图服务的子菜单可以查找图像的GPS坐标</tip>
+				<function type="normal">
+					<instruction>Image LOCATE=menu,nohide</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none">
+				<label>插件命令</label>
+				<tip>插入查看器插件提供的任何其他命令</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=plugincmds</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none" type="menu">
+				<label>插件(&amp;G)</label>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>配置(&amp;C)...</label>
+					<tip>配置活动查看器插件(如果适用)</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=plugincfg</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>关于(&amp;A)...</label>
+					<tip>显示有关活动查看器插件的信息(如果适用)</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=pluginabout</instruction>
+					</function>
+				</button>
+			</button>
+			<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none" type="menu">
+				<label>设置为壁纸(&amp;S)</label>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>居中</label>
+					<tip>设置桌面墙纸，使图像在每个显示器上居中</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=wallpaper,center</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>平铺</label>
+					<tip>设置桌面墙纸，平铺图像以填充所有显示器</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=wallpaper,tile</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>拉伸</label>
+					<tip>设置桌面壁纸，图像变形以填充每个显示器</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=wallpaper,stretch</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>适配</label>
+					<tip>设置桌面壁纸，使图像尽可能大而不裁剪</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=wallpaper,fit</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>填充</label>
+					<tip>设置桌面壁纸，调整大小和裁剪图像以填充屏幕</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=wallpaper,fill</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>跨度</label>
+					<tip>设置桌面壁纸，类似于&quot;适配&quot;，除非跨多个显示器</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=wallpaper,span</instruction>
+					</function>
+				</button>
+			</button>
+			<button backcol="none" display="label" label_pos="right" textcol="none">
+				<label>关闭(&amp;C)</label>
+				<tip>关闭查看器</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=close</instruction>
+				</function>
+			</button>
+		</button>
+		<button backcol="none" display="label" label_pos="right" textcol="none" type="menu">
+			<label>编辑(&amp;E)</label>
+			<button backcol="none" display="label" hotkey="ctrl+Y" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>复制到(C)</label>
+				<tip>创建当前文件的副本</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=copyto</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>移动到(&amp;M)</label>
+				<tip>将当前文件移动到另一个文件夹</tip>
+				<hotkeys>
+					<key>ctrl+V</key>
+					<key>shift+insert</key>
+				</hotkeys>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=moveto</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" hotkey_label="yes" label_pos="right" separate="yes" textcol="none">
+				<label>重命名(&amp;N)</label>
+				<tip>重命名当前文件</tip>
+				<function type="normal">
+					<instruction>Rename SIMPLE</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" hotkey="ctrl+X" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>剪切文件(U)</label>
+				<tip>将当前文件放在剪贴板中，如果随后粘贴，则移动它</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=cut</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" hotkey_label="yes" label_pos="right" separate="yes" textcol="none">
+				<label>删除(&amp;D)</label>
+				<tip>删除当前文件</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=delete</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" hotkey="ctrl+A" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>全选(&amp;A)</label>
+				<tip>选择所有当前图像(或文本)</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=selectall</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" hotkey="shift+R" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>重新选择(&amp;L)</label>
+				<tip>选择与上次选择的图像相同的区域</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=reselect</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" hotkey_label="yes" label_pos="right" separate="yes" textcol="none">
+				<label>复制(&amp;C)</label>
+				<tip>=selimage ? &quot;将所选内容复制到剪贴板&quot; : &quot;将图像(或文本)数据复制到剪贴板&quot;</tip>
+				<hotkeys>
+					<key>ctrl+C</key>
+					<key>ctrl+insert</key>
+				</hotkeys>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=copy</instruction>
+					<instruction>@label:LanguageStr(selimage ? &quot;CopySelection&quot; : &quot;CopyAll&quot;)</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" hotkey="ctrl+R" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>裁剪(&amp;R)</label>
+				<tip>将图像复制到选定区域</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=crop</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" hotkey="ctrl+Z" hotkey_label="yes" label_pos="right" separate="yes" textcol="none">
+				<label>撤消(&amp;U)</label>
+				<tip>撤消以前的裁剪或其他破坏性编辑</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=restore</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" hotkey="f9" hotkey_label="yes" label_pos="right" separate="yes" textcol="none">
+				<label>编辑元数据(M)</label>
+				<tip>在查看器中打开元数据编辑面板</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=meta</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" label_pos="right" textcol="none">
+				<label>选项(&amp;P)...</label>
+				<tip>打开查看器的&quot;选项&quot;页面</tip>
+				<function type="normal">
+					<instruction>Prefs PAGE=viewer</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" label_pos="right" textcol="none">
+				<label>自定义工具栏和热键(C)...</label>
+				<tip>自定义工具栏、菜单和热键</tip>
+				<function type="normal">
+					<instruction>Prefs CUSTOMIZE</instruction>
+				</function>
+			</button>
+		</button>
+		<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none" type="menu">
+			<label>查看(&amp;V)</label>
+			<button backcol="none" display="label" hotkey="ctrl+N" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>菜单栏(&amp;M)</label>
+				<tip>切换查看器顶部的可配置工具栏/菜单</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=toolbar</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" hotkey="ctrl+B" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>状态栏(&amp;T)</label>
+				<tip>切换查看器底部的状态栏</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=statusbar</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" hotkey="ctrl+L" hotkey_label="yes" label_pos="right" separate="yes" textcol="none">
+				<label>控制栏(C)</label>
+				<tip>在查看器底部切换一个简单的固定工具栏</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=shortcutbar</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" label_pos="right" textcol="none" type="menu">
+				<label>查看大小(&amp;V)</label>
+				<button backcol="none" display="label" hotkey_label="yes" label_pos="right" separate="yes" textcol="none">
+					<label>原始大小(&amp;O)</label>
+					<tip>以原始大小显示图像</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=zoom,reset</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" hotkey="ctrl+1" hotkey_label="yes" label_pos="right" textcol="none">
+					<label>&amp;25% </label>
+					<tip>以原始大小的 25% 显示图像</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=zoom,25</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" hotkey="ctrl+2" hotkey_label="yes" label_pos="right" textcol="none">
+					<label>&amp;50% </label>
+					<tip>以原始大小的 50% 显示图像</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=zoom,50</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" hotkey="ctrl+3" hotkey_label="yes" label_pos="right" textcol="none">
+					<label>&amp;75% </label>
+					<tip>以原始大小的 75% 显示图像</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=zoom,75</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" hotkey="ctrl+4" hotkey_label="yes" label_pos="right" textcol="none">
+					<label>&amp;150% </label>
+					<tip>以原始大小的 150% 显示图像</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=zoom,150</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" hotkey="ctrl+5" hotkey_label="yes" label_pos="right" textcol="none">
+					<label>2&amp;00% </label>
+					<tip>以原始大小的 200% 显示图像</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=zoom,200</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>250% </label>
+					<tip>以原始大小的 250% 显示图像</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=zoom,250</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" hotkey="ctrl+6" hotkey_label="yes" label_pos="right" textcol="none">
+					<label>&amp;300% </label>
+					<tip>以原始大小的 300% 显示图像</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=zoom,300</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>350% </label>
+					<tip>以原始大小的 350% 显示图像</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=zoom,350</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" hotkey="ctrl+7" hotkey_label="yes" label_pos="right" textcol="none">
+					<label>&amp;400% </label>
+					<tip>以原始大小的 400% 显示图像</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=zoom,400</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>&amp;600% </label>
+					<tip>以原始大小的 600% 显示图像</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=zoom,600</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" hotkey="ctrl+8" hotkey_label="yes" label_pos="right" separate="yes" textcol="none">
+					<label>&amp;800% </label>
+					<tip>以原始大小的 800% 显示图像</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=zoom,800</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" hotkey_label="yes" label_pos="right" textcol="none">
+					<label>适配窗口(&amp;F)</label>
+					<tip>显示整个图像，根据需要缩小，但从不放大</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=zoom,fit</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" hotkey_label="yes" label_pos="right" textcol="none">
+					<label>扩展到窗口大小(&amp;G)</label>
+					<tip>显示整个图像，尽可能大</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=zoom,grow</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>平铺(&amp;D)</label>
+					<tip>以原始大小显示图像，重复以填充窗口</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=zoom,tile</instruction>
+					</function>
+				</button>
+			</button>
+			<button backcol="none" display="label" label_pos="right" textcol="none" type="menu">
+				<label>旋转预览(&amp;R)</label>
+				<button backcol="none" display="label" hotkey_label="yes" label_pos="right" textcol="none">
+					<label>向左旋转</label>
+					<tip>将图像逆时针旋转 90 度</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=rotate,-90</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" hotkey_label="yes" label_pos="right" separate="yes" textcol="none">
+					<label>向右旋转</label>
+					<tip>将图像顺时针旋转 90 度</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=rotate,+90</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" hotkey="0" hotkey_label="yes" label_pos="right" textcol="none">
+					<label>&amp;0°</label>
+					<tip>恢复图像的原始方向</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=rotate,reset</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" hotkey="1" hotkey_label="yes" label_pos="right" textcol="none">
+					<label>&amp;90°</label>
+					<tip>将图像从其原始方向顺时针旋转 90 度</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=rotate,90</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" hotkey="2" hotkey_label="yes" label_pos="right" textcol="none">
+					<label>&amp;180°</label>
+					<tip>将图像从其原始方向旋转 180 度</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=rotate,180</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" hotkey="3" hotkey_label="yes" label_pos="right" separate="yes" textcol="none">
+					<label>&amp;270°</label>
+					<tip>将图像从其原始方向逆时针旋转 90 度</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=rotate,270</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" hotkey="H" hotkey_label="yes" label_pos="right" textcol="none">
+					<label>横向翻转(&amp;H)</label>
+					<tip>从左向右翻转图像</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=flip,horiz</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" hotkey="V" hotkey_label="yes" label_pos="right" textcol="none">
+					<label>纵向翻转(&amp;V)</label>
+					<tip>从上到下翻转图像</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=flip,vert</instruction>
+					</function>
+				</button>
+			</button>
+			<button backcol="none" display="label" label_pos="right" textcol="none" type="menu">
+				<label>伽马校正(&amp;G)</label>
+				<button backcol="none" display="label" hotkey="shift+num+" hotkey_label="yes" label_pos="right" textcol="none">
+					<label>增加(&amp;I)</label>
+					<tip>增加所显示图像的伽玛校正</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=gamma,+10</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" hotkey="shift+num-" hotkey_label="yes" label_pos="right" separate="yes" textcol="none">
+					<label>减少(&amp;D)</label>
+					<tip>减少显示图像的伽玛校正</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=gamma,-10</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" hotkey="shift+num*" hotkey_label="yes" label_pos="right" textcol="none">
+					<label>重置(&amp;R)</label>
+					<tip>重置显示图像的伽玛校正</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=gamma,reset</instruction>
+					</function>
+				</button>
+			</button>
+			<button backcol="none" display="label" label_pos="right" textcol="none" type="menu">
+				<label>背景颜色(&amp;B)</label>
+				<button backcol="none" display="label" hotkey="f3" hotkey_label="yes" label_pos="right" separate="yes" textcol="none">
+					<label>循环(&amp;C)</label>
+					<tip>在黑白之间循环背景(如果查看器支持)</tip>
+					<function type="normal">
+						<instruction>@enableif:enabled Show VIEWERCMD=backcol</instruction>
+						<instruction>@toggle:disable</instruction>
+						<instruction>// If we are in Dark Mode, jump to white first, then black, then white...</instruction>
+						<instruction>// If we are in Light Mode, jump to black first, then white, then black...</instruction>
+						<instruction>=if (!Elapsed(&quot;DarkModeViewerToggle&quot;, 500, true) &amp;&amp; key_repeat) AbortFunc();</instruction>
+						<instruction>=col1=&quot;#000000&quot;; col2=&quot;#FFFFFF&quot;</instruction>
+						<instruction>=if (SysInfo(&quot;DarkMode&quot;)) { swap(col1,col2) }</instruction>
+						<instruction>=return &quot;Show VIEWERCMD=backcol,&quot; + (ischecked(&quot;Show VIEWERCMD=backcol,&quot; + col1) ? col2 : col1)</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" hotkey="shift+B" hotkey_label="yes" label_pos="right" textcol="none">
+					<label>黑色(&amp;B)</label>
+					<tip>将背景色设置为黑色(如果查看器支持)</tip>
+					<function type="normal">
+						<instruction>@enableif:enabled Show VIEWERCMD=backcol</instruction>
+						<instruction>@toggle:if Show VIEWERCMD=backcol,#000000</instruction>
+						<instruction>@if:Show VIEWERCMD=backcol,#000000</instruction>
+						<instruction>Show VIEWERCMD=backcol</instruction>
+						<instruction>@if:else</instruction>
+						<instruction>Show VIEWERCMD=backcol,#000000</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" hotkey="shift+W" hotkey_label="yes" label_pos="right" separate="yes" textcol="none">
+					<label>白色的(&amp;W)</label>
+					<tip>将背景色设置为白色(如果查看器支持)</tip>
+					<function type="normal">
+						<instruction>@enableif:enabled Show VIEWERCMD=backcol</instruction>
+						<instruction>@toggle:if Show VIEWERCMD=backcol,#ffffff</instruction>
+						<instruction>@if:Show VIEWERCMD=backcol,#ffffff</instruction>
+						<instruction>Show VIEWERCMD=backcol</instruction>
+						<instruction>@if:else</instruction>
+						<instruction>Show VIEWERCMD=backcol,#ffffff</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" label_pos="right" textcol="none">
+					<label>重置(&amp;R)</label>
+					<tip>将背景颜色重置为&quot;选项&quot;中指定的颜色</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=backcol</instruction>
+					</function>
+				</button>
+			</button>
+			<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none">
+				<label>相框(&amp;C)</label>
+				<tip>在显示的图像周围切换框架</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=frame</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" hotkey="shift+A" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>隐藏&amp;Alpha通道(A)</label>
+				<tip>切换显示图像的 Alpha 通道</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=alpha</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" hotkey="shift+X" hotkey_label="yes" label_pos="right" separate="yes" textcol="none">
+				<label>以十六进制查看(H)</label>
+				<tip>将当前文件的原始字节显示为十六进制数据</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=hex</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" hotkey="f10" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>显示信息(&amp;I)</label>
+				<tip>叠加显示元数据的信息提示</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=info</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none">
+				<label>保存最小宽度</label>
+				<tip>将当前宽度另存为新查看器窗口的最小宽度</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=minwidth</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" hotkey="S" hotkey_label="yes" label_pos="right" separate="yes" textcol="none">
+				<label>放映(&amp;H)</label>
+				<tip>切换幻灯片模式;延迟后自动显示后续图像</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=slideshow</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" hotkey="alt+left" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>上一个监视器(&amp;P)</label>
+				<tip>将查看器移动到上一个监视器</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=monitorprev</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" hotkey="alt+right" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>下一个监视器(&amp;N)</label>
+				<tip>将查看器移动到下一个监视器</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=monitornext</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" hotkey="alt+enter" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>全屏(&amp;F)</label>
+				<tip>切换查看器的全屏模式</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=fullscreen</instruction>
+				</function>
+			</button>
+		</button>
+		<button backcol="none" display="icon" label_pos="right" no_label="yes" textcol="none" timed="yes" type="menu_button">
+			<label>上一张(&amp;E)</label>
+			<tip>&lt;%bullet&gt; 按住 &lt;kbd&gt;Ctrl&lt;/kbd&gt; 标记当前图像
+&lt;%bullet&gt; 下拉菜单以从列表中选择</tip>
+			<icon1>#viewerprev</icon1>
+			<function type="normal">
+				<instruction>@keydown:ctrl</instruction>
+				<instruction>Show VIEWERCMD=prev,markfirst</instruction>
+				<instruction>@keydown:else</instruction>
+				<instruction>Show VIEWERCMD=prev</instruction>
+			</function>
+			<button backcol="none" display="label" label_pos="right" textcol="none">
+				<label>上一个图片列表</label>
+				<tip>当前图片之前的图片列表</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=prevlist</instruction>
+				</function>
+			</button>
+		</button>
+		<button backcol="none" display="icon" label_pos="right" no_label="yes" textcol="none" timed="yes" type="menu_button">
+			<label>下一张(&amp;N)</label>
+			<tip>&lt;%bullet&gt; 按住 &lt;kbd&gt;Ctrl&lt;/kbd&gt; 标记当前图像
+&lt;%bullet&gt; 下拉菜单以从列表中选择</tip>
+			<icon1>#viewernext</icon1>
+			<function type="normal">
+				<instruction>@keydown:ctrl</instruction>
+				<instruction>Show VIEWERCMD=next,markfirst</instruction>
+				<instruction>@keydown:else</instruction>
+				<instruction>Show VIEWERCMD=next</instruction>
+			</function>
+			<button backcol="none" display="label" label_pos="right" textcol="none">
+				<label>下一个图片列表</label>
+				<tip>当前图片之后的图片列表</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=nextlist</instruction>
+				</function>
+			</button>
+		</button>
+		<button backcol="none" display="icon" hotkey="L" hotkey_label="yes" label_pos="right" no_label="yes" textcol="none">
+			<label>向左旋转</label>
+			<tip>将图像逆时针旋转 90 度</tip>
+			<icon1>#viewerrotateleft</icon1>
+			<function type="normal">
+				<instruction>Show VIEWERCMD=rotate,-90</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="icon" hotkey="R" hotkey_label="yes" label_pos="right" no_label="yes" separate="yes" textcol="none">
+			<label>向右旋转</label>
+			<tip>将图像顺时针旋转 90 度</tip>
+			<icon1>#viewerrotateright</icon1>
+			<function type="normal">
+				<instruction>Show VIEWERCMD=rotate,+90</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="icon" hotkey_label="yes" label_pos="right" no_label="yes" textcol="none">
+			<label>放大</label>
+			<tip>以更高的放大倍率显示图像</tip>
+			<hotkeys>
+				<key>187,0</key>
+				<key>num+</key>
+			</hotkeys>
+			<icon1>#viewerzoomin</icon1>
+			<function type="normal">
+				<instruction>Show VIEWERCMD=zoom,+</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="icon" hotkey_label="yes" label_pos="right" no_label="yes" textcol="none">
+			<label>缩小</label>
+			<tip>以较低的放大倍率显示图像</tip>
+			<hotkeys>
+				<key>189,0</key>
+				<key>num-</key>
+			</hotkeys>
+			<icon1>#viewerzoomout</icon1>
+			<function type="normal">
+				<instruction>Show VIEWERCMD=zoom,-</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="icon" hotkey_label="yes" label_pos="right" no_label="yes" textcol="none">
+			<label>原始大小</label>
+			<tip>以原始大小显示图像</tip>
+			<hotkeys>
+				<key>O</key>
+				<key>num*</key>
+			</hotkeys>
+			<icon1>#viewerzoomorig</icon1>
+			<function type="normal">
+				<instruction>Show VIEWERCMD=zoom,reset</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="icon" hotkey="F" hotkey_label="yes" label_pos="right" no_label="yes" textcol="none">
+			<label>适配窗口</label>
+			<tip>显示整个图像，根据需要缩小，但从不放大</tip>
+			<icon1>#viewerzoomfit</icon1>
+			<function type="normal">
+				<instruction>Show VIEWERCMD=zoom,fit</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="icon" hotkey="G" hotkey_label="yes" label_pos="right" no_label="yes" separate="yes" textcol="none">
+			<label>扩展到窗口大小</label>
+			<tip>显示整个图像，尽可能大</tip>
+			<icon1>#viewerzoomgrow</icon1>
+			<function type="normal">
+				<instruction>Show VIEWERCMD=zoom,grow</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" hotkey_label="yes" label_pos="right" separate="yes" textcol="none">
+			<label>全屏(F)</label>
+			<tip>切换查看器的全屏模式</tip>
+			<icon1>#viewerfullscreen</icon1>
+			<function type="normal">
+				<instruction>Show VIEWERCMD=fullscreen</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" hotkey_label="yes" label_pos="right" textcol="none" type="menu_button">
+			<label>标记(&amp;M)</label>
+			<tip>标记当前文件以供进一步处理;再次按下以取消标记</tip>
+			<hotkeys>
+				<key>M</key>
+				<key>insert</key>
+			</hotkeys>
+			<icon1>#markpicture</icon1>
+			<function type="normal">
+				<instruction>Show VIEWERCMD=mark,toggle,nohighlight</instruction>
+			</function>
+			<button backcol="none" display="both" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>标记(&amp;M)</label>
+				<tip>标记当前文件以供进一步处理;再次按下以取消标记</tip>
+				<icon1>#markpicture</icon1>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=mark,toggle,nohighlight</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" hotkey_label="yes" label_pos="right" separate="yes" textcol="none">
+				<label>交换标记(&amp;X)</label>
+				<tip>标记当前文件，并取消标记之前标记的文件</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=mark,exchange</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none" type="menu">
+				<label>前往(&amp;G)</label>
+				<button backcol="none" display="label" hotkey="ctrl+up" hotkey_label="yes" label_pos="right" textcol="none">
+					<label>第一张标记图片(&amp;F)</label>
+					<tip>跳转到第一个标记的文件</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=mark,first</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" hotkey="ctrl+left" hotkey_label="yes" label_pos="right" textcol="none">
+					<label>上一张标记图片(&amp;P)</label>
+					<tip>跳转到上一个标记的文件</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=mark,prev</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" hotkey="ctrl+right" hotkey_label="yes" label_pos="right" textcol="none">
+					<label>下一张标记图片(&amp;N)</label>
+					<tip>跳转到下一个标记的文件</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=mark,next</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" hotkey="ctrl+down" hotkey_label="yes" label_pos="right" separate="yes" textcol="none">
+					<label>最后一张标记图片(&amp;L)</label>
+					<tip>跳转到最后一个标记的文件</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=mark,last</instruction>
+					</function>
+				</button>
+				<button backcol="none" display="label" hotkey="ctrl+space" hotkey_label="yes" label_pos="right" textcol="none">
+					<label>从前往中返回(&amp;R)</label>
+					<tip>撤消跳跃，返回到之前的图像</tip>
+					<function type="normal">
+						<instruction>Show VIEWERCMD=mark,return</instruction>
+					</function>
+				</button>
+			</button>
+			<button backcol="none" display="label" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>显示标记图片窗格(&amp;S)</label>
+				<tip>切换在查看器中列出标记图像的面板</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=mark,view</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none">
+				<label>浏览已标记图片(&amp;B)</label>
+				<tip>在文件夹标签页中打开标记图像的列表</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=mark,browse</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" label_pos="right" textcol="none">
+				<label>清除已标记图片(&amp;C)</label>
+				<tip>清除标记图像的列表</tip>
+				<function type="normal">
+					<instruction>Show VIEWERCMD=mark,clear</instruction>
+				</function>
+			</button>
+		</button>
+		<button backcol="none" display="icon" hotkey="shift+M" hotkey_label="yes" label_pos="right" no_label="yes" textcol="none">
+			<label>交换标记(X)</label>
+			<tip>标记当前文件，并取消标记之前标记的文件</tip>
+			<icon1>#exchangemarkedpicture</icon1>
+			<function type="normal">
+				<instruction>Show VIEWERCMD=mark,exchange</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="icon" hotkey="ctrl+M" hotkey_label="yes" label_pos="right" no_label="yes" separate="yes" textcol="none">
+			<label>显示标记图片窗格(S)</label>
+			<tip>切换在查看器中列出标记图像的面板</tip>
+			<icon1>#showmarkedpictures</icon1>
+			<function type="normal">
+				<instruction>Show VIEWERCMD=mark,view</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" hotkey="f2" hotkey_label="yes" label_pos="right" textcol="none">
+			<label>重命名(N)</label>
+			<tip>重命名当前文件</tip>
+			<icon1>#rename</icon1>
+			<function type="normal">
+				<instruction>Rename SIMPLE</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" hotkey_label="yes" label_pos="right" separate="yes" textcol="none">
+			<label>删除(D)</label>
+			<tip>删除当前文件</tip>
+			<hotkeys>
+				<key>delete</key>
+				<key>shift+delete</key>
+			</hotkeys>
+			<icon1>#delete</icon1>
+			<function type="normal">
+				<instruction>Show VIEWERCMD=delete</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="icon" label_pos="right" no_label="yes" textcol="none">
+			<label>打开所在文件夹(I)</label>
+			<tip>打开包含当前文件的文件夹</tip>
+			<icon1>#folder</icon1>
+			<function type="normal">
+				<instruction>Show VIEWERCMD=selectfile</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>链接到窗口</label>
+			<tip>在打开查看器的窗口中跟踪并显示当前选定的文件</tip>
+			<icon1>#listerlink</icon1>
+			<function type="normal">
+				<instruction>Show VIEWERCMD=listerlink</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="label" field_type="spacer" label_pos="right" size="full" textcol="none">
+			<label>分隔符</label>
+			<function type="normal">
+				<instruction>Set SPACER</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="icon" hotkey="f1" hotkey_label="yes" label_pos="right" no_label="yes" textcol="none">
+			<label>帮助(H)</label>
+			<tip>打开有关如何使用查看器的手册</tip>
+			<icon1>#help</icon1>
+			<function type="normal">
+				<instruction>Show VIEWERCMD=help</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="icon" hotkey_label="yes" label_pos="right" no_label="yes" textcol="none">
+			<label>上一个监视器(P)</label>
+			<tip>将查看器移动到上一个监视器(如果不是全屏，则隐藏)</tip>
+			<icon1>#monitorprev</icon1>
+			<function type="normal">
+				<instruction>@showif:=fullscreen</instruction>
+				<instruction>Show VIEWERCMD=monitorprev</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="icon" hotkey_label="yes" label_pos="right" no_label="yes" textcol="none">
+			<label>下一个监视器(N)</label>
+			<tip>将查看器移动到下一个监视器(如果不是全屏，则隐藏)</tip>
+			<icon1>#monitornext</icon1>
+			<function type="normal">
+				<instruction>@showif:=fullscreen</instruction>
+				<instruction>Show VIEWERCMD=monitornext</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="icon" label_pos="right" no_label="yes" textcol="none">
+			<label>关闭(C)</label>
+			<tip>关闭查看器(如果不是全屏，则隐藏)</tip>
+			<icon1>#closelister</icon1>
+			<function type="normal">
+				<instruction>@showif:=fullscreen</instruction>
+				<instruction>Show VIEWERCMD=close</instruction>
+			</function>
+		</button>
+	</buttons>
+	<default_info hash="0x71110ff4,0x751d2d4e,0x5394192e,0x2f3a8d99,0x9a9e56c1" type="Image Viewer" version="13.0" />
+</toolbar>

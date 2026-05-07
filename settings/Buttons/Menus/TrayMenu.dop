@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<toolbar>
+	<image_settings fill="none" fit="8" image="" inheritable="yes" opacity="100" use_custom="no" />
+	<buttons backcol="none" display="label" textcol="none" type="menu">
+		<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+			<label>打开新窗口(N)</label>
+			<tip>打开新窗口</tip>
+			<icon1>#newlister</icon1>
+			<function type="normal">
+				<instruction>Go NEW</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>选项(P)...</label>
+			<tip>打开 Directory Opus选项编辑器</tip>
+			<icon1>#prefs</icon1>
+			<function type="normal">
+				<instruction>Prefs</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>自定义工具栏和热键(C)...</label>
+			<tip>自定义工具栏、菜单和热键</tip>
+			<icon1>#customize</icon1>
+			<function type="normal">
+				<instruction>Prefs CUSTOMIZE</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>文件类型(F)...</label>
+			<tip>打开文件类型编辑器</tip>
+			<icon1>#filetype</icon1>
+			<function type="normal">
+				<instruction>Prefs FILETYPES</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none" type="menu">
+			<label>窗口布局(&amp;L)</label>
+			<icon1>#layoutlist</icon1>
+			<button backcol="none" display="label" label_pos="right" textcol="none">
+				<label>编辑布局(&amp;E)...</label>
+				<tip>显示布局编辑器</tip>
+				<function type="normal">
+					<instruction>Prefs LAYOUTEDIT</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none">
+				<label>保存所有窗口...</label>
+				<tip>将所有打开的窗口保存为一个布局</tip>
+				<function type="normal">
+					<instruction>Prefs LAYOUTSAVE</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" label_pos="right" textcol="none">
+				<label>已保存的布局</label>
+				<tip>显示包含已保存布局列表</tip>
+				<function type="normal">
+					<instruction>Prefs LAYOUTLIST</instruction>
+				</function>
+			</button>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>关于 Directory Opus (A)...</label>
+			<tip>显示 Directory Opus 版权和版本信息</tip>
+			<icon1>#about</icon1>
+			<function type="normal">
+				<instruction>Help ABOUT</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>退出 Directory Opus(X)</label>
+			<tip>退出Directory Opus(无需确认)</tip>
+			<icon1>#exit</icon1>
+			<function type="normal">
+				<instruction>Close PROGRAM</instruction>
+			</function>
+		</button>
+	</buttons>
+	<default_info hash="0xa760f91,0x9e55907,0xcb892286,0xd6c0241,0x6f0b8433" type="TrayMenu" version="13.0" />
+</toolbar>

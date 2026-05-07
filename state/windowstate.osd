@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<windowstates>
+	<advfunced data="100" rc="236,685,1109,1301,150" />
+	<aliasprefs>
+		<extra>
+			<builtin>0</builtin>
+			<sort>1</sort>
+		</extra>
+	</aliasprefs>
+	<brainchild />
+	<caf_themes>
+		<extra>
+			<splitter>0,150</splitter>
+		</extra>
+	</caf_themes>
+	<copy_progress rc="909,537,1623,1147,150" />
+	<customise data="162">
+		<wp rc="46,480,1259,1355,150" showcmd="1" />
+		<extra>
+			<keylist_group>0</keylist_group>
+			<cmdlist_selcat>FileOp</cmdlist_selcat>
+			<keylist_selcat>15</keylist_selcat>
+		</extra>
+	</customise>
+	<evalcolumns>
+		<extra>
+			<sort>1</sort>
+			<bcconfig>0</bcconfig>
+		</extra>
+	</evalcolumns>
+	<evalgroups>
+		<extra>
+			<colw>0,150</colw>
+			<splitter>50,150</splitter>
+			<editw>0,150</editw>
+			<edith>0,150</edith>
+			<colh>0,150</colh>
+			<sort>1</sort>
+			<bcconfig>0</bcconfig>
+		</extra>
+	</evalgroups>
+	<filetypeedit rc="472,531,1938,1312,150">
+		<extra>
+			<text_ext>0</text_ext>
+		</extra>
+	</filetypeedit>
+	<filetypes rc="472,475,1211,1280,150">
+		<extra_nodes>
+			<state scroll="0">
+				<expanded>
+					<group>1</group>
+					<group>2</group>
+					<group>3</group>
+					<group>4</group>
+				</expanded>
+				<collapsed />
+			</state>
+		</extra_nodes>
+	</filetypes>
+	<ftaction rc="617,573,1474,1162,150" />
+	<inlinerenameprefs>
+		<extra>
+			<splitter>1,150</splitter>
+		</extra>
+	</inlinerenameprefs>
+	<labelledfilesprefs>
+		<extra>
+			<bygroup>0</bygroup>
+		</extra>
+	</labelledfilesprefs>
+	<networkfolderprefs>
+		<extra>
+			<splitter>0,150</splitter>
+		</extra>
+	</networkfolderprefs>
+	<opusnews rc="727,477,1840,1171,150" />
+	<pref_advanced>
+		<extra>
+			<selected_category>全部</selected_category>
+		</extra>
+	</pref_advanced>
+	<pref_filters>
+		<extra>
+			<splitter>655360,150</splitter>
+			<text_mode>0</text_mode>
+		</extra>
+	</pref_filters>
+	<pref_folderimages>
+		<extra_nodes>
+			<list_state scroll="0">
+				<expanded>
+					<group>2</group>
+					<group>4</group>
+					<group>5</group>
+				</expanded>
+				<collapsed>
+					<group>1</group>
+				</collapsed>
+			</list_state>
+		</extra_nodes>
+	</pref_folderimages>
+	<pref_folderlabels>
+		<extra_nodes>
+			<list_state scroll="0">
+				<expanded>
+					<group>2</group>
+					<group>4</group>
+				</expanded>
+				<collapsed>
+					<group>1</group>
+				</collapsed>
+			</list_state>
+		</extra_nodes>
+	</pref_folderlabels>
+	<pref_foldersettings>
+		<extra_nodes>
+			<list_state scroll="0">
+				<expanded>
+					<group>7</group>
+				</expanded>
+				<collapsed>
+					<group>1</group>
+					<group>2</group>
+					<group>3</group>
+					<group>4</group>
+					<group>5</group>
+				</collapsed>
+			</list_state>
+		</extra_nodes>
+	</pref_foldersettings>
+	<pref_foldertoolbars>
+		<extra_nodes>
+			<list_state scroll="0">
+				<expanded>
+					<group>2</group>
+					<group>5</group>
+				</expanded>
+				<collapsed>
+					<group>1</group>
+				</collapsed>
+			</list_state>
+		</extra_nodes>
+	</pref_foldertoolbars>
+	<pref_fontsandcolors_filecolors data="0xffffffff">
+		<extra_nodes>
+			<list_selection>
+				<keyword>highlightedfields</keyword>
+			</list_selection>
+		</extra_nodes>
+	</pref_fontsandcolors_filecolors>
+	<pref_fontsandcolors_fonts data="0xffffffff">
+		<extra_nodes>
+			<list_selection>
+				<keyword>fontpaneborders</keyword>
+			</list_selection>
+		</extra_nodes>
+	</pref_fontsandcolors_fonts>
+	<pref_fontsandcolors_images data="0xffffffff">
+		<extra_nodes>
+			<list_selection>
+				<keyword>img_viewerpane</keyword>
+			</list_selection>
+		</extra_nodes>
+	</pref_fontsandcolors_images>
+	<pref_fontsandcolors_systemcolors data="0xffffffff">
+		<extra_nodes>
+			<list_selection>
+				<keyword>sys_about</keyword>
+			</list_selection>
+		</extra_nodes>
+	</pref_fontsandcolors_systemcolors>
+	<pref_labeldefs>
+		<extra_nodes>
+			<lv_state />
+		</extra_nodes>
+	</pref_labeldefs>
+	<preferences>
+		<wp rc="758,475,1977,1377,150" showcmd="1" />
+		<extra>
+			<initial_page>explorerrep</initial_page>
+			<done_intro>1</done_intro>
+			<hide_scripts>0</hide_scripts>
+		</extra>
+		<extra_nodes>
+			<list_state scroll="0">
+				<expanded>
+					<group>0x48d</group>
+				</expanded>
+				<collapsed>
+					<group>808</group>
+					<group>1023</group>
+					<group>1024</group>
+					<group>0x415</group>
+					<group>0x43a</group>
+					<group>0x45b</group>
+					<group>0x45d</group>
+					<group>0x496</group>
+					<group>0x4a0</group>
+					<group>0x4a1</group>
+					<group>0x4d6</group>
+					<group>0x4d8</group>
+					<group>0x4e1</group>
+					<group>0x5e8</group>
+					<group>0x5fb</group>
+					<group>0x64c</group>
+					<group>0x6d3</group>
+					<group>0x6da</group>
+					<group>0x6d8d</group>
+				</collapsed>
+			</list_state>
+		</extra_nodes>
+	</preferences>
+	<prefs_shellprops>
+		<extra>
+			<hide_unused>0</hide_unused>
+			<group_data>0</group_data>
+		</extra>
+	</prefs_shellprops>
+	<presets_dlg rc="740,232,1171,647,150" />
+	<scripts rc="746,443,1812,1156,150">
+		<extra>
+			<showinclude>0</showinclude>
+		</extra>
+	</scripts>
+	<selfolder rc="924,453,1556,1132,150" />
+	<shellexprefs>
+		<extra>
+			<splitter>0,150</splitter>
+			<grouped>1</grouped>
+		</extra>
+		<extra_nodes>
+			<columns columns="0,1,2,3" order="0,1,2,3" sort="1" />
+		</extra_nodes>
+	</shellexprefs>
+	<viewer rc="-11,-11,2570,1610,150">
+		<wp flags="2" rc="309,197,2251,1412,150" showcmd="3" />
+		<extra>
+			<ontop>0</ontop>
+		</extra>
+	</viewer>
+	<viewer_listerlink rc="342,342,2261,1512,150">
+		<wp rc="342,342,2262,1513,150" showcmd="1" />
+		<extra>
+			<ontop>0</ontop>
+		</extra>
+	</viewer_listerlink>
+</windowstates>

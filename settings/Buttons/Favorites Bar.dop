@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<toolbar>
+	<buttons backcol="none" display="label" textcol="none" type="menu">
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>收藏栏</label>
+			<tip>列出收藏夹树的收藏夹栏分支</tip>
+			<function type="normal">
+				<instruction>@ctx:=&quot;Favorites SHOWICONS USEQUALKEYS NOOPENINTABS AUTOCREATE BRANCH=&quot;&quot;&quot; + LanguageStr(&quot;FavoritesBar&quot;) + &quot;&quot;&quot;</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="label" field_type="spacer" label_pos="right" size="full" textcol="none">
+			<label>分隔符</label>
+			<function type="normal">
+				<instruction>Set SPACER</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" dropdown_glyph="yes" label_pos="right" textcol="none" type="menu">
+			<label>其他收藏夹(&amp;A)</label>
+			<icon1>#favorites</icon1>
+			<button backcol="none" display="both" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>添加到收藏夹(&amp;A)</label>
+				<tip>将当前文件夹加入收藏夹</tip>
+				<icon1>#favoritesadd</icon1>
+				<function type="normal">
+					<instruction>Favorites ADDDIALOG</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>编辑收藏夹(&amp;E)</label>
+				<tip>编辑您的收藏夹列表</tip>
+				<icon1>#favoritesedit</icon1>
+				<function type="normal">
+					<instruction>Favorites EDIT</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" hotkey_label="yes" label_pos="right" textcol="none">
+				<label>收藏夹位置(F)</label>
+				<tip>列出收藏夹文件夹，不包括收藏夹栏分支</tip>
+				<icon1>#favoriteslist</icon1>
+				<function type="normal">
+					<instruction>@ctx:=&quot;Favorites SHOWICONS USEQUALKEYS NOOPENINTABS HEADING EXCLUDEBRANCH=&quot;&quot;&quot; + LanguageStr(&quot;FavoritesBar&quot;) + &quot;&quot;&quot;</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>智能收藏夹(S)</label>
+				<tip>显示已添加的任何智能收藏夹(tm) 项目</tip>
+				<icon1>#smartfavorites</icon1>
+				<function type="normal">
+					<instruction>Favorites SMART SHOWICONS USEQUALKEYS NOOPENINTABS HEADING</instruction>
+				</function>
+			</button>
+		</button>
+		<button backcol="none" display="both" dropdown_glyph="yes" label_pos="right" textcol="none" type="menu">
+			<label>快速访问(&amp;Q)</label>
+			<icon1>#folder</icon1>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>快速访问(Q)</label>
+				<tip>将快速访问文件夹添加到工具栏或菜单</tip>
+				<icon1>#favoriteslist</icon1>
+				<function type="normal">
+					<instruction>Go /quickaccess FOLDERCONTENT=norecurse,nofiles,sortnone HEADING</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>驱动器</label>
+				<tip>自动在工具栏/菜单中为您系统中的每个驱动器添加一个按钮</tip>
+				<icon1>#drivebuttons</icon1>
+				<function type="normal">
+					<instruction>Go DRIVEBUTTONS=lettersbeforelabels HEADING</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" field_type="label" label_pos="right" size="full" textcol="none">
+				<label>特殊文件夹</label>
+				<function type="normal">
+					<instruction>Set LABEL</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>桌面(&amp;D)</label>
+				<tip>转到桌面文件夹</tip>
+				<icon1>#godesktop</icon1>
+				<function type="normal">
+					<instruction>Go /desktop USEQUALKEYS</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>下载(&amp;W)</label>
+				<tip>转到下载文件夹</tip>
+				<icon1>#downloads</icon1>
+				<function type="normal">
+					<instruction>Go /downloads USEQUALKEYS</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>文档(&amp;Y)</label>
+				<icon1>#gomydocuments</icon1>
+				<function type="normal">
+					<instruction>Go /mydocuments USEQUALKEYS</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>库(&amp;B)</label>
+				<icon1>#golibraries</icon1>
+				<function type="normal">
+					<instruction>Go lib:// USEQUALKEYS</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>此电脑(&amp;T)</label>
+				<tip>转到此电脑文件夹</tip>
+				<icon1>#gomycomputer</icon1>
+				<function type="normal">
+					<instruction>Go /mycomputer USEQUALKEYS</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>网络(&amp;N)</label>
+				<icon1>#gonetwork</icon1>
+				<function type="normal">
+					<instruction>Go /network USEQUALKEYS</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>&amp;FTP</label>
+				<tip>在文件显示中列出您的 FTP 通讯簿项目</tip>
+				<icon1>#ftpconnect</icon1>
+				<function type="normal">
+					<instruction>Go ftp:// USEQUALKEYS</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>文件收集(F)</label>
+				<icon1>#gocollection</icon1>
+				<function type="normal">
+					<instruction>Go coll:// USEQUALKEYS</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>回收站(Y)</label>
+				<icon1>#gotrash</icon1>
+				<function type="normal">
+					<instruction>Go /trash USEQUALKEYS</instruction>
+				</function>
+			</button>
+		</button>
+	</buttons>
+	<default_info hash="0xd7db7056,0xa9a6d7e6,0xcaac551a,0xb227cef9,0x1136671d" type="Favorites Bar" version="13.0" />
+</toolbar>

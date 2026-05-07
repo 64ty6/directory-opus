@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<prefs opus_version_beta="0" opus_version_major="13" opus_version_minor="22" version="6">
+	<fileop flags1="0x8000110f086e7" flags2="0x20000002" jobs_button_width="165" jobs_button_width2="165,0,150" secure_delete="3" upload_modified_time="20" />
+	<flags autorememberlimit="100" lowspace="10" misc="0x4a01" privacy="0" settings1="0xc00000408389b8" settings2="0x21802000" settings3="0x1166818600011" settings4="772" settings5="0x600080020002000" settings6="0" settings7="512" settings8="0">
+		<powermode button="left" cmdelay="1000" flags="0x9100" />
+		<powermode button="right" cmdelay="1000" flags="0xa400" />
+		<powermode button="middle" cmdelay="1000" flags="0x8004" />
+	</flags>
+	<thumbstretch details="FitPixelated" folders="FillCropPixelated" power="FitPixelated" thumbnails="FitPixelated" tiles="FitPixelated" />
+	<timing dblclkhighlight="5" folderexpanddrag="1000" hover="1000" progress="800" renametooltip="750" singleclickexpand="500" singleclickhover="400" tabtofront="1000" toolbarslidehide="200" toolbarslideprehide="500" toolbarslideprereveal="0" toolbarslidereveal="100" tooltip="750" treeexpanddrag="1000" />
+	<smtp>
+		<server />
+		<port>25</port>
+		<user />
+		<pass />
+		<email>2015index20152015@gmail.com</email>
+		<name>shifter</name>
+		<max_threads>1</max_threads>
+	</smtp>
+	<gridlines detailscolpadding="15" detailscolpadding_dpi="150" detailsleft="0" detailspadding="1" detailspadding_dpi="150" detailsthumbpadding="0,0,150" expandindent="0" powercolpadding="15" powercolpadding_dpi="150" powerleft="0" powerpadding="1" powerpadding_dpi="150" powerthumbpadding="0,0,150" spacing="257" thumbcolratio="0" />
+	<status>
+		<single>//所选/总文件夹和文件计数：{||}{i:dir} {sd} / {td} {||}{i:file} {sf} / {tf} {||}//选定的文件扩展名和计数：{||}{h!} {ft:sel,frame} {h!}{||}//隐藏项目计数，或“显示所有内容”模式下的“所有”指示器：{||}{h!} &lt;#%error_text&gt;&lt;b&gt;{hi} 隐藏&lt;/b&gt;&lt;/#&gt; {h!}{||}{h!} &lt;#%ok_text&gt;&lt;b&gt;{hse}&lt;/b&gt;&lt;/#&gt; {h!}{||}//所选/总音乐和视频时长(如果可用):{||}{h!} {smp3} /{h!}{h!} {tmp3} {h!}{||}//所选/总大小(以字节为单位):{||} {sba} / {tba} {rpad}{||}//窗口状态(如果适用)：{||}{h!} {ls} {h!}{||}//格式锁定：{||} {fl} {||}//可用空间计数和条形图：{||}{h!} {df} {bg+w=50,f=2,g=3,t=n,c1=#68f040,c2=#f06840}{h!}</single>
+		<dual>// 左：所选/总文件夹和文件计数：{||}{i:dir} {sdL} / {tdL}{||}{i:文件} {sfL} / {tfL}{||}// 左：隐藏项目计数，或处于“显示所有内容”模式时的“所有内容”指示器：{||}{h!L} &lt;#%error_text&gt;&lt;b&gt;{hiL} 已隐藏&lt;/b&gt;&lt;/#&gt; {h!L}{||}{h!L} &lt;#%ok_text&gt;&lt;b&gt;{hseL}&lt;/b&gt;&lt;/#&gt; {h!L}{||}// 左：所选/总音乐和视频持续时间（如果有）：{||}{h!L} {smp3L} /{h!L}{h!L} {tmp3L} {h!L}{||}// 左：所选/总大小（以字节为单位）：{||}  {sbaL} / {tbaL}{||}// 左：可用空间计数和条形图：{||}{h!L} {dfL} {bgL+w=50,f=2,g=3,t=n,c1=#68f040,c2=#f06840} {h!L}{rleft-}{||}// 右：所选/总文件夹和文件计数：{||}{i:dir} {sdR} / {tdR}{||}{i:文件} {sfR} / {tfR}{||}// 右：隐藏项目计数，或处于“显示所有内容”模式时的“所有内容”指示器：{||}{h!R} &lt;#%error_text&gt;&lt;b&gt;{hiR} 已隐藏&lt;/b&gt;&lt;/#&gt; {h!R}{||}{h!R} &lt;#%ok_text&gt;&lt;b&gt;{hseR}&lt;/b&gt;&lt;/#&gt; {h!R}{||}// 右：所选/总音乐和视频持续时间（如果有）：{||}{h!R} {smp3R} /{h!R}{h!R} {tmp3R} {h!R}{||}// 右：所选/总大小（以字节为单位）：{||}  {sbaR} / {tbaR} {rpad}{||}// 右：可用空间计数和条形图：{||}{h!R} {dfR} {bgR+w=50,f=2,g=3,t=n,c1=#68f040,c2=#f06840}{h!R}{||}// 格式锁：{||}{fl}</dual>
+		<left>//所选/总文件夹和文件计数：{||}{i:dir} {sd} / {td} {||}{i:file} {sf} / {tf} {||}//选定的文件扩展名和计数：{||}{h!} {ft:sel,frame} {h!}{||}//隐藏项目计数，或“显示所有内容”模式下的“所有”指示器：{||}{h!} &lt;#%error_text&gt;&lt;b&gt;{hi} 隐藏&lt;/b&gt;&lt;/#&gt; {h!}{||}{h!} &lt;#%ok_text&gt;&lt;b&gt;{hse}&lt;/b&gt;&lt;/#&gt; {h!}{||}//所选/总音乐和视频时长(如果可用):{||}{h!} {smp3} /{h!}{h!} {tmp3} {h!}{||}//所选/总大小(以字节为单位):{||} {sba} / {tba} {rpad}{||}//窗口状态(如果适用)：{||}{h!} {ls} {h!}{||}//格式锁定：{||} {fl} {||}//可用空间计数和条形图：{||}{h!} {df} {bg+w=50,f=2,g=3,t=n,c1=#68f040,c2=#f06840}{h!}</left>
+		<right>//所选/总文件夹和文件计数：{||}{i:dir} {sd} / {td} {||}{i:file} {sf} / {tf} {||}//选定的文件扩展名和计数：{||}{h!} {ft:sel,frame} {h!}{||}//隐藏项目计数，或“显示所有内容”模式下的“所有”指示器：{||}{h!} &lt;#%error_text&gt;&lt;b&gt;{hi} 隐藏&lt;/b&gt;&lt;/#&gt; {h!}{||}{h!} &lt;#%ok_text&gt;&lt;b&gt;{hse}&lt;/b&gt;&lt;/#&gt; {h!}{||}//所选/总音乐和视频时长(如果可用):{||}{h!} {smp3} /{h!}{h!} {tmp3} {h!}{||}//所选/总大小(以字节为单位):{||} {sba} / {tba} {rpad}{||}//窗口状态(如果适用)：{||}{h!} {ls} {h!}{||}//格式锁定：{||} {fl} {||}//可用空间计数和条形图：{||}{h!} {df} {bg+w=50,f=2,g=3,t=n,c1=#68f040,c2=#f06840}{h!}</right>
+		<tortoise_set>Win10</tortoise_set>
+	</status>
+	<tree custom_gap="16" custom_gap_dpi="150" custom_indent="15" custom_indent_dpi="150" extra_height="1" extra_height_dpi="150">
+		<actions>
+			<lmb_alt enable="yes">Go NEWTAB</lmb_alt>
+			<lmb_ctrl enable="yes">Go OPENINDUAL</lmb_ctrl>
+			<mmb_normal enable="yes">Go NEWTAB</mmb_normal>
+			<mmb_ctrl enable="yes">Go NEWTAB OPENINDUAL</mmb_ctrl>
+			<lmb_normal>Go</lmb_normal>
+		</actions>
+	</tree>
+	<fonts>
+		<files>Segoe UI/-18,400,0,0,0,1,0,150,9</files>
+		<tree>Segoe UI/-18,400,0,0,0,1,0,150,9</tree>
+		<status>Segoe UI/-18,400,0,0,0,1,0,150,9</status>
+		<header>Segoe UI/-18,400,0,0,0,1,0,150,9</header>
+		<thumbnails>Segoe UI/-18,400,0,0,0,1,0,150,9</thumbnails>
+		<foldertabs>Segoe UI/-18,400,0,0,0,1,0,150,9</foldertabs>
+		<fdb>Segoe UI/-18,600,0,0,0,1,0,150,9</fdb>
+		<log>Courier New/-18,400,0,0,0,1,0,150,9</log>
+		<groups>Segoe UI/-22,400,0,0,0,1,0,150,11</groups>
+		<panelnc>Segoe UI/-18,400,0,0,0,1,0,150,9</panelnc>
+		<jobsbar>Segoe UI/-18,400,0,0,0,1,0,150,9</jobsbar>
+		<metapane>Segoe UI/-18,400,0,0,0,1,0,150,9</metapane>
+		<infotips>Segoe UI/-18,400,0,0,0,1,0,150,9</infotips>
+	</fonts>
+	<colors inline_expand_fade="25" version="13">
+		<gridlines>
+			<details>
+				<horiz />
+				<vert />
+			</details>
+			<power>
+				<horiz />
+				<vert />
+			</power>
+			<frozen />
+		</gridlines>
+		<system_colors_enabled />
+		<system_colors />
+		<named_color_bools />
+		<named_dwords />
+		<named_colors />
+		<fields fieldDefaults="1" />
+	</colors>
+	<colors_dark version="13">
+		<gridlines>
+			<details>
+				<horiz />
+				<vert />
+			</details>
+			<power>
+				<horiz />
+				<vert />
+			</power>
+			<frozen />
+		</gridlines>
+		<system_colors_enabled />
+		<system_colors />
+		<named_color_bools fd_colors_compressed="yes" fd_colors_compressed_folder="yes" graph_freespace_custom_colors="no" opus_menus_use_themes="no" opus_toolbars_use_themes="no" opusstatusbar_colors="yes" />
+		<named_dwords />
+		<named_colors fd_background_dest="none" fd_background_source="#181a1f" fd_background_source_filtered="#181a1f" fd_compressed_folder_sel_background="#3e4451" fd_compressed_folder_sel_text="#ffe3f8" fd_compressed_folder_unsel_text="#c5abe8" fd_compressed_sel_background="#3e4451" fd_compressed_sel_text="#ffe3f8" fd_compressed_unsel_text="#c5abe8" fd_dirs_selected_background="#33353e" fd_dirs_selected_text="#f7dd8f" fd_dirs_unselected_text="#b1b4ba" fd_encrypted_folder_sel_background="#3e4451" fd_encrypted_folder_sel_text="#dbf3b6" fd_encrypted_folder_unsel_text="#b9e873" fd_encrypted_sel_background="#3e4451" fd_encrypted_sel_text="#dbf3b6" fd_encrypted_unsel_text="#b9e873" fd_error_sel_background="#181a1f" fd_error_sel_text="#f8bcbc" fd_error_unsel_background="#f08080" fd_error_unsel_text="#3e4451" fd_favorite_sel_background="#316ac5" fd_favorite_sel_text="#ffffff" fd_favorite_unsel_background="#ffbdbd" fd_favorite_unsel_text="#0000a8" fd_files_selected_background="#33353e" fd_files_selected_text="#f7dd8f" fd_files_unselected_text="#b1b4ba" fd_groupcolumn_dest_gradient_bottom="#888b95" fd_groupcolumn_dest_gradient_top="#888b95" fd_groupcolumn_source_gradient_bottom="#888b95" fd_groupcolumn_source_gradient_top="#888b95" fd_groupheader_glyph="none" fd_groupheader_glyph_hot="none" fd_groupheader_separator="#3e4451" fd_groupheader_text="#888b95" fd_matched_folder_sel_background="#f7dd8f" fd_matched_folder_unsel_background="#f7dd8f" fd_matched_sel_background="#f7dd8f" fd_matched_text_frame="#f7dd8f" fd_matched_unsel_background="#f7dd8f" fd_system_folder_sel_background="#181a1f" fd_system_folder_sel_text="#f7dd8f" fd_system_folder_unsel_text="#f08080" fd_system_sel_background="#181a1f" fd_system_sel_text="#f7dd8f" fd_system_unsel_text="#f08080" foldertree_background="#181a1f" foldertree_dest_background="#181a1f" foldertree_dest_sel_background="none" foldertree_dest_sel_text="#edeeef" foldertree_dest_unsel_text="#888b95" foldertree_sel_background="none" foldertree_sel_text="#edeeef" foldertree_unsel_text="#888b95" graph_freespace_back="#181a1f" graph_freespace_bar_normal="#8ac6f2" graph_freespace_bar_warning="#f08080" graph_freespace_frame="#202228" graph_rel_date_back_file="none" graph_rel_date_back_folder="none" graph_rel_date_file="#888b95" graph_rel_date_folder="#888b95" graph_rel_date_frame_file="none" graph_rel_date_frame_folder="none" graph_rel_size_back_file="#181a1f" graph_rel_size_back_folder="#181a1f" graph_rel_size_file="#8ac6f2" graph_rel_size_folder="#8ac6f2" graph_rel_size_frame_file="#3e4451" graph_rel_size_frame_folder="#3e4451" jobsbar_back="#181a1f" linkedtab_02="#a2d0ff" linkedtab_03="#ffdb7a" linkedtab_06="#74ffff" linkedtab_07="#ff765e" locationbar_active_dest_background="#181a1f" locationbar_active_off_background="#181a1f" locationbar_active_off_text="#c0c0c0b0" locationbar_active_source_background="#181a1f" locationbar_dest_text_active="#c0c0c0b0" locationbar_dest_text_inactive="#c0c0c0b0" locationbar_inactive_dest_background="#181a1f" locationbar_inactive_off_background="#181a1f" locationbar_inactive_source_background="#181a1f" locationbar_source_text_active="#c0c0c0b0" locationbar_source_text_inactive="#c0c0c0b0" metapane_background="#181a1f" metapane_background_stripe="#3e4451" metapane_text="#c0c0c0" opusmenu_back="#181a1f" opusmenu_frame_inner="#202228" opusmenu_frame_outer="#202228" opusmenu_selected="#3e4451" opusmenu_toggled="#3e4451" opusstatusbar_background="#181a1f" opusstatusbar_separators="#181a1f" opusstatusbar_text="#888b95" opusstatusbar_top="#181a1f" opustoolbar_background="#181a1f" opustoolbar_selected="#3e4451" opustoolbar_separator_highlight="#181a1f" opustoolbar_separator_shadow="#181a1f" opustoolbar_text="#888b95" opustoolbar_toggled="#3e4451" panelnc_background="#202228" panelnc_border_highlight="#181a1f" panelnc_border_shadow="#181a1f" panelnc_links_disabled="#3e4451" panelnc_links_enabled="#3e4451" panelnc_text="#888b95" preview_back_empty="#181a1f" preview_back_image="#303030" thumb_fill_thumbs="#ffffff" thumb_folder_fill1="#ffffa0" thumb_folder_fill2="#ffd773" thumb_folder_outline="#c58c00" thumb_folder_top="#ffff82" />
+	</colors_dark>
+	<viewpane flags="257" gamma="100" />
+	<layout new_flags="0x600006101">
+		<startup />
+		<command />
+		<spacing_scheme />
+		<auto_backup>10</auto_backup>
+		<lister_title>%!%T - %!Directory Opus</lister_title>
+	</layout>
+	<dblclk flags="0x1000406">
+		<layout />
+		<command />
+		<icon_layout />
+		<icon_command />
+		<win_e_layout />
+		<win_e_command />
+		<text />
+		<bg_commands single_middle_click="no">
+			<event command="Go UP BACK" enable="no" id="0" />
+		</bg_commands>
+		<mouse_hook_delay>0</mouse_hook_delay>
+	</dblclk>
+	<toolbars fdb="File Display" flags="0x2a8d" flags2="0" scaling="100" spacing="5,3,150" viewer="Image Viewer">
+		<viewmodes>
+			<mode mode="6" name="Images" set="no" type="0" />
+		</viewmodes>
+	</toolbars>
+	<log activity_log_size="64" custom="0xffffffff" flags="89" max="1000" max_undo="10" />
+	<lister_images>
+		<std.toolbar fill="none" fit="0x408" image="" opacity="100" />
+		<std.filedisplay fill="none" fit="0x408" image="" opacity="100" />
+		<std.foldertree fill="none" fit="0x408" image="" opacity="100" />
+		<std.statusbar fill="none" fit="0x408" image="" opacity="100" />
+		<std.viewerpane fill="none" fit="0x408" image="" opacity="100" />
+		<std.foldertabs fill="none" fit="0x408" image="" opacity="100" />
+		<std.metapane fill="none" fit="0x408" image="" opacity="100" />
+	</lister_images>
+	<lister_images_dark>
+		<std.toolbar fill="none" fit="0x408" image="" opacity="100" />
+		<std.filedisplay fill="none" fit="0x408" image="" opacity="100" />
+		<std.foldertree fill="none" fit="0x408" image="" opacity="100" />
+		<std.statusbar fill="none" fit="0x408" image="" opacity="100" />
+		<std.viewerpane fill="none" fit="0x408" image="" opacity="100" />
+		<std.foldertabs fill="none" fit="0x408" image="" opacity="100" />
+		<std.metapane fill="none" fit="0x408" image="" opacity="100" />
+	</lister_images_dark>
+	<zip comp="5" flags="0x460001">
+		<ext>.zip;.jar;.exe</ext>
+		<hideext>.exe</hideext>
+		<auto>.exe;.msi</auto>
+	</zip>
+	<thumbnails cache_size="100" filetypesize="unlimited" flags="0x21de030" lines="2" max_threads="15" single_image="*" size="0xc000c0" size2="192,192,150" spacing="12,6,150" />
+	<tiles flags="192" size="0x3001a" spacing="0x60006" spacing2="6,6,150" thumb_size="0x600060" thumb_size2="96,96,150" />
+	<recent flags="31" history="10" limit="10" />
+	<smartfav limit="10" points="0x5,0x5,0x5,0xa,0x8,0x8,0x3,0x5,0x8,0x5,0xa,0xa,0x8,0x5,0xa,0x8,0x8,0x0,0x0" size="100" thresh="40">
+		<exclude />
+	</smartfav>
+	<viewer customtitle="" dblclkcmd="" edgewidth="20" flags="0x202e1901" flags2="0" flags3="2" gamma="100" lbuttoncmd="" markedthumb="96,96,150" maxquicksize="50" mbuttoncmd="" minwidth="800,0,150" speed="10.000000" tagcol="标记的图片\%F">
+		<vpexclude />
+	</viewer>
+	<foldertab_size>0</foldertab_size>
+	<foldertab_size2>0</foldertab_size2>
+	<foldertab_size3>0,0,150</foldertab_size3>
+	<foldertab_size4>0,0,150</foldertab_size4>
+	<transanims disable="no" navback="default" navforward="default" navinto="default" navother="default" navup="default" prefspages="default" />
+	<jumplist flags="0xffff0210" />
+	<filters prefix="">
+		<hide>
+			<file>(desktop.ini|thumbs.db|ehthumbs_vista.db)</file>
+			<folder />
+		</hide>
+		<permanent>
+			<file />
+			<folder />
+		</permanent>
+	</filters>
+	<fayt defaultmode="%fayt_find" searchtimeout="0.750000" timeout="5.000000">
+		<modes />
+	</fayt>
+	<pathFields arrow="20" arrow_dpi="150" iconLeft="2" iconLeft_dpi="150" iconRight="6" iconRight_dpi="150" labelLeft="6" labelLeft_dpi="150" labelRight="6" labelRight_dpi="150" maxLabelWidth="300" maxLabelWidth_dpi="150" />
+</prefs>

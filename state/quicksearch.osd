@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<quicksearch>
+	<engine flags="0" id="0" />
+	<engine flags="0" id="1" />
+	<engine flags="256" id="2" />
+	<engine current="yes" flags="0" id="3" />
+</quicksearch>

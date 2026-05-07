@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xml_registry_redirect hive="HKCU" regkey="Software\GPSoftware\Directory Opus\Filetypes\Groups">
+	<key name="Archives">
+		<key name="opus">
+			<key name="dblclk">
+				<key name="command">
+					<value name="@default" type="sz">go</value>
+				</key>
+			</key>
+			<key name="dblclkalt">
+				<key name="command">
+					<value name="@default" type="sz">go newtab</value>
+				</key>
+			</key>
+			<key name="dblclkctrl">
+				<key name="command">
+					<value name="@default" type="sz">go openindual</value>
+				</key>
+			</key>
+			<key name="dblclkshift">
+				<key name="command">
+					<value name="@default" type="sz">go new</value>
+				</key>
+			</key>
+		</key>
+		<value name="@default" type="sz">压缩文件</value>
+		<value name="Members" type="sz">.000 .001 .7z .arj .bz2 .bzip2 .cab .cb7 .cbr .cbz .esd .gz .gzip .jar .lha .lzh .lzma .lzma86 .r00 .r01 .rar .swm .tar .taz .tbz .tbz2 .tgz .tlz .tlzma .tpz .txz .wim .xz .z .zip</value>
+	</key>
+	<key name="Documents">
+		<key name="opusflags">
+			<value name="OpusTilesDef" type="sz_multi">{title}
+{author}
+{subject}
+{comments}
+{sizeauto}{!pages} - {pages} page{!}{!pages&gt;1}s{!}</value>
+			<value name="OpusTooltipDef" type="sz_multi">{name}
+&lt;b&gt;类型：&lt;/b&gt;\	{type}
+&lt;b&gt;作者：&lt;/b&gt;\	{author}
+&lt;b&gt;标题：&lt;/b&gt;\	{title}
+&lt;b&gt;修改日期：&lt;/b&gt;\	{modified}
+&lt;b&gt;大小：&lt;/b&gt;\	{sizeauto}</value>
+		</key>
+		<value name="@default" type="sz">文档</value>
+		<value name="Members" type="sz">.doc .dot .docx .dotx .mdb .xls .xlsb .xlsx .xlt .xltx .ppt .pps .pot .pptx .ppsx .potx</value>
+	</key>
+	<key name="Images">
+		<key name="opus">
+			<key name="ConvertImage">
+				<key name="command">
+					<value name="@default" type="sz">Image CONVERT HERE</value>
+				</key>
+				<key name="opusflags">
+					<value name="Position" type="sz">1</value>
+				</key>
+				<value name="@default" type="sz">转换图像(&amp;C)...</value>
+			</key>
+			<key name="Convert_To">
+				<key name="command">
+					<value name="@default" type="sz" />
+				</key>
+				<key name="opusflags">
+					<value name="Position" type="sz">0</value>
+					<value name="SubMenu" type="sz">1</value>
+				</key>
+				<value name="@default" type="sz">转换图像(&amp;C)</value>
+			</key>
+			<key name="LocateImage">
+				<key name="command">
+					<key name="opusflags">
+						<value name="Position" type="sz">7</value>
+					</key>
+					<value name="@default" type="sz">Image LOCATE=menu</value>
+				</key>
+				<value name="@default" type="sz">定位图像</value>
+			</key>
+			<key name="Presets">
+				<key name="command">
+					<value name="@default" type="sz_multi">Image CONVERT HERE PRESET=!list</value>
+				</key>
+				<key name="opusflags">
+					<value name="BeginGroup" type="sz">1</value>
+					<value name="EndSubMenu" type="sz">1</value>
+					<value name="Position" type="sz">6</value>
+				</key>
+				<value name="@default" type="sz">预设</value>
+			</key>
+			<key name="SaveAsBMP">
+				<key name="command">
+					<value name="@default" type="sz_multi">@hidenosel:type=~(*.bmp)
+Image HERE CONVERT=bmp</value>
+				</key>
+				<key name="opusflags">
+					<value name="Position" type="sz">5</value>
+				</key>
+				<value name="@default" type="sz">转换为 BMP</value>
+			</key>
+			<key name="SaveAsGIF">
+				<key name="command">
+					<value name="@default" type="sz_multi">@hidenosel:type=~(*.gif)
+Image HERE CONVERT=gif</value>
+				</key>
+				<key name="opusflags">
+					<value name="Position" type="sz">4</value>
+				</key>
+				<value name="@default" type="sz">转换为 GIF</value>
+			</key>
+			<key name="SaveAsJPG">
+				<key name="command">
+					<value name="@default" type="sz_multi">@hidenosel:type=~(*.(jpg|jpeg))
+Image HERE CONVERT=jpg QUALITY=90</value>
+				</key>
+				<key name="opusflags">
+					<value name="BeginGroup" type="sz">1</value>
+					<value name="Position" type="sz">2</value>
+				</key>
+				<value name="@default" type="sz">转换为 JPG</value>
+			</key>
+			<key name="SaveAsPNG">
+				<key name="command">
+					<value name="@default" type="sz_multi">@hidenosel:type=~(*.png)
+Image HERE CONVERT=png</value>
+				</key>
+				<key name="opusflags">
+					<value name="Position" type="sz">3</value>
+				</key>
+				<value name="@default" type="sz">转换为 PNG</value>
+			</key>
+			<key name="SaveAsWallpaper">
+				<key name="command">
+					<value name="@default" type="sz">Properties SETWALLPAPER=menu</value>
+				</key>
+				<key name="opusflags">
+					<value name="Position" type="sz">8</value>
+				</key>
+				<value name="@default" type="sz">设置壁纸</value>
+			</key>
+		</key>
+		<key name="opusflags">
+			<value name="OpusTilesDef" type="sz_multi">{type}
+{picsize}
+{sizeauto}</value>
+			<value name="OpusTooltipDef" type="sz_multi">{name}
+{desc}{thumbnail}
+ 
+&lt;b&gt;大小:&lt;/b&gt;\	{sizeauto}
+&lt;b&gt;大小:&lt;/b&gt;\	{picsize}
+&lt;b&gt;修改日期:&lt;/b&gt;\	{modified}
+&lt;b&gt;拍摄日期:&lt;/b&gt;\	{shootingtime}
+&lt;b&gt;相机品牌:&lt;/b&gt;\	{cameramake}
+&lt;b&gt;相机型号:&lt;/b&gt;\	{cameramodel}
+&lt;b&gt;光圈:&lt;/b&gt;\	{apertureval}\\	&lt;b&gt;F 值:&lt;/b&gt;\	{fnumber}
+&lt;b&gt;快门速度:&lt;/b&gt;\	{shutterspeed}\\	&lt;b&gt;曝光时长:&lt;/b&gt;\	{exposuretime}
+&lt;b&gt;ISO速度:&lt;/b&gt;\	{isorating}\\	&lt;b&gt;白平衡:&lt;/b&gt;\	{whitebalance}
+&lt;b&gt;曝光补偿:&lt;/b&gt;\	{exposurebias}\\	&lt;b&gt;焦距:&lt;/b&gt;\	{focallength}
+&lt;b&gt;被摄距离:&lt;/b&gt;\	{subjectdistance}\\	&lt;b&gt;测光模式:&lt;/b&gt;\	{meteringmode}
+&lt;b&gt;曝光程序:&lt;/b&gt;\	{exposureprogram}\\	&lt;b&gt;闪光:&lt;/b&gt;\	{flash}</value>
+		</key>
+		<value name="@default" type="sz">图片</value>
+		<value name="Members" type="sz">.jpg .jpe .jpeg .jfif .gif .png .iff .ilbm .lbm .bmp .info .tif .tiff .psd .psp .wmf .emf .clip .webp .heic .heif .hif .avif .dds .3fr .arw .bay .cr2 .cr3 .crw .dc2 .dcr .dcs .dng .erf .fff .iiq .kdc .mdc .mef .mos .mrw .nef .nrw .orf .pef .ptx .raf .raw .rw2 .rwz .sr2 .srf .srw .x3f</value>
+	</key>
+	<key name="Movies">
+		<key name="opusflags">
+			<value name="OpusTilesDef" type="sz_multi">{videocodec}{!videocodec&amp;mp3type} - {!}{mp3type}
+{sizeauto}
+{picsize}{!picsize&amp;framerate} ({!}{framerate}{!picsize&amp;framerate}){!}
+{mp3songlength}</value>
+			<value name="OpusTooltipDef" type="sz_multi">{name}{thumbnail}
+ 
+&lt;b&gt;文件大小：&lt;/b&gt;\	{sizeauto}
+&lt;b&gt;类型:&lt;/b&gt;\	{type}
+&lt;b&gt;修改：&lt;/b&gt;\	{modified}
+ 
+&lt;b&gt;视频编解码器：&lt;/b&gt;\	{videocodec}\\ &lt;b&gt;音频编解码器：&lt;/b&gt;\	{mp3type}
+&lt;b&gt;尺寸：&lt;/b&gt;\	{picsize}\\ &lt;b&gt;频道：&lt;/b&gt;\	{mp3mode}
+&lt;b&gt;持续时间：&lt;/b&gt;\	{mp3songlength}\	&lt;b&gt;语言：&lt;/b&gt;\	{audiolangs}
+&lt;b&gt;帧速率：&lt;/b&gt;\	{framerate}\\ &lt;b&gt;采样率：&lt;/b&gt;\	{mp3samplerate}
+&lt;b&gt;数据速率：&lt;/b&gt;\	{datarate}\	&lt;b&gt;比特率：&lt;/b&gt;\	{mp3bitrate}</value>
+		</key>
+		<value name="@default" type="sz">视频</value>
+		<value name="Members" type="sz">.asf .asx .avi .wm .wmv .mp2v .mpg .mpeg .m1v .mpe .mpv2 .m2ts .vob .mov .mp4 .3gp .flv .mkv .webm .m2v .m4v</value>
+	</key>
+	<key name="Music">
+		<key name="opusflags">
+			<value name="OpusTilesDef" type="sz_multi">{mp3artist}
+{mp3album}{!mp3album&amp;mp3year} ({!}{mp3year}{!mp3album&amp;mp3year}){!}
+{mp3title}{!mp3title&amp;mp3songlength} ({!}{mp3songlength}{!mp3title&amp;mp3songlength}){!}
+{sizeauto}</value>
+			<value name="OpusTooltipDef" type="sz_multi">{name}{thumbnail}
+ 
+&lt;b&gt;艺术家：&lt;/b&gt;\	{mp3artist}
+&lt;b&gt;标题：&lt;/b&gt;\	{mp3title}
+&lt;b&gt;专辑：&lt;/b&gt;\	{mp3album}
+&lt;b&gt;年份：&lt;/b&gt;\	{mp3year}
+&lt;b&gt;曲目编号：&lt;/b&gt;\	{mp3track}
+&lt;b&gt;持续时间：&lt;/b&gt;\	{mp3songlength}
+&lt;b&gt;比特率：&lt;/b&gt;\	{mp3bitrate}
+&lt;b&gt;采样率：&lt;/b&gt;\	{mp3samplerate}
+&lt;b&gt;修改时间：&lt;/b&gt;\	{modified}
+&lt;b&gt;文件大小：&lt;/b&gt;\	{sizeauto}</value>
+		</key>
+		<value name="@default" type="sz">音乐</value>
+		<value name="Members" type="sz">.mp3 .mp2 .mp2v .mp1 .m4a .m4b .mka .wav .wma .aac .flac .m4p .mid .ogg .spx</value>
+	</key>
+	<key name="Programs">
+		<key name="opusflags">
+			<value name="OpusTilesDef" type="sz_multi">{prodname}{!prodname&amp;prodversion} - {!}{prodversion}
+{moddesc}{!moddesc&amp;modversion} - {!}{modversion}
+{companyname}
+{copyright}
+{sizeauto}</value>
+			<value name="OpusTooltipDef" type="sz_multi">{name}{thumbnail}
+&lt;b&gt;描述：&lt;/b&gt;\	{moddesc}
+&lt;b&gt;公司：&lt;/b&gt;\	{companyname}
+&lt;b&gt;文件版本：&lt;/b&gt;\	{modversion}
+&lt;b&gt;创建时间：&lt;/b&gt;\	{created}
+&lt;b&gt;修改时间：&lt;/b&gt;\	{modified}
+&lt;b&gt;文件大小：&lt;/b&gt;\	{sizeauto}</value>
+		</key>
+		<value name="@default" type="sz">程序</value>
+		<value name="Members" type="sz">.exe .dll .cpl .ocx</value>
+	</key>
+	<value name="DoneDef" type="dword">6</value>
+	<value name="DoneDef_ImagesLocate" type="dword">1</value>
+	<value name="DoneDef_ImagesSaveAs" type="dword">1</value>
+	<value name="arc_plugins" type="sz">opus7zip.dll;*zip</value>
+	<value name="opus_version_beta" type="dword">0</value>
+	<value name="opus_version_major" type="dword">13</value>
+	<value name="opus_version_minor" type="dword">5</value>
+</xml_registry_redirect>

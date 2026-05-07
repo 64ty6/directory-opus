@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xml_registry_redirect hive="HKCR">
+	<key name="Bandizip.zip">
+		<key name="opus">
+			<value name="opus_version_beta" type="dword">0</value>
+			<value name="opus_version_major" type="dword">13</value>
+			<value name="opus_version_minor" type="dword">21</value>
+		</key>
+	</key>
+</xml_registry_redirect>

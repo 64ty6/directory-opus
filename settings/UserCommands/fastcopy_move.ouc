@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<usercommand backcol="none" hide_from_menu="no" textcol="none">
+	<label>fastcopy_move</label>
+	<icon1>#usercommand</icon1>
+	<function type="normal">
+		<instruction>@externalonly</instruction>
+		<instruction>&quot;‪D:\Tools\FastCopy\FastCopy.exe&quot; /cmd=move /speed=full /force_start /auto_close {allfilepath$} /to=&quot;{destpath}&quot;</instruction>
+	</function>
+</usercommand>
