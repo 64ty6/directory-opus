@@ -1,382 +1,396 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <folder_formats>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="C:\" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="245" size_dpi="150" />
-		<field id="sizeauto" size="95" size_dpi="150" />
-		<field id="type" size="119" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" sort="1" />
+		<field id="name" size="163" size_dpi="100" />
+		<field id="sizeauto" size="63" size_dpi="100" />
+		<field id="type" size="79" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" sort="1" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="C:\Users\xwd\AppData\Roaming\Rime" reverse="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="354" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="102" size_dpi="150" />
-		<field id="type" size="112" size_dpi="150" />
-		<field id="modified" size="171" size_dpi="150" />
-		<field id="attr" size="75" size_dpi="150" />
+		<field id="name" size="236" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="68" size_dpi="100" />
+		<field id="type" size="75" size_dpi="100" />
+		<field id="modified" size="114" size_dpi="100" />
+		<field id="attr" size="50" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="C:\Users\xwd\Music" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="174" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="109" size_dpi="150" />
-		<field id="type" size="119" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="attr" size="85" size_dpi="150" />
+		<field id="name" size="116" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="73" size_dpi="100" />
+		<field id="type" size="79" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="attr" size="57" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="C:\Windows" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="312" size_dpi="150" />
-		<field id="sizeauto" size="109" size_dpi="150" />
-		<field id="type" size="198" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" sort="1" />
-		<field id="attr" size="84" size_dpi="150" />
+		<field id="name" size="208" size_dpi="100" />
+		<field id="sizeauto" size="73" size_dpi="100" />
+		<field id="type" size="132" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" sort="1" />
+		<field id="attr" size="56" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" manual_resize="yes" size="209" size_dpi="150" sort="1" />
-		<field id="type" size="119" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="created" size="185" size_dpi="150" />
-		<field id="filecounttotal" size="113" size_dpi="150" />
+		<field id="name" manual_resize="yes" size="139" size_dpi="100" sort="1" />
+		<field id="type" size="79" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="created" size="123" size_dpi="100" />
+		<field id="filecounttotal" size="75" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Backup" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" manual_resize="yes" size="461" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="102" size_dpi="150" />
-		<field id="type" manual_resize="yes" size="182" size_dpi="150" />
-		<field id="modified" size="171" size_dpi="150" />
-		<field id="attr" size="75" size_dpi="150" />
+		<field id="name" manual_resize="yes" size="307" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="68" size_dpi="100" />
+		<field id="type" manual_resize="yes" size="121" size_dpi="100" />
+		<field id="modified" size="114" size_dpi="100" />
+		<field id="attr" size="50" size_dpi="100" />
 	</format>
 	<format content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\bishe" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field auto_size="yes" id="name" size="550" size_dpi="150" sort="1" />
-		<field auto_size="yes" id="sizeauto" size="98" size_dpi="150" />
-		<field auto_size="yes" id="type" size="200" size_dpi="150" />
-		<field auto_size="yes" id="modified" size="185" size_dpi="150" />
-		<field auto_size="yes" id="created" size="185" size_dpi="150" />
-		<field auto_size="yes" id="filecounttotal" size="113" size_dpi="150" />
+		<field auto_size="yes" id="name" size="367" size_dpi="100" sort="1" />
+		<field auto_size="yes" id="sizeauto" size="65" size_dpi="100" />
+		<field auto_size="yes" id="type" size="133" size_dpi="100" />
+		<field auto_size="yes" id="modified" size="123" size_dpi="100" />
+		<field auto_size="yes" id="created" size="123" size_dpi="100" />
+		<field auto_size="yes" id="filecounttotal" size="75" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\bishe\pdf" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="906" size_dpi="150" />
-		<field id="sizeauto" size="95" size_dpi="150" />
-		<field id="type" size="197" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" sort="1" />
-		<field id="attr" size="82" size_dpi="150" />
+		<field id="name" size="604" size_dpi="100" />
+		<field id="sizeauto" size="63" size_dpi="100" />
+		<field id="type" size="131" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" sort="1" />
+		<field id="attr" size="55" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Download" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="283" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="95" size_dpi="150" />
-		<field id="type" size="119" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
+		<field id="name" size="189" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="63" size_dpi="100" />
+		<field id="type" size="79" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Download\BaiduNetdiskDownload" reverse="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="353" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="90" size_dpi="150" />
-		<field id="type" size="119" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="attr" size="80" size_dpi="150" />
-		<field id="filecounttotal" size="113" size_dpi="150" />
+		<field id="name" size="235" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="60" size_dpi="100" />
+		<field id="type" size="79" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="attr" size="53" size_dpi="100" />
+		<field id="filecounttotal" size="75" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Download\BaiduNetdiskDownload\1.方法精讲\2.言语理解-明蕾" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="219" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="91" size_dpi="150" />
-		<field id="type" size="154" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="attr" size="82" size_dpi="150" />
+		<field id="name" size="146" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="61" size_dpi="100" />
+		<field id="type" size="103" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="attr" size="55" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Download\BaiduNetdiskDownload\1.方法精讲\讲义" reverse="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="149" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="95" size_dpi="150" />
-		<field id="type" size="100" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="attr" size="82" size_dpi="150" />
+		<field id="name" size="99" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="63" size_dpi="100" />
+		<field id="type" size="67" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="attr" size="55" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Download\BaiduNetdiskDownload\2024省考花生十三行测系统班\2024省考花生十三行测系统班\刷题班【赠送：23下刷题班】" reverse="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="224" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="95" size_dpi="150" />
-		<field id="type" size="154" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="attr" size="82" size_dpi="150" />
+		<field id="name" size="149" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="63" size_dpi="100" />
+		<field id="type" size="103" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="attr" size="55" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Download\BaiduNetdiskDownload\2024省考花生十三行测系统班\2024省考花生十三行测系统班\系统班\资料分析" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="351" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="95" size_dpi="150" />
-		<field id="type" size="154" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
+		<field id="name" size="234" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="63" size_dpi="100" />
+		<field id="type" size="103" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Download\Chrome Download" reverse="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="639" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="95" size_dpi="150" />
-		<field id="type" size="169" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="attr" size="82" size_dpi="150" />
+		<field id="name" size="426" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="63" size_dpi="100" />
+		<field id="type" size="113" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="attr" size="55" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Download\IDM Download" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="359" size_dpi="150" sort="1" />
-		<field id="status" size="62" size_dpi="150" />
-		<field id="sizeauto" size="102" size_dpi="150" />
-		<field id="type" size="226" size_dpi="150" />
-		<field id="modified" size="171" size_dpi="150" />
-		<field id="attr" size="75" size_dpi="150" />
+		<field id="name" size="239" size_dpi="100" sort="1" />
+		<field id="status" size="41" size_dpi="100" />
+		<field id="sizeauto" size="68" size_dpi="100" />
+		<field id="type" size="151" size_dpi="100" />
+		<field id="modified" size="114" size_dpi="100" />
+		<field id="attr" size="50" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" inherit_grouping="yes" inherit_hidefilter="yes" inherit_showfilter="yes" inherit_sorting="yes" inherit_view="yes" numericname="yes" path="D:\Download\OneDrive\文档" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="548" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="109" size_dpi="150" />
-		<field id="type" size="286" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
+		<field id="name" size="365" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="73" size_dpi="100" />
+		<field id="type" size="191" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" inherit_grouping="yes" inherit_hidefilter="yes" inherit_showfilter="yes" inherit_sorting="yes" inherit_view="yes" numericname="yes" path="D:\Download\OneDrive\文档\答辩" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="232" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="109" size_dpi="150" />
-		<field id="type" size="200" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="created" size="185" size_dpi="150" />
-		<field id="filecounttotal" size="113" size_dpi="150" />
+		<field id="name" size="155" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="73" size_dpi="100" />
+		<field id="type" size="133" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="created" size="123" size_dpi="100" />
+		<field id="filecounttotal" size="75" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Download\QQ Download" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="506" size_dpi="150" />
-		<field id="sizeauto" size="95" size_dpi="150" />
-		<field id="type" size="292" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" sort="1" />
-		<field id="attr" size="82" size_dpi="150" />
+		<field id="name" size="337" size_dpi="100" />
+		<field id="sizeauto" size="63" size_dpi="100" />
+		<field id="type" size="195" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" sort="1" />
+		<field id="attr" size="55" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Game" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="492" size_dpi="150" />
-		<field id="sizeauto" size="95" size_dpi="150" />
-		<field id="type" size="132" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" sort="1" />
-		<field id="filecounttotal" size="113" size_dpi="150" />
+		<field id="name" size="328" size_dpi="100" />
+		<field id="sizeauto" size="63" size_dpi="100" />
+		<field id="type" size="88" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" sort="1" />
+		<field id="filecounttotal" size="75" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Game\Baldur&apos;s Gate 3 [FitGirl Repack]" reverse="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="398" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="98" size_dpi="150" />
-		<field id="type" size="198" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="attr" size="82" size_dpi="150" />
+		<field id="name" size="265" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="65" size_dpi="100" />
+		<field id="type" size="132" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="attr" size="55" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Game\Steam\userdata\1115678227\760\remote\1085660\screenshots" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="285" size_dpi="150" />
-		<field id="sizeauto" size="95" size_dpi="150" />
-		<field id="type" size="159" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" sort="1" />
-		<field id="attr" size="82" size_dpi="150" />
+		<field id="name" size="190" size_dpi="100" />
+		<field id="sizeauto" size="63" size_dpi="100" />
+		<field id="type" size="106" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" sort="1" />
+		<field id="attr" size="55" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Music\Music" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="778" size_dpi="150" />
-		<field id="type" size="119" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="created" size="185" size_dpi="150" sort="1" />
-		<field id="filecounttotal" size="113" size_dpi="150" />
+		<field id="name" size="519" size_dpi="100" />
+		<field id="type" size="79" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="created" size="123" size_dpi="100" sort="1" />
+		<field id="filecounttotal" size="75" size_dpi="100" />
 	</format>
 	<format content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Music\Music\Black Sabbath - Heaven And Hell" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field auto_size="yes" id="name" size="323" size_dpi="150" sort="1" />
-		<field auto_size="yes" id="sizeauto" size="95" size_dpi="150" />
-		<field auto_size="yes" id="type" size="159" size_dpi="150" />
-		<field auto_size="yes" id="modified" size="185" size_dpi="150" />
-		<field auto_size="yes" id="attr" size="82" size_dpi="150" />
+		<field auto_size="yes" id="name" size="215" size_dpi="100" sort="1" />
+		<field auto_size="yes" id="sizeauto" size="63" size_dpi="100" />
+		<field auto_size="yes" id="type" size="106" size_dpi="100" />
+		<field auto_size="yes" id="modified" size="123" size_dpi="100" />
+		<field auto_size="yes" id="attr" size="55" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Music\Music\M.M（ALAC港区）qwts\M. MC HOTDOG（ALAC港区）" reverse="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="1016" size_dpi="150" />
-		<field id="type" size="119" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="created" size="185" size_dpi="150" sort="1" />
-		<field id="filecounttotal" size="113" size_dpi="150" />
+		<field id="name" size="677" size_dpi="100" />
+		<field id="type" size="79" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="created" size="123" size_dpi="100" sort="1" />
+		<field id="filecounttotal" size="75" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Music\Music\方大同" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="428" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="116" size_dpi="150" />
-		<field id="type" size="108" size_dpi="150" />
-		<field id="modified" size="171" size_dpi="150" />
-		<field id="attr" size="75" size_dpi="150" />
+		<field id="name" size="285" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="77" size_dpi="100" />
+		<field id="type" size="72" size_dpi="100" />
+		<field id="modified" size="114" size_dpi="100" />
+		<field id="attr" size="50" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Music\Music\陈绮贞\2009 - 太陽 (Apple Lossless)" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="306" size_dpi="150" />
-		<field id="sizeauto" size="109" size_dpi="150" />
-		<field id="type" size="173" size_dpi="150" sort="1" />
-		<field id="modified" size="185" size_dpi="150" />
+		<field id="name" size="204" size_dpi="100" />
+		<field id="sizeauto" size="73" size_dpi="100" />
+		<field id="type" size="115" size_dpi="100" sort="1" />
+		<field id="modified" size="123" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Music\MusicBee\Plugins" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="331" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="109" size_dpi="150" />
-		<field id="type" size="159" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="attr" size="82" size_dpi="150" />
+		<field id="name" size="221" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="73" size_dpi="100" />
+		<field id="type" size="106" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="attr" size="55" size_dpi="100" />
 	</format>
 	<format content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Photo\专辑封面" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="thumbnail" size="144" size_dpi="150" />
-		<field auto_size="yes" id="name" size="425" size_dpi="150" sort="1" />
-		<field auto_size="yes" id="sizeauto" size="95" size_dpi="150" />
-		<field auto_size="yes" id="type" size="159" size_dpi="150" />
-		<field auto_size="yes" id="modified" size="185" size_dpi="150" />
-		<field auto_size="yes" id="attr" size="82" size_dpi="150" />
+		<field id="thumbnail" size="96" size_dpi="100" />
+		<field auto_size="yes" id="name" size="283" size_dpi="100" sort="1" />
+		<field auto_size="yes" id="sizeauto" size="63" size_dpi="100" />
+		<field auto_size="yes" id="type" size="106" size_dpi="100" />
+		<field auto_size="yes" id="modified" size="123" size_dpi="100" />
+		<field auto_size="yes" id="attr" size="55" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Study\刷题\【120】2025年国考花生十三冲刺套题班【二期】" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="321" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="90" size_dpi="150" />
-		<field id="type" size="119" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="attr" size="80" size_dpi="150" />
+		<field id="name" size="214" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="60" size_dpi="100" />
+		<field id="type" size="79" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="attr" size="53" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Study\套题" reverse="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="411" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="95" size_dpi="150" />
-		<field id="type" size="154" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="attr" size="82" size_dpi="150" />
+		<field id="name" size="274" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="63" size_dpi="100" />
+		<field id="type" size="103" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="attr" size="55" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Study\资料分析\资料分析刷题班" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="206" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="95" size_dpi="150" />
-		<field id="type" size="154" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="attr" size="82" size_dpi="150" />
+		<field id="name" size="137" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="63" size_dpi="100" />
+		<field id="type" size="103" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="attr" size="55" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Tool\Dism++10.1.1002.1B" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="340" size_dpi="150" sort="1" />
-		<field id="type" size="119" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="attr" size="82" size_dpi="150" />
+		<field id="name" size="227" size_dpi="100" sort="1" />
+		<field id="type" size="79" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="attr" size="55" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Tools\bandizip 6.29" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="257" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="102" size_dpi="150" />
-		<field id="type" size="138" size_dpi="150" />
-		<field id="modified" size="171" size_dpi="150" />
-		<field id="attr" size="75" size_dpi="150" />
+		<field id="name" size="171" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="68" size_dpi="100" />
+		<field id="type" size="92" size_dpi="100" />
+		<field id="modified" size="114" size_dpi="100" />
+		<field id="attr" size="50" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Tools\卡巴斯基免费版KFA 21.14.5.462" reverse="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="369" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="89" size_dpi="150" />
-		<field id="type" size="100" size_dpi="150" />
-		<field id="modified" size="171" size_dpi="150" />
-		<field id="attr" size="75" size_dpi="150" />
+		<field id="name" size="246" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="59" size_dpi="100" />
+		<field id="type" size="67" size_dpi="100" />
+		<field id="modified" size="114" size_dpi="100" />
+		<field id="attr" size="50" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Video" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="178" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="95" size_dpi="150" />
-		<field id="type" size="119" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="attr" size="80" size_dpi="150" />
+		<field id="name" size="119" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="63" size_dpi="100" />
+		<field id="type" size="79" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="attr" size="53" size_dpi="100" />
+	</format>
+	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Video\The Wire\Season 4" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
+		<field id="name" size="433" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="55" size_dpi="100" />
+		<field id="type" size="70" size_dpi="100" />
+		<field id="modified" size="108" size_dpi="100" />
+		<field id="attr" size="52" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Video\回放" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="446" size_dpi="150" />
-		<field id="sizeauto" size="95" size_dpi="150" />
-		<field id="type" size="119" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" sort="1" />
-		<field id="filecounttotal" size="113" size_dpi="150" />
+		<field id="name" size="297" size_dpi="100" />
+		<field id="sizeauto" size="63" size_dpi="100" />
+		<field id="type" size="79" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" sort="1" />
+		<field id="filecounttotal" size="75" size_dpi="100" />
 	</format>
 	<format content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Video\回放\Destiny 2" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field auto_size="yes" id="name" size="539" size_dpi="150" />
-		<field auto_size="yes" id="sizeauto" size="95" size_dpi="150" />
-		<field auto_size="yes" id="type" size="154" size_dpi="150" />
-		<field auto_size="yes" id="created" size="185" size_dpi="150" />
-		<field auto_size="yes" id="modified" size="185" size_dpi="150" sort="1" />
-		<field auto_size="yes" id="filecounttotal" size="113" size_dpi="150" />
-		<field auto_size="yes" id="duration" size="96" size_dpi="150" />
+		<field auto_size="yes" id="name" manual_resize="yes" size="165" size_dpi="100" />
+		<field auto_size="yes" id="sizeauto" size="55" size_dpi="100" />
+		<field auto_size="yes" id="type" size="70" size_dpi="100" />
+		<field auto_size="yes" id="created" size="108" size_dpi="100" />
+		<field auto_size="yes" id="modified" size="108" size_dpi="100" sort="1" />
+		<field auto_size="yes" id="filecounttotal" size="79" size_dpi="100" />
+		<field auto_size="yes" id="duration" size="42" size_dpi="100" />
+	</format>
+	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Video\回放\Destiny 2\pvp" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
+		<field auto_size="yes" id="name" size="186" size_dpi="100" />
+		<field auto_size="yes" id="sizeauto" size="58" size_dpi="100" />
+		<field auto_size="yes" id="type" size="69" size_dpi="100" />
+		<field auto_size="yes" id="modified" size="108" size_dpi="100" sort="1" />
+		<field id="attr" size="52" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\Video\回放\League of Legends" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="234" size_dpi="150" />
-		<field id="sizeauto" size="89" size_dpi="150" />
-		<field id="type" size="103" size_dpi="150" />
-		<field id="modified" size="171" size_dpi="150" sort="1" />
-		<field id="attr" size="75" size_dpi="150" />
+		<field id="name" size="468" size_dpi="100" />
+		<field id="sizeauto" size="65" size_dpi="100" />
+		<field id="type" size="69" size_dpi="100" />
+		<field id="modified" size="108" size_dpi="100" sort="1" />
+		<field id="attr" size="52" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="D:\考公" reverse="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="563" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="98" size_dpi="150" />
-		<field id="type" size="292" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="attr" size="82" size_dpi="150" />
+		<field id="name" size="375" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="65" size_dpi="100" />
+		<field id="type" size="195" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="attr" size="55" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="E:\" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="326" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="60" size_dpi="150" />
-		<field id="type" size="119" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="attr" size="80" size_dpi="150" />
+		<field id="name" size="330" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="58" size_dpi="100" />
+		<field id="type" size="84" size_dpi="100" />
+		<field id="modified" size="108" size_dpi="100" />
+		<field id="attr" size="54" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="E:\09101625\09101625\09101625\电脑" reverse="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="223" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="90" size_dpi="150" />
-		<field id="type" size="119" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="attr" size="80" size_dpi="150" />
+		<field id="name" size="149" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="60" size_dpi="100" />
+		<field id="type" size="79" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="attr" size="53" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="E:\906109 Speech to Text for Premiere Pro 2024\Adobe.Speech.to.Text.for.Premiere.Pro.2024\Adobe 2024" reverse="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="468" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="109" size_dpi="150" />
-		<field id="type" size="132" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="attr" size="82" size_dpi="150" />
+		<field id="name" size="312" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="73" size_dpi="100" />
+		<field id="type" size="88" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="attr" size="55" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="E:\Alan Wake 2" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="396" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="109" size_dpi="150" />
-		<field id="type" size="169" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="attr" size="82" size_dpi="150" />
+		<field id="name" size="264" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="73" size_dpi="100" />
+		<field id="type" size="113" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="attr" size="55" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="E:\Cocoon\MonoBleedingEdge\etc" reverse="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="129" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="60" size_dpi="150" />
-		<field id="type" size="119" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="attr" size="80" size_dpi="150" />
+		<field id="name" size="86" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="40" size_dpi="100" />
+		<field id="type" size="79" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="attr" size="53" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="E:\Cocoon\MonoBleedingEdge\etc\mono" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="187" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="88" size_dpi="150" />
-		<field id="type" size="119" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="attr" size="82" size_dpi="150" />
+		<field id="name" size="125" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="59" size_dpi="100" />
+		<field id="type" size="79" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="attr" size="55" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="E:\duimadao\DUIMADAO" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="386" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="60" size_dpi="150" />
-		<field id="type" size="119" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="attr" size="80" size_dpi="150" />
+		<field id="name" size="257" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="40" size_dpi="100" />
+		<field id="type" size="79" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="attr" size="53" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="E:\saierda\saierda\yuzu-windows-msvc-early-access\room" reverse="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="833" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="90" size_dpi="150" />
-		<field id="type" size="94" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="attr" size="82" size_dpi="150" />
+		<field id="name" size="555" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="60" size_dpi="100" />
+		<field id="type" size="63" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="attr" size="55" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="E:\Son Of Asia" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="341" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="91" size_dpi="150" />
-		<field id="type" size="119" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="attr" size="80" size_dpi="150" />
+		<field id="name" size="227" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="61" size_dpi="100" />
+		<field id="type" size="79" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="attr" size="53" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="E:\The Sims 4 Life and Death\The Sims 4 Life and Death" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="191" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="95" size_dpi="150" />
-		<field id="type" size="119" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="attr" size="82" size_dpi="150" />
+		<field id="name" size="127" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="63" size_dpi="100" />
+		<field id="type" size="79" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="attr" size="55" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="E:\The Sims 4 Life and Death\The Sims 4 Life and Death\__Installer" reverse="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="221" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="95" size_dpi="150" />
-		<field id="type" size="119" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="attr" size="82" size_dpi="150" />
+		<field id="name" size="147" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="63" size_dpi="100" />
+		<field id="type" size="79" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="attr" size="55" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="E:\TombRaiderGOTYE" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="341" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="98" size_dpi="150" />
-		<field id="type" size="200" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="attr" size="82" size_dpi="150" />
+		<field id="name" size="227" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="65" size_dpi="100" />
+		<field id="type" size="133" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="attr" size="55" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="E:\UINS" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="206" size_dpi="150" sort="1" />
-		<field id="sizeauto" size="91" size_dpi="150" />
-		<field id="type" size="138" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="attr" size="82" size_dpi="150" />
+		<field id="name" size="137" size_dpi="100" sort="1" />
+		<field id="sizeauto" size="61" size_dpi="100" />
+		<field id="type" size="92" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="attr" size="55" size_dpi="100" />
 	</format>
 	<format autosize="yes" content_max="999" content_min="1" getsizes="default" numericname="yes" path="E:\vedio\liinaliiis-fan-edits" sort="dirsfirst" sortnewfiles="default" threshhold="25" v="4" view_mode="details">
-		<field id="name" size="341" size_dpi="150" />
-		<field id="sizeauto" size="124" size_dpi="150" sort="1" />
-		<field id="type" size="178" size_dpi="150" />
-		<field id="modified" size="185" size_dpi="150" />
-		<field id="attr" size="82" size_dpi="150" />
+		<field id="name" size="227" size_dpi="100" />
+		<field id="sizeauto" size="83" size_dpi="100" sort="1" />
+		<field id="type" size="119" size_dpi="100" />
+		<field id="modified" size="123" size_dpi="100" />
+		<field id="attr" size="55" size_dpi="100" />
 	</format>
 </folder_formats>

@@ -1,58 +1,59 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <lister_layout flags="1">
-	<lister virtual_desktop="{1DF5E7DA-CA12-4F79-A28D-4F2E637D1C33}">
-		<wp ptmin="-32000,-32000,150" rc="93,81,2390,1554,150" showcmd="1" />
-		<layout display_size="47" display_size_flt="0.478336" flags="0x10b00000b" tree_size="544,0" tree_size_dpi="150" view_mode="details,details" well_width="192,192" well_width_dpi="150" />
+	<lister virtual_desktop="{F763B7B7-7F53-4A3A-B8DF-C8217C0A24D6}">
+		<wp rc="509,327,1861,1154,100" showcmd="1" />
+		<layout display_size="52" display_size_flt="0.520362" flags="0x10300000b" tree_size="363,0" tree_size_dpi="100" view_mode="details,details" well_width="128,128" well_width_dpi="100" />
 		<filedisplay>
-			<left buf_flags="0xc0020000" flags="0" name="">
-				<pathstring>D:\Music\Music</pathstring>
-				<format autosize="yes" content_max="999" content_min="1" getsizes="default" noremember="no" numericname="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" type="0x10000000" v="4" view_mode="details">
-					<field id="name" size="719" size_dpi="150" />
-					<field id="type" size="81" size_dpi="150" />
-					<field id="modified" size="171" size_dpi="150" />
-					<field id="created" size="171" size_dpi="150" sort="1" />
-					<field id="filecounttotal" size="115" size_dpi="150" />
+			<left buf_flags="0xc1020000" flags="0" name="">
+				<pathstring>D:\Video\回放\Destiny 2</pathstring>
+				<format content_max="999" content_min="1" getsizes="default" noremember="no" numericname="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" type="0x10000000" v="4" view_mode="details">
+					<field auto_size="yes" id="name" manual_resize="yes" size="165" size_dpi="100" />
+					<field auto_size="yes" id="sizeauto" size="55" size_dpi="100" />
+					<field auto_size="yes" id="type" size="70" size_dpi="100" />
+					<field auto_size="yes" id="created" size="108" size_dpi="100" />
+					<field auto_size="yes" id="modified" size="108" size_dpi="100" sort="1" />
+					<field auto_size="yes" id="filecounttotal" size="79" size_dpi="100" />
+					<field auto_size="yes" id="duration" size="42" size_dpi="100" />
 				</format>
 				<curdir>
 					<4>
-						<pathstring>D:\Music\Music</pathstring>
+						<pathstring>D:\Video\回放\Destiny 2</pathstring>
 					</4>
 				</curdir>
 				<vars />
 			</left>
 			<right buf_flags="0xc0020000" flags="0" name="">
-				<pathstring>C:\Users\xwd\.config\wezterm</pathstring>
+				<pathstring>D:\Tools\mpv-lazy</pathstring>
 				<format autosize="yes" content_max="999" content_min="1" getsizes="default" noremember="no" numericname="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" type="0x8000000" v="4" view_mode="details">
-					<field id="name" size="251" size_dpi="150" sort="1" />
-					<field id="sizeauto" size="102" size_dpi="150" />
-					<field id="type" size="171" size_dpi="150" />
-					<field id="modified" size="171" size_dpi="150" />
-					<field id="attr" size="75" size_dpi="150" />
+					<field id="name" size="216" size_dpi="100" sort="1" />
+					<field id="sizeauto" size="65" size_dpi="100" />
+					<field id="type" size="151" size_dpi="100" />
+					<field id="modified" size="108" size_dpi="100" />
+					<field id="attr" size="52" size_dpi="100" />
 				</format>
 				<curdir>
-					<3>
-						<pathstring>C:\Users\xwd\.config\wezterm</pathstring>
-					</3>
 					<4>
-						<pathstring>D:\Download</pathstring>
+						<pathstring>D:\Tools\mpv-lazy</pathstring>
 					</4>
 				</curdir>
 				<vars />
 			</right>
 		</filedisplay>
-		<tabs1 active="1">
-			<tab buf_flags="0xc0020000" custom_flags="0,0,4,3" flags="0" name="" nsid="{B52C30E0-7FF9-47CC-B112-A3D9374CD79E}">
-				<pathstring>D:\Video\回放\League of Legends</pathstring>
-				<format autosize="yes" content_max="999" content_min="1" getsizes="default" noremember="no" numericname="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" type="0x10000000" v="4" view_mode="details">
-					<field id="name" size="234" size_dpi="150" />
-					<field id="sizeauto" size="89" size_dpi="150" />
-					<field id="type" size="103" size_dpi="150" />
-					<field id="modified" size="171" size_dpi="150" sort="1" />
-					<field id="attr" size="75" size_dpi="150" />
+		<tabs1 active="0">
+			<tab buf_flags="0xc1020000" flags="0" name="">
+				<pathstring>D:\Video\回放\Destiny 2</pathstring>
+				<format content_max="999" content_min="1" getsizes="default" noremember="no" numericname="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" type="0x10000000" v="4" view_mode="details">
+					<field auto_size="yes" id="name" manual_resize="yes" size="165" size_dpi="100" />
+					<field auto_size="yes" id="sizeauto" size="55" size_dpi="100" />
+					<field auto_size="yes" id="type" size="70" size_dpi="100" />
+					<field auto_size="yes" id="created" size="108" size_dpi="100" />
+					<field auto_size="yes" id="modified" size="108" size_dpi="100" sort="1" />
+					<field auto_size="yes" id="filecounttotal" size="79" size_dpi="100" />
+					<field auto_size="yes" id="duration" size="42" size_dpi="100" />
 				</format>
 				<curdir>
 					<4>
-						<pathstring>D:\Video\回放\League of Legends</pathstring>
+						<pathstring>D:\Video\回放\Destiny 2</pathstring>
 					</4>
 				</curdir>
 				<vars />
@@ -60,46 +61,27 @@
 			<tab buf_flags="0xc0020000" flags="0" name="">
 				<pathstring>D:\Music\Music</pathstring>
 				<format autosize="yes" content_max="999" content_min="1" getsizes="default" noremember="no" numericname="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" type="0x10000000" v="4" view_mode="details">
-					<field id="name" size="719" size_dpi="150" />
-					<field id="type" size="81" size_dpi="150" />
-					<field id="modified" size="171" size_dpi="150" />
-					<field id="created" size="171" size_dpi="150" sort="1" />
-					<field id="filecounttotal" size="115" size_dpi="150" />
+					<field id="name" size="473" size_dpi="100" />
+					<field id="type" size="55" size_dpi="100" />
+					<field id="modified" size="108" size_dpi="100" />
+					<field id="created" size="108" size_dpi="100" sort="1" />
+					<field id="filecounttotal" size="79" size_dpi="100" />
 				</format>
 				<curdir>
 					<4>
 						<pathstring>D:\Music\Music</pathstring>
 					</4>
-				</curdir>
-				<vars />
-			</tab>
-			<tab buf_flags="0xc0020000" flags="0" name="">
-				<pathstring>E:\The Wire S3</pathstring>
-				<format autosize="yes" content_max="999" content_min="1" getsizes="default" noremember="no" numericname="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" type="0x8000000" v="4" view_mode="details">
-					<field id="name" size="738" size_dpi="150" sort="1" />
-					<field id="sizeauto" size="85" size_dpi="150" />
-					<field id="type" size="104" size_dpi="150" />
-					<field id="modified" size="171" size_dpi="150" />
-					<field id="attr" size="75" size_dpi="150" />
-				</format>
-				<curdir>
-					<4>
-						<pathstring>D:\考公</pathstring>
-					</4>
-					<5>
-						<pathstring>E:\The Wire S3</pathstring>
-					</5>
 				</curdir>
 				<vars />
 			</tab>
 			<tab buf_flags="0xc0020000" flags="0" name="">
 				<pathstring>E:\study</pathstring>
 				<format autosize="yes" content_max="999" content_min="1" getsizes="default" noremember="no" numericname="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" type="0x8000000" v="4" view_mode="details">
-					<field id="name" size="422" size_dpi="150" sort="1" />
-					<field id="sizeauto" size="89" size_dpi="150" />
-					<field id="type" size="145" size_dpi="150" />
-					<field id="modified" size="171" size_dpi="150" />
-					<field id="attr" size="75" size_dpi="150" />
+					<field id="name" size="273" size_dpi="100" sort="1" />
+					<field id="sizeauto" size="58" size_dpi="100" />
+					<field id="type" size="96" size_dpi="100" />
+					<field id="modified" size="108" size_dpi="100" />
+					<field id="attr" size="52" size_dpi="100" />
 				</format>
 				<curdir>
 					<3>
@@ -114,19 +96,40 @@
 				</curdir>
 				<vars />
 			</tab>
-		</tabs1>
-		<tabs2 active="4">
 			<tab buf_flags="0xc0020000" flags="0" name="">
-				<pathstring>D:\Download</pathstring>
-				<format autosize="yes" content_max="999" content_min="1" getsizes="default" noremember="no" numericname="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" type="0x10000000" v="4" view_mode="details">
-					<field id="name" size="265" size_dpi="150" sort="1" />
-					<field id="sizeauto" size="89" size_dpi="150" />
-					<field id="type" size="81" size_dpi="150" />
-					<field id="modified" size="171" size_dpi="150" />
+				<pathstring>D:\Video\The Wire\Season 5</pathstring>
+				<format autosize="yes" content_max="999" content_min="1" getsizes="default" noremember="no" numericname="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" type="0x8000000" v="4" view_mode="details">
+					<field id="name" size="488" size_dpi="100" sort="1" />
+					<field id="sizeauto" size="55" size_dpi="100" />
+					<field id="type" size="70" size_dpi="100" />
+					<field id="modified" size="108" size_dpi="100" />
+					<field id="attr" size="52" size_dpi="100" />
 				</format>
 				<curdir>
 					<4>
-						<pathstring>D:\Download</pathstring>
+						<pathstring>D:\Video\The Wire\Season 5</pathstring>
+					</4>
+					<5>
+						<pathstring>E:\</pathstring>
+					</5>
+				</curdir>
+				<vars />
+			</tab>
+		</tabs1>
+		<tabs2 active="1">
+			<tab buf_flags="0xc0020000" flags="0" name="">
+				<pathstring>D:\Download\IDM Download</pathstring>
+				<format autosize="yes" content_max="999" content_min="1" getsizes="default" noremember="no" numericname="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" type="0x10000000" v="4" view_mode="details">
+					<field id="name" size="336" size_dpi="100" sort="1" />
+					<field id="status" size="42" size_dpi="100" />
+					<field id="sizeauto" size="65" size_dpi="100" />
+					<field id="type" size="86" size_dpi="100" />
+					<field id="modified" size="108" size_dpi="100" />
+					<field id="attr" size="52" size_dpi="100" />
+				</format>
+				<curdir>
+					<4>
+						<pathstring>D:\Download\IDM Download</pathstring>
 					</4>
 					<5>
 						<pathstring>E:\Kingdom Come Deliverance\Kingdom Come Deliverance II\Bin\Win64MasterMasterSteamPGO</pathstring>
@@ -135,36 +138,35 @@
 				<vars />
 			</tab>
 			<tab buf_flags="0xc0020000" flags="0" name="">
-				<pathstring>D:\Tools</pathstring>
+				<pathstring>D:\Tools\mpv-lazy</pathstring>
 				<format autosize="yes" content_max="999" content_min="1" getsizes="default" noremember="no" numericname="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" type="0x8000000" v="4" view_mode="details">
-					<field id="name" size="441" size_dpi="150" sort="1" />
-					<field id="sizeauto" size="89" size_dpi="150" />
-					<field id="type" size="301" size_dpi="150" />
-					<field id="modified" size="171" size_dpi="150" />
-					<field id="attr" size="75" size_dpi="150" />
+					<field id="name" size="216" size_dpi="100" sort="1" />
+					<field id="sizeauto" size="65" size_dpi="100" />
+					<field id="type" size="151" size_dpi="100" />
+					<field id="modified" size="108" size_dpi="100" />
+					<field id="attr" size="52" size_dpi="100" />
 				</format>
 				<curdir>
 					<4>
-						<pathstring>D:\Tools</pathstring>
+						<pathstring>D:\Tools\mpv-lazy</pathstring>
 					</4>
 				</curdir>
 				<vars />
 			</tab>
 			<tab buf_flags="0xc0020000" flags="0" name="">
-				<pathstring>D:\Music\MusicBee</pathstring>
-				<format autosize="yes" content_max="999" content_min="1" getsizes="default" noremember="no" numericname="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" type="0x8000000" v="4" view_mode="details">
-					<field id="name" size="349" size_dpi="150" sort="1" />
-					<field id="sizeauto" size="102" size_dpi="150" />
-					<field id="type" size="195" size_dpi="150" />
-					<field id="modified" size="171" size_dpi="150" />
-					<field id="attr" size="75" size_dpi="150" />
+				<pathstring>C:\</pathstring>
+				<format autosize="yes" content_max="999" content_min="1" getsizes="default" noremember="no" numericname="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" type="0x10000000" v="4" view_mode="details">
+					<field id="name" size="156" size_dpi="100" />
+					<field id="sizeauto" size="65" size_dpi="100" />
+					<field id="type" size="68" size_dpi="100" />
+					<field id="modified" size="108" size_dpi="100" sort="1" />
 				</format>
 				<curdir>
 					<3>
 						<pathstring>C:\</pathstring>
 					</3>
 					<4>
-						<pathstring>D:\Music\MusicBee</pathstring>
+						<pathstring>D:\WORKING\ODR</pathstring>
 					</4>
 				</curdir>
 				<vars />
@@ -172,38 +174,19 @@
 			<tab buf_flags="0xc0020000" flags="0" name="">
 				<pathstring>E:\</pathstring>
 				<format autosize="yes" content_max="999" content_min="1" getsizes="default" noremember="no" numericname="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" type="0x10000000" v="4" view_mode="details">
-					<field id="name" size="291" size_dpi="150" sort="1" />
-					<field id="sizeauto" size="89" size_dpi="150" />
-					<field id="type" size="81" size_dpi="150" />
-					<field id="modified" size="171" size_dpi="150" />
-					<field id="attr" size="75" size_dpi="150" />
+					<field id="name" size="131" size_dpi="100" sort="1" />
+					<field id="sizeauto" size="58" size_dpi="100" />
+					<field id="type" size="55" size_dpi="100" />
+					<field id="modified" size="108" size_dpi="100" />
+					<field id="attr" size="52" size_dpi="100" />
 				</format>
 				<curdir>
-					<3>
-						<pathstring>C:\Users\xwd\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude-3p</pathstring>
-					</3>
+					<4>
+						<pathstring>D:\Download\IDM Download</pathstring>
+					</4>
 					<5>
 						<pathstring>E:\</pathstring>
 					</5>
-				</curdir>
-				<vars />
-			</tab>
-			<tab buf_flags="0xc0020000" flags="0" name="">
-				<pathstring>C:\Users\xwd\.config\wezterm</pathstring>
-				<format autosize="yes" content_max="999" content_min="1" getsizes="default" noremember="no" numericname="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" type="0x8000000" v="4" view_mode="details">
-					<field id="name" size="251" size_dpi="150" sort="1" />
-					<field id="sizeauto" size="102" size_dpi="150" />
-					<field id="type" size="171" size_dpi="150" />
-					<field id="modified" size="171" size_dpi="150" />
-					<field id="attr" size="75" size_dpi="150" />
-				</format>
-				<curdir>
-					<3>
-						<pathstring>C:\Users\xwd\.config\wezterm</pathstring>
-					</3>
-					<4>
-						<pathstring>D:\Download</pathstring>
-					</4>
 				</curdir>
 				<vars />
 			</tab>

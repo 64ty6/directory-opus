@@ -73,7 +73,7 @@
 			<splitter>0,150</splitter>
 		</extra>
 	</networkfolderprefs>
-	<opusnews rc="727,477,1840,1171,150" />
+	<opusnews rc="909,474,1651,965,100" />
 	<pref_advanced>
 		<extra>
 			<selected_category>全部</selected_category>
@@ -175,16 +175,17 @@
 		</extra_nodes>
 	</pref_labeldefs>
 	<preferences>
-		<wp rc="758,475,1977,1377,150" showcmd="1" />
+		<wp rc="435,308,1247,946,100" showcmd="1" />
 		<extra>
-			<initial_page>explorerrep</initial_page>
+			<initial_page>autoloading</initial_page>
 			<done_intro>1</done_intro>
 			<hide_scripts>0</hide_scripts>
 		</extra>
 		<extra_nodes>
-			<list_state scroll="0">
+			<list_state scroll="53">
 				<expanded>
 					<group>0x48d</group>
+					<group>0x5e8</group>
 				</expanded>
 				<collapsed>
 					<group>808</group>
@@ -200,7 +201,6 @@
 					<group>0x4d6</group>
 					<group>0x4d8</group>
 					<group>0x4e1</group>
-					<group>0x5e8</group>
 					<group>0x5fb</group>
 					<group>0x64c</group>
 					<group>0x6d3</group>
@@ -232,8 +232,8 @@
 			<columns columns="0,1,2,3" order="0,1,2,3" sort="1" />
 		</extra_nodes>
 	</shellexprefs>
-	<viewer rc="-11,-11,2570,1610,150">
-		<wp flags="2" rc="309,197,2251,1412,150" showcmd="3" />
+	<viewer rc="836,284,2033,953,150">
+		<wp rc="836,284,2034,954,150" showcmd="1" />
 		<extra>
 			<ontop>0</ontop>
 		</extra>

@@ -2,27 +2,42 @@
 <recent>
 	<path>
 		<dir>
-			<pathstring>D:\Tools</pathstring>
-		</dir>
-	</path>
-	<path>
-		<dir>
-			<pathstring>D:\Tools\Directory Opus</pathstring>
-		</dir>
-	</path>
-	<path>
-		<dir>
 			<pathstring>D:\Music</pathstring>
 		</dir>
 	</path>
 	<path>
 		<dir>
-			<pathstring>D:\Music\MusicBee</pathstring>
+			<pathstring>D:\</pathstring>
 		</dir>
 	</path>
 	<path>
 		<dir>
-			<pathstring>D:\Download\Vivaldi Download</pathstring>
+			<pathstring>D:\Tools\mpv-lazy</pathstring>
+		</dir>
+	</path>
+	<path>
+		<dir>
+			<pathstring>D:\Tools</pathstring>
+		</dir>
+	</path>
+	<path>
+		<dir>
+			<pathstring>D:\WORKING</pathstring>
+		</dir>
+	</path>
+	<path>
+		<dir>
+			<pathstring>D:\Work</pathstring>
+		</dir>
+	</path>
+	<path>
+		<dir>
+			<pathstring>D:\weixinliaotian</pathstring>
+		</dir>
+	</path>
+	<path>
+		<dir>
+			<pathstring>D:\Program Files</pathstring>
 		</dir>
 	</path>
 	<path>
@@ -32,22 +47,7 @@
 	</path>
 	<path>
 		<dir>
-			<pidl>?AAAAFAAfeEDwX2SBUBsQnwgAqgAvlU4AAA==</pidl>
-		</dir>
-	</path>
-	<path>
-		<dir>
-			<pathstring>E:\study</pathstring>
-		</dir>
-	</path>
-	<path>
-		<dir>
-			<pathstring>E:\</pathstring>
-		</dir>
-	</path>
-	<path>
-		<dir>
-			<pathstring>E:\The Wire S3</pathstring>
+			<pathstring>D:\Download\IDM Download</pathstring>
 		</dir>
 	</path>
 </recent>
