@@ -13,7 +13,7 @@ $ErrorActionPreference = 'Stop'
 Assert-ApplicationStopped @('dopus', 'dopusrt')
 Assert-RequiredPaths $ProgramDirectory @('dopus.exe')
 Assert-RequiredPaths (Join-Path $Source 'program') @('dopus.dat')
-Assert-RequiredPaths (Join-Path $Source 'settings') @('prefs.oxc')
+Assert-RequiredPaths (Join-Path $Source 'settings') @('ConfigFiles/prefs.oxc')
 Assert-RequiredPaths (Join-Path $Source 'state')
 if (Test-Path -LiteralPath (Join-Path $Source '.backup-incomplete')) { throw '该备份尚未完成，不能恢复。' }
 Restore-Configuration @(

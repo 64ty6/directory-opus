@@ -12,7 +12,7 @@ $ErrorActionPreference = 'Stop'
 
 Assert-ApplicationStopped @('dopus', 'dopusrt')
 Assert-RequiredPaths $ProgramDirectory @('dopus.dat')
-Assert-RequiredPaths $SettingsDirectory @('prefs.oxc')
+Assert-RequiredPaths $SettingsDirectory @('ConfigFiles/prefs.oxc')
 Assert-RequiredPaths $StateDirectory
 foreach ($src in @($ProgramDirectory, $SettingsDirectory, $StateDirectory)) { Assert-SeparatePaths $src $Destination }
 New-BackupDirectory $Destination
