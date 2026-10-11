@@ -1,30 +1,23 @@
-# Directory Opus 配置备份
+#requires -Version 7.0
+# Directory Opus 配置备份。
+param(
+    [string]$ProgramDirectory = 'D:\Tools\Directory Opus',
+    [string]$SettingsDirectory = (Join-Path $env:APPDATA 'GPSoftware/Directory Opus'),
+    [string]$StateDirectory = (Join-Path $env:LOCALAPPDATA 'GPSoftware/Directory Opus/State Data'),
+    [string]$Destination = (Join-Path $PSScriptRoot 'Backup' (Get-Date -Format 'yyyyMMdd-HHmmss-fffffff'))
+)
 
-$dest = Join-Path $PSScriptRoot "Backup" (Get-Date -Format "yyyyMMdd-HHmmss")
+$ErrorActionPreference = 'Stop'
+. (Join-Path $PSScriptRoot 'scripts/config-common.ps1')
 
-Write-Host "=== Directory Opus 配置备份 ===" -ForegroundColor Cyan
+Assert-ApplicationStopped @('dopus', 'dopusrt')
+Assert-RequiredPaths $ProgramDirectory @('dopus.dat')
+Assert-RequiredPaths $SettingsDirectory @('ConfigFiles/prefs.oxc')
+Assert-RequiredPaths $StateDirectory
+foreach ($src in @($ProgramDirectory, $SettingsDirectory, $StateDirectory)) { Assert-SeparatePaths $src $Destination }
+New-BackupDirectory $Destination
+Copy-SelectedItems $ProgramDirectory (Join-Path $Destination 'program') @('dopus.dat', 'Images', 'Language', 'Policies')
+Copy-DirectoryContents $SettingsDirectory (Join-Path $Destination 'settings') @('Icon Cache Roaming', 'Logs', 'Backup')
+Copy-DirectoryContents $StateDirectory (Join-Path $Destination 'state')
+Complete-Backup $Destination
 
-# program/
-Write-Host "[1/3] 安装目录配置..." -ForegroundColor Yellow
-$dst = Join-Path $dest "program"
-New-Item -ItemType Directory -Path $dst -Force | Out-Null
-@("dopus.dat","Images","Language","Policies") | ForEach-Object {
-    $s = Join-Path "D:\Tools\Directory Opus" $_
-    if (Test-Path $s) { Copy-Item $s -Destination $dst -Recurse -Force }
-}
-
-# settings/
-Write-Host "[2/3] 用户设置..." -ForegroundColor Yellow
-$s = "$env:APPDATA\GPSoftware\Directory Opus"
-$d = Join-Path $dest "settings"
-if (Test-Path $s) {
-    Copy-Item $s -Destination $d -Recurse -Force
-    Remove-Item "$d\Icon Cache Roaming","$d\Logs" -Recurse -Force -ErrorAction SilentlyContinue
-}
-
-# state/
-Write-Host "[3/3] 状态数据..." -ForegroundColor Yellow
-$s = "$env:LOCALAPPDATA\GPSoftware\Directory Opus\State Data"
-if (Test-Path $s) { Copy-Item $s -Destination (Join-Path $dest "state") -Recurse -Force }
-
-Write-Host "`n=== 完成: $dest ===" -ForegroundColor Cyan

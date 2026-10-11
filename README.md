@@ -2,6 +2,26 @@
 
 本仓库保存 Directory Opus 文件管理器的完整用户配置快照（工具栏按钮、布局、脚本、首选项、快捷键、主题、文件类型等），用于换新电脑后把界面与行为还原到与旧机一致。
 
+
+## PowerShell 7 脚本入口
+
+所有 PowerShell 命令均在 **PowerShell 7** 中执行。仓库脚本使用 `#requires -Version 7.0`，不支持 Windows PowerShell 5.1。
+
+```powershell
+pwsh -NoProfile -Command '$PSVersionTable.PSVersion'
+pwsh -NoProfile -File .\backup.ps1
+pwsh -NoProfile -File .\restore.ps1
+```
+
+自动操作优先使用以上脚本；下文手动步骤用于说明目录映射和还原后检查，不能绕过脚本的进程及完整性校验。
+
+- 备份前完全退出应用及后台进程。缺少必要配置、文件被占用或复制失败时脚本报错停止，不打印成功。
+- 导出目录内的 `.backup-incomplete` 表示快照尚未完成；存在该标记时禁止恢复。每次导出使用独立目录，不与旧备份合并。
+- 恢复前先验证所有源目录，再把将要覆盖的现有配置复制到目标目录旁的 `*.before-restore-<时间戳>`。发生错误时可从该目录找回原文件；新复制的文件不会自动回滚。
+- 目录按内容逐项复制，重复恢复不会产生同名子目录嵌套。数据库的 `CURRENT` 必须指向存在且可读取的 `MANIFEST-*`；数值命名的事务日志（如 `000003.log`）属于数据库内容，必须保留。
+- 若在 Codex 等沙盒中操作，进程列表可能不完整。请先在宿主机确认应用退出；文件锁或复制错误仍会使脚本停止。
+
+
 ## 前置要求
 
 - 已在 Windows 上把 **Directory Opus 安装到 `D:\Tools\Directory Opus`**。该路径由配置中的绝对路径决定，请勿安装到其它位置。
@@ -224,7 +244,7 @@ $la = "$env:LOCALAPPDATA\GPSoftware\Directory Opus\State Data"
    运行脚本（会在仓库下 `Backup\<时间戳>\` 生成一份快照；注意 `Backup/` 已被 `.gitignore` 忽略，需再手动同步进 `program/settings/state`）：
 
    ```powershell
-   .\backup.ps1
+   pwsh -NoProfile -File .\backup.ps1
    ```
 
    或直接手动复制到仓库目录：
@@ -247,3 +267,4 @@ $la = "$env:LOCALAPPDATA\GPSoftware\Directory Opus\State Data"
 - **安装路径固定**：配置内含有指向 `D:\Tools\Directory Opus` 的绝对路径，务必安装到同一位置；否则需在 Opus 中手动修正相关路径。
 - **覆盖式还原**：复制使用 `-Force`，会替换目标机上的同名配置。若想保留旧配置，请在还原前自行备份。
 - **权限 / 占用报错**：复制时报“正在使用”基本都是 Opus 没退干净，回到第 2 步重新确认进程。
+
