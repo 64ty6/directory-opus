@@ -268,3 +268,11 @@ $la = "$env:LOCALAPPDATA\GPSoftware\Directory Opus\State Data"
 - **覆盖式还原**：复制使用 `-Force`，会替换目标机上的同名配置。若想保留旧配置，请在还原前自行备份。
 - **权限 / 占用报错**：复制时报“正在使用”基本都是 Opus 没退干净，回到第 2 步重新确认进程。
 
+
+## 私有迁移数据（2026-10-11）
+
+最新个人配置和状态存放在私有仓库 `64ty6/wezterm-yazi-nushell-starship` 的 `migration/data/
+directory-opus
+`，本公开仓库保留脚本与可公开配置。完整恢复请参照私有仓库 `migration/README.md`，使用 `migration/restore-all.ps1`。单独调用此仓库的 `restore.ps1` 时，传入 `-Source <私有迁移快照目录>`。大型运行环境另存私有 Release 附件。
+
+旧个人数据在当前分支已移除；此前公开提交的历史不在本次重写范围内。
